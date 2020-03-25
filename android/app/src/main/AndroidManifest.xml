@@ -1,8 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.virtual_assistant">
+    package="vukan.com.virtualassistant">
     <application
         android:name="io.flutter.app.FlutterApplication"
-        android:label="virtual_assistant"
+        android:label="Virtual assistant"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

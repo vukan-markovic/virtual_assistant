@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1018455856067",
+    "firebase_url": "https://virtual-assistant-67a8b.firebaseio.com",
+    "project_id": "virtual-assistant-67a8b",
+    "storage_bucket": "virtual-assistant-67a8b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1018455856067:android:a4e46d7c2e9af0ddfea376",
+        "android_client_info": {
+          "package_name": "vukan.com.virtualassistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1018455856067-glk3iasu6u4hnbts63ro4i6qkfe0ase2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vukan.com.virtualassistant",
+            "certificate_hash": "70b8e1b0d89d78ecb93fd6d06073ee3e2cefd57d"
+          }
+        },
+        {
+          "client_id": "1018455856067-62u4ocf85fgi2qni44dvs76abit8icj2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYp38EQHiJvcbmlaZ_RjGu8T8qXRAsUEk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1018455856067-62u4ocf85fgi2qni44dvs76abit8icj2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
