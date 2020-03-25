@@ -1,4 +1,4 @@
-package com.example.virtual_assistant
+package vukan.com.virtualassistant
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity
