@@ -28,7 +28,7 @@ class SignInPageState extends State<SignInPage> {
             shrinkWrap: true,
             padding: const EdgeInsets.all(20.0),
             scrollDirection: Axis.vertical,
-            children: <Widget>[_GoogleSignInSection()],
+            children: <Widget>[_SignInSection()],
           ),
         );
       }),
@@ -37,14 +37,14 @@ class SignInPageState extends State<SignInPage> {
   }
 }
 
-class _GoogleSignInSection extends StatefulWidget {
+class _SignInSection extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() => _GoogleSignInSectionState();
+  State<StatefulWidget> createState() => _SignInSectionState();
 }
 
-class _GoogleSignInSectionState extends State<_GoogleSignInSection> {
+class _SignInSectionState extends State<_SignInSection> {
   bool _success;
-  String _userID;
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -140,7 +140,6 @@ class _GoogleSignInSectionState extends State<_GoogleSignInSection> {
     setState(() {
       if (user != null) {
         _success = true;
-        _userID = user.uid;
         _pushPage(context, HomePageDialogflowV2(user: user));
       } else {
         _success = false;
@@ -170,7 +169,6 @@ class _GoogleSignInSectionState extends State<_GoogleSignInSection> {
     setState(() {
       if (user != null) {
         _success = true;
-        _userID = user.uid;
         _pushPage(context, HomePageDialogflowV2(user: user));
       } else
         _success = false;
@@ -202,7 +200,6 @@ class _GoogleSignInSectionState extends State<_GoogleSignInSection> {
     setState(() {
       if (user != null) {
         _success = true;
-        _userID = user.uid;
         _pushPage(context, HomePageDialogflowV2(user: user));
       } else
         _success = false;

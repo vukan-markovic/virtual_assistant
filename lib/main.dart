@@ -1,6 +1,4 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:virtual_assistant/chatbot.dart';
 import 'package:virtual_assistant/login.dart';
 
 void main() => runApp(new MyApp());

@@ -113,6 +113,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.1.1+2"
+  firebase_ml_vision:
+    dependency: "direct main"
+    description:
+      name: firebase_ml_vision
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.9.3+8"
+  firebase_mlkit_language:
+    dependency: "direct main"
+    description:
+      name: firebase_mlkit_language
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.1.2"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -132,11 +146,25 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.0.0"
+  flutter_plugin_android_lifecycle:
+    dependency: transitive
+    description:
+      name: flutter_plugin_android_lifecycle
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.6"
   flutter_test:
     dependency: "direct dev"
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_tts:
+    dependency: "direct main"
+    description:
+      name: flutter_tts
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.9.1"
   flutter_twitter_login:
     dependency: "direct main"
     description:
@@ -205,6 +233,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.4"
+  image_picker:
+    dependency: "direct main"
+    description:
+      name: image_picker
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.6.4"
   js:
     dependency: transitive
     description:
@@ -273,6 +308,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.5.5"
+  speech_recognition:
+    dependency: "direct main"
+    description:
+      name: speech_recognition
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.3.0+1"
   stack_trace:
     dependency: transitive
     description:
@@ -331,4 +373,4 @@ packages:
     version: "3.5.0"
 sdks:
   dart: ">=2.7.0-dev <3.0.0"
-  flutter: ">=1.12.13+hotfix.4 <2.0.0"
+  flutter: ">=1.12.13+hotfix.5 <2.0.0"

@@ -1,10 +1,14 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_ml_vision/firebase_ml_vision.dart';
+import 'package:firebase_mlkit_language/firebase_mlkit_language.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dialogflow/dialogflow_v2.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:virtual_assistant/login.dart';
+import 'package:virtual_assistant/menuOption.dart';
 import 'dart:io';
 import 'package:virtual_assistant/message.dart';
+import 'package:image_picker/image_picker.dart';
 
 class HomePageDialogflowV2 extends StatefulWidget {
   HomePageDialogflowV2({Key key, this.title, this.user}) : super(key: key);
@@ -21,6 +25,7 @@ class _HomePageDialogflowV2 extends State<HomePageDialogflowV2> {
   final FirebaseAuth _auth = FirebaseAuth.instance;
   Choice _selectedChoice = choices[0];
   bool flag = true;
+  File _image;
 
   void _select(Choice choice) {
     setState(() {
@@ -29,9 +34,73 @@ class _HomePageDialogflowV2 extends State<HomePageDialogflowV2> {
     });
   }
 
+  Future<List<String>> detectLabels(File image) async {
+    final FirebaseVisionImage visionImage = FirebaseVisionImage.fromFile(image);
+    final ImageLabeler labeler = FirebaseVision.instance.imageLabeler();
+    final List<ImageLabel> labels = await labeler.processImage(visionImage);
+    List<String> texts;
+    for (ImageLabel label in labels) {
+      texts.add(label.text);
+    }
+    labeler.close();
+    return texts;
+  }
+
+  void detectText(File image) async {
+    final FirebaseVisionImage visionImage = FirebaseVisionImage.fromFile(image);
+    final TextRecognizer textRecognizer =
+        FirebaseVision.instance.textRecognizer();
+    final VisionText visionText =
+        await textRecognizer.processImage(visionImage);
+
+    String text = visionText.text;
+  
+    for (TextBlock block in visionText.blocks) {
+      final String text = block.text;
+      final List<RecognizedLanguage> languages = block.recognizedLanguages;
+    }
+
+    textRecognizer.close();
+  }
+
+  Future<String> identifyLanguage(String message) async {
+    final LanguageIdentifier languageIdentifier =
+        FirebaseLanguage.instance.languageIdentifier();
+    final List<LanguageLabel> labels =
+        await languageIdentifier.processText(message);
+    return labels[0].languageCode;
+  }
+
+  Future<String> translateMessage(
+      String message, String fromLanguage, String toLanguage) async {
+    final ModelManager modelManager = FirebaseLanguage.instance.modelManager();
+    modelManager.downloadModel(fromLanguage);
+    final LanguageTranslator languageTranslator =
+        FirebaseLanguage.instance.languageTranslator(fromLanguage, toLanguage);
+    final String translatedString =
+        await languageTranslator.processText(message);
+    return translatedString;
+  }
+
+  Future getImageCamera() async {
+    var image = await ImagePicker.pickImage(source: ImageSource.camera);
+
+    setState(() {
+      _image = image;
+    });
+  }
+
+  Future getImageGallery() async {
+    var image = await ImagePicker.pickImage(source: ImageSource.gallery);
+
+    setState(() {
+      _image = image;
+    });
+  }
+
   void _signOut() async {
     await _auth.signOut();
-     _pushPage(context, SignInPage());
+    _pushPage(context, SignInPage());
   }
 
   void _pushPage(BuildContext context, Widget page) {
@@ -178,40 +247,6 @@ class _HomePageDialogflowV2 extends State<HomePageDialogflowV2> {
           child: _buildTextComposer(),
         ),
       ]),
-    );
-  }
-}
-
-class Choice {
-  const Choice({this.title, this.icon});
-
-  final String title;
-  final IconData icon;
-}
-
-const List<Choice> choices = const <Choice>[
-  const Choice(title: 'Sign out', icon: Icons.power_settings_new)
-];
-
-class ChoiceCard extends StatelessWidget {
-  const ChoiceCard({Key key, this.choice}) : super(key: key);
-  final Choice choice;
-
-  @override
-  Widget build(BuildContext context) {
-    final TextStyle textStyle = Theme.of(context).textTheme.display1;
-    return Card(
-      color: Colors.white,
-      child: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            Icon(choice.icon, size: 128.0, color: textStyle.color),
-            Text(choice.title, style: textStyle),
-          ],
-        ),
-      ),
     );
   }
 }
