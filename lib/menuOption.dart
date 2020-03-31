@@ -8,7 +8,9 @@ class Choice {
 }
 
 const List<Choice> choices = const <Choice>[
-  const Choice(title: 'Sign out', icon: Icons.power_settings_new)
+  const Choice(title: 'Sign out', icon: Icons.power_settings_new),
+   const Choice(title: 'Languages', icon: Icons.speaker_phone),
+    const Choice(title: 'Speach languages', icon: Icons.speaker_phone)
 ];
 
 class ChoiceCard extends StatelessWidget {
@@ -25,7 +27,7 @@ class ChoiceCard extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            Icon(choice.icon, size: 128.0, color: textStyle.color),
+            Icon(choice.icon, size: 128.0, color: Colors.red),
             Text(choice.title, style: textStyle),
           ],
         ),

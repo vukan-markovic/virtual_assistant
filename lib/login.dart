@@ -16,6 +16,7 @@ class SignInPage extends StatefulWidget {
 }
 
 class SignInPageState extends State<SignInPage> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -118,29 +119,28 @@ class _SignInSectionState extends State<_SignInSection> {
 
   void _signInWithGoogle() async {
     FirebaseUser user;
-    
-    try {
-    final GoogleSignInAccount googleUser = await _googleSignIn.signIn();
-    final GoogleSignInAuthentication googleAuth =
-        await googleUser.authentication;
-    final AuthCredential credential = GoogleAuthProvider.getCredential(
-      accessToken: googleAuth.accessToken,
-      idToken: googleAuth.idToken,
-    );
-    user =
-        (await _auth.signInWithCredential(credential)).user;
-    assert(user.email != null);
-    assert(user.displayName != null);
-    assert(!user.isAnonymous);
-    assert(await user.getIdToken() != null);
 
-    final FirebaseUser currentUser = await _auth.currentUser();
-    assert(user.uid == currentUser.uid);
-    } catch(_) {}
+    try {
+      final GoogleSignInAccount googleUser = await _googleSignIn.signIn();
+      final GoogleSignInAuthentication googleAuth =
+          await googleUser.authentication;
+      final AuthCredential credential = GoogleAuthProvider.getCredential(
+        accessToken: googleAuth.accessToken,
+        idToken: googleAuth.idToken,
+      );
+      user = (await _auth.signInWithCredential(credential)).user;
+      assert(user.email != null);
+      assert(user.displayName != null);
+      assert(!user.isAnonymous);
+      assert(await user.getIdToken() != null);
+
+      final FirebaseUser currentUser = await _auth.currentUser();
+      assert(user.uid == currentUser.uid);
+    } catch (_) {}
     setState(() {
       if (user != null) {
         _success = true;
-        _pushPage(context, HomePageDialogflowV2(user: user));
+        _pushPage(context, Chatbot(user: user));
       } else {
         _success = false;
       }
@@ -156,8 +156,7 @@ class _SignInSectionState extends State<_SignInSection> {
 
       final AuthCredential credential = FacebookAuthProvider.getCredential(
           accessToken: result.accessToken.token);
-      FirebaseUser user =
-          (await _auth.signInWithCredential(credential)).user;
+      FirebaseUser user = (await _auth.signInWithCredential(credential)).user;
       assert(user.email != null);
       assert(user.displayName != null);
       assert(!user.isAnonymous);
@@ -169,7 +168,7 @@ class _SignInSectionState extends State<_SignInSection> {
     setState(() {
       if (user != null) {
         _success = true;
-        _pushPage(context, HomePageDialogflowV2(user: user));
+        _pushPage(context, Chatbot(user: user));
       } else
         _success = false;
     });
@@ -200,7 +199,7 @@ class _SignInSectionState extends State<_SignInSection> {
     setState(() {
       if (user != null) {
         _success = true;
-        _pushPage(context, HomePageDialogflowV2(user: user));
+        _pushPage(context, Chatbot(user: user));
       } else
         _success = false;
     });

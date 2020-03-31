@@ -1,4 +1,6 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:virtual_assistant/chatbot.dart';
 import 'package:virtual_assistant/login.dart';
 
 void main() => runApp(new MyApp());
@@ -10,7 +12,7 @@ class MyApp extends StatelessWidget {
       title: 'Virtual assistant',
       theme: new ThemeData(
           primarySwatch: Colors.red, accentColor: Colors.redAccent),
-      home: SignInPage(),
+      home: MyHomePage(),
     );
   }
 }
@@ -25,6 +27,20 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+
+   @override
+  initState() {
+    super.initState();
+    isLoggedIn();
+  }
+
+  void isLoggedIn() async {
+    final FirebaseUser currentUser = await FirebaseAuth.instance.currentUser();
+    if (currentUser != null)
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute<void>(builder: (_) => Chatbot(user: currentUser)),
+      );
+  }
 
   @override
   Widget build(BuildContext context) {

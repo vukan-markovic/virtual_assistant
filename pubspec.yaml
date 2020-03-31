@@ -17,11 +17,13 @@ dependencies:
   google_sign_in: ^4.2.0
   flutter_facebook_login: ^3.0.0
   flutter_twitter_login: ^1.1.0
-  firebase_mlkit_language: ^1.1.2
+  translator: ^0.1.4
   flutter_tts: ^0.9.1
   firebase_ml_vision: ^0.9.3+8
   image_picker: ^0.6.4
-  speech_recognition: ^0.3.0+1
+  soundpool: ^1.0.1
+  speech_to_text: ^2.0.1
+  shared_preferences_settings: ^1.2.0 
 
 dev_dependencies:
   flutter_test:

@@ -1,36 +1,249 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_ml_vision/firebase_ml_vision.dart';
-import 'package:firebase_mlkit_language/firebase_mlkit_language.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dialogflow/dialogflow_v2.dart';
+import 'package:flutter_tts/flutter_tts.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:speech_to_text/speech_recognition_error.dart';
+import 'package:speech_to_text/speech_recognition_result.dart';
+import 'package:speech_to_text/speech_to_text.dart';
+import 'package:translator/translator.dart';
+import 'package:virtual_assistant/languages.dart';
 import 'package:virtual_assistant/login.dart';
 import 'package:virtual_assistant/menuOption.dart';
 import 'dart:io';
 import 'package:virtual_assistant/message.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:shared_preferences_settings/shared_preferences_settings.dart';
+import 'package:virtual_assistant/speakLanguages.dart';
 
-class HomePageDialogflowV2 extends StatefulWidget {
-  HomePageDialogflowV2({Key key, this.title, this.user}) : super(key: key);
+class Chatbot extends StatefulWidget {
+  Chatbot({Key key, this.title, this.user}) : super(key: key);
   final String title;
   final FirebaseUser user;
 
   @override
-  _HomePageDialogflowV2 createState() => new _HomePageDialogflowV2();
+  _ChatbotState createState() => new _ChatbotState();
 }
 
-class _HomePageDialogflowV2 extends State<HomePageDialogflowV2> {
+enum TtsState { playing, stopped }
+
+class _ChatbotState extends State<Chatbot> {
   final List<ChatMessage> _messages = <ChatMessage>[];
+  final translator = new GoogleTranslator();
   final TextEditingController _textController = new TextEditingController();
   final FirebaseAuth _auth = FirebaseAuth.instance;
   Choice _selectedChoice = choices[0];
   bool flag = true;
+  String language = "en";
   File _image;
+  FlutterTts flutterTts;
+  double volume = 0.5;
+  double pitch = 1.0;
+  double rate = 0.5;
+  String newVoiceText;
+  TtsState ttsState = TtsState.stopped;
+  get isPlaying => ttsState == TtsState.playing;
+  get isStopped => ttsState == TtsState.stopped;
+  bool _hasSpeech = false;
+  bool _stressTest = false;
+  double level = 0.0;
+  int _stressLoops = 0;
+  String lastWords = "";
+  String lastError = "";
+  String lastStatus = "";
+  String _currentLocaleId = "";
+  List<LocaleName> _localeNames = [];
+  final SpeechToText speech = SpeechToText();
+  Map<String, String> speakLanguages = {};
+  // languages.first;
+
+  // void onCurrentLocale(String locale) {
+  //   setState(
+  //       () => selectedLang = languages.firstWhere((l) => l.code == locale));
+  // }
+
+  @override
+  initState() {
+    super.initState();
+    initTts();
+    initSpeechState();
+  }
+
+  Future<void> initSpeechState() async {
+    bool hasSpeech = await speech.initialize(
+        onError: errorListener, onStatus: statusListener);
+    if (hasSpeech) {
+      _localeNames = await speech.locales();
+      var systemLocale = await speech.systemLocale();
+      _currentLocaleId = systemLocale.localeId;
+      for (var item in _localeNames) {
+        speakLanguages[item.localeId] = item.name;
+      }
+    }
+
+    if (!mounted) return;
+
+    setState(() {
+      _hasSpeech = hasSpeech;
+    });
+  }
+
+  void startListening() async {
+    Fluttertoast.showToast(
+        msg: "Start",
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.CENTER,
+        timeInSecForIosWeb: 1,
+        backgroundColor: Colors.red,
+        textColor: Colors.white,
+        fontSize: 16.0);
+    lastWords = "";
+    lastError = "";
+
+    _currentLocaleId = await Settings().getString(
+      'radiokeyspeak',
+      'en',
+    );
+
+    print(_currentLocaleId);
+
+    speech.listen(
+      onResult: resultListener
+      // listenFor: Duration(seconds: 2),
+      ,
+      localeId: _currentLocaleId,
+      // onSoundLevelChange: soundLevelListener,
+      // cancelOnError: true,
+      // partialResults: true
+    );
+    setState(() {});
+  }
+
+  void stopListening() {
+    Fluttertoast.showToast(
+        msg: "Stop",
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.CENTER,
+        timeInSecForIosWeb: 1,
+        backgroundColor: Colors.red,
+        textColor: Colors.white,
+        fontSize: 16.0);
+    speech.stop();
+    setState(() {
+      // level = 0.0;
+    });
+  }
+
+  void cancelListening() {
+    speech.cancel();
+    setState(() {
+      level = 0.0;
+    });
+  }
+
+  void resultListener(SpeechRecognitionResult result) {
+    print("POZVANOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO");
+    setState(() {
+      Fluttertoast.showToast(
+          msg: result.recognizedWords,
+          toastLength: Toast.LENGTH_SHORT,
+          gravity: ToastGravity.CENTER,
+          timeInSecForIosWeb: 1,
+          backgroundColor: Colors.red,
+          textColor: Colors.white,
+          fontSize: 16.0);
+
+      if (!speech.isListening && lastWords != result.recognizedWords) {
+        lastWords = result.recognizedWords;
+        handleSubmitted(result.recognizedWords);
+      }
+    });
+  }
+
+  void soundLevelListener(double level) {
+    setState(() {
+      this.level = level;
+    });
+  }
+
+  void errorListener(SpeechRecognitionError error) {
+    setState(() {
+      lastError = "${error.errorMsg} - ${error.permanent}";
+    });
+  }
+
+  void statusListener(String status) {
+    // changeStatusForStress(status);
+    setState(() {
+      lastStatus = "$status";
+    });
+  }
+
+  initTts() {
+    flutterTts = FlutterTts();
+
+    flutterTts.setStartHandler(() {
+      setState(() {
+        ttsState = TtsState.playing;
+      });
+    });
+
+    flutterTts.setCompletionHandler(() {
+      setState(() {
+        ttsState = TtsState.stopped;
+      });
+    });
+
+    flutterTts.setErrorHandler((msg) {
+      setState(() {
+        ttsState = TtsState.stopped;
+      });
+    });
+  }
+
+  Future speak() async {
+    await flutterTts.setVolume(volume);
+    await flutterTts.setSpeechRate(rate);
+    await flutterTts.setPitch(pitch);
+
+    if (newVoiceText != null) {
+      if (newVoiceText.isNotEmpty) {
+        var result = await flutterTts.speak(newVoiceText);
+        if (result == 1) setState(() => ttsState = TtsState.playing);
+      }
+    }
+  }
+
+  Future _stop() async {
+    var result = await flutterTts.stop();
+    if (result == 1) setState(() => ttsState = TtsState.stopped);
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    flutterTts.stop();
+  }
 
   void _select(Choice choice) {
     setState(() {
       _selectedChoice = choice;
-      if (_selectedChoice.title == "Sign out") _signOut();
+      if (_selectedChoice.title == "Sign out")
+        _signOut();
+      else if (_selectedChoice.title == "Languages")
+        Navigator.of(context).push(
+          MaterialPageRoute<void>(
+              builder: (_) => Languages(language: language)),
+        );
+      else if (_selectedChoice.title == "Speach languages") {
+        Navigator.of(context).push(MaterialPageRoute<void>(
+          builder: (_) => SpeachLanguages(
+            language: language,
+            speakLanguages: speakLanguages,
+          ),
+        ));
+      }
     });
   }
 
@@ -46,41 +259,22 @@ class _HomePageDialogflowV2 extends State<HomePageDialogflowV2> {
     return texts;
   }
 
-  void detectText(File image) async {
-    final FirebaseVisionImage visionImage = FirebaseVisionImage.fromFile(image);
-    final TextRecognizer textRecognizer =
-        FirebaseVision.instance.textRecognizer();
-    final VisionText visionText =
-        await textRecognizer.processImage(visionImage);
+  // void detectText(File image) async {
+  //   final FirebaseVisionImage visionImage = FirebaseVisionImage.fromFile(image);
+  //   final TextRecognizer textRecognizer =
+  //       FirebaseVision.instance.textRecognizer();
+  //   final VisionText visionText =
+  //       await textRecognizer.processImage(visionImage);
 
-    String text = visionText.text;
-  
-    for (TextBlock block in visionText.blocks) {
-      final String text = block.text;
-      final List<RecognizedLanguage> languages = block.recognizedLanguages;
-    }
+  //   String text = visionText.text;
 
-    textRecognizer.close();
-  }
+  //   for (TextBlock block in visionText.blocks) {
+  //     final String text = block.text;
+  //     final List<RecognizedLanguage> languages = block.recognizedLanguages;
+  //   }
 
-  Future<String> identifyLanguage(String message) async {
-    final LanguageIdentifier languageIdentifier =
-        FirebaseLanguage.instance.languageIdentifier();
-    final List<LanguageLabel> labels =
-        await languageIdentifier.processText(message);
-    return labels[0].languageCode;
-  }
-
-  Future<String> translateMessage(
-      String message, String fromLanguage, String toLanguage) async {
-    final ModelManager modelManager = FirebaseLanguage.instance.modelManager();
-    modelManager.downloadModel(fromLanguage);
-    final LanguageTranslator languageTranslator =
-        FirebaseLanguage.instance.languageTranslator(fromLanguage, toLanguage);
-    final String translatedString =
-        await languageTranslator.processText(message);
-    return translatedString;
-  }
+  //   textRecognizer.close();
+  // }
 
   Future getImageCamera() async {
     var image = await ImagePicker.pickImage(source: ImageSource.camera);
@@ -119,7 +313,7 @@ class _HomePageDialogflowV2 extends State<HomePageDialogflowV2> {
             new Flexible(
               child: new TextField(
                 controller: _textController,
-                onSubmitted: _handleSubmitted,
+                onSubmitted: handleSubmitted,
                 decoration:
                     new InputDecoration.collapsed(hintText: "Send a message"),
               ),
@@ -130,7 +324,17 @@ class _HomePageDialogflowV2 extends State<HomePageDialogflowV2> {
                   icon: new Icon(
                     Icons.send, /*color: Colors.blue,*/
                   ),
-                  onPressed: () => _handleSubmitted(_textController.text)),
+                  onPressed: () => handleSubmitted(_textController.text)),
+            ),
+            new Container(
+              margin: new EdgeInsets.symmetric(horizontal: 4.0),
+              child: new IconButton(
+                  icon: new Icon(
+                    Icons.mic, /*color: Colors.blue,*/
+                  ),
+                  onPressed: _hasSpeech && !speech.isListening
+                      ? startListening
+                      : stopListening),
             ),
           ],
         ),
@@ -146,25 +350,41 @@ class _HomePageDialogflowV2 extends State<HomePageDialogflowV2> {
     Dialogflow dialogflow =
         Dialogflow(authGoogle: authGoogle, language: Language.english);
     AIResponse response = await dialogflow.detectIntent(query);
+
+    String myValue = await Settings().getString(
+      'radiokey',
+      'en',
+    );
+    assert(myValue.isNotEmpty);
+    String rsp = await response.getMessage().translate(to: myValue);
+
     ChatMessage message = new ChatMessage(
-      text: response.getMessage() ??
-          new TypeMessage(response.getListMessage()[0]).platform,
+      text: rsp ?? "What?",
+      // new TypeMessage(response.getListMessage()[0]).platform,
       name: "Alex",
       type: false,
     );
+
+    if (await flutterTts.isLanguageAvailable(myValue))
+      await flutterTts.setLanguage(myValue);
+
+    newVoiceText = message.text;
     setState(() {
       _messages.insert(0, message);
       flag = true;
+      speak();
     });
   }
 
-  void _handleSubmitted(String text) async {
+  void handleSubmitted(String text) async {
     try {
       final result = await InternetAddress.lookup('google.com');
       if (result.isNotEmpty && result[0].rawAddress.isNotEmpty) {
         if (text.isNotEmpty) {
           if (flag) {
             _textController.clear();
+
+            var s = await text.translate(to: 'en');
 
             ChatMessage message = new ChatMessage(
                 text: text,
@@ -176,30 +396,29 @@ class _HomePageDialogflowV2 extends State<HomePageDialogflowV2> {
               _messages.insert(0, message);
               flag = false;
             });
-
-            response(text);
+            response(s);
           } else {
-            Fluttertoast.showToast(
-                msg: "Wait for the bot to respond first!",
-                toastLength: Toast.LENGTH_SHORT,
-                gravity: ToastGravity.CENTER,
-                timeInSecForIosWeb: 1,
-                backgroundColor: Colors.red,
-                textColor: Colors.white,
-                fontSize: 16.0);
+            // Fluttertoast.showToast(
+            //     msg: "Wait for the bot to respond first!",
+            //     toastLength: Toast.LENGTH_SHORT,
+            //     gravity: ToastGravity.CENTER,
+            //     timeInSecForIosWeb: 1,
+            //     backgroundColor: Colors.red,
+            //     textColor: Colors.white,
+            //     fontSize: 16.0);
           }
         } else {
-          Fluttertoast.showToast(
-              msg: "You must enter the message first!",
-              toastLength: Toast.LENGTH_SHORT,
-              gravity: ToastGravity.CENTER,
-              timeInSecForIosWeb: 1,
-              backgroundColor: Colors.red,
-              textColor: Colors.white,
-              fontSize: 16.0);
+          // Fluttertoast.showToast(
+          //     msg: "You must enter the message first!",
+          //     toastLength: Toast.LENGTH_SHORT,
+          //     gravity: ToastGravity.CENTER,
+          //     timeInSecForIosWeb: 1,
+          //     backgroundColor: Colors.red,
+          //     textColor: Colors.white,
+          //     fontSize: 16.0);
         }
       }
-    } on SocketException catch (_) {
+    } catch (_) {
       Fluttertoast.showToast(
           msg:
               "You must be connected to the internet to communicate with the assistant!",
