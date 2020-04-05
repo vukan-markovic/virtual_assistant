@@ -8,9 +8,10 @@ class Choice {
 }
 
 const List<Choice> choices = const <Choice>[
+  const Choice(title: 'Assistant language', icon: Icons.speaker_phone),
+  const Choice(title: 'Your speach language', icon: Icons.speaker_phone),
   const Choice(title: 'Sign out', icon: Icons.power_settings_new),
-   const Choice(title: 'Languages', icon: Icons.speaker_phone),
-    const Choice(title: 'Speach languages', icon: Icons.speaker_phone)
+  const Choice(title: 'Delete account', icon: Icons.delete)
 ];
 
 class ChoiceCard extends StatelessWidget {

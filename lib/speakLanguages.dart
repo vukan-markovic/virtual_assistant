@@ -7,21 +7,13 @@ class SpeachLanguages extends StatefulWidget {
 
   final String title;
   final String language;
-  final Map<String, String> speakLanguages; 
+  final Map<String, String> speakLanguages;
 
   @override
   _SpeachLanguagesState createState() => _SpeachLanguagesState();
 }
 
 class _SpeachLanguagesState extends State<SpeachLanguages> {
-
-  @override
-  initState() {
-    super.initState();
-print(widget.speakLanguages);
-  }
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,7 +21,7 @@ print(widget.speakLanguages);
         body: SingleChildScrollView(
           child: RadioSettingsTile(
               settingKey: 'radiokeyspeak',
-              title: 'Select speach language',
+              title: 'Select your speach language',
               values: widget.speakLanguages),
         ));
   }

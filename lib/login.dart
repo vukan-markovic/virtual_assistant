@@ -9,19 +9,16 @@ final FirebaseAuth _auth = FirebaseAuth.instance;
 final GoogleSignIn _googleSignIn = GoogleSignIn();
 
 class SignInPage extends StatefulWidget {
-  final String title = 'Login';
-
   @override
   State<StatefulWidget> createState() => SignInPageState();
 }
 
 class SignInPageState extends State<SignInPage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text('Login'),
       ),
       body: Builder(builder: (BuildContext context) {
         return Center(
@@ -101,6 +98,9 @@ class _SignInSectionState extends State<_SignInSection> {
             ),
             label: const Text('Sign in with Facebook'),
             color: Colors.red,
+            highlightColor: Color(0xffff7f7f),
+            splashColor: Colors.transparent,
+            textColor: Colors.white,
           ),
         ),
         Container(
@@ -129,21 +129,13 @@ class _SignInSectionState extends State<_SignInSection> {
         idToken: googleAuth.idToken,
       );
       user = (await _auth.signInWithCredential(credential)).user;
-      assert(user.email != null);
-      assert(user.displayName != null);
-      assert(!user.isAnonymous);
-      assert(await user.getIdToken() != null);
-
-      final FirebaseUser currentUser = await _auth.currentUser();
-      assert(user.uid == currentUser.uid);
     } catch (_) {}
     setState(() {
       if (user != null) {
         _success = true;
         _pushPage(context, Chatbot(user: user));
-      } else {
+      } else
         _success = false;
-      }
     });
   }
 
@@ -153,17 +145,9 @@ class _SignInSectionState extends State<_SignInSection> {
     try {
       final facebookLogin = FacebookLogin();
       final result = await facebookLogin.logIn(['email']);
-
       final AuthCredential credential = FacebookAuthProvider.getCredential(
           accessToken: result.accessToken.token);
-      FirebaseUser user = (await _auth.signInWithCredential(credential)).user;
-      assert(user.email != null);
-      assert(user.displayName != null);
-      assert(!user.isAnonymous);
-      assert(await user.getIdToken() != null);
-
-      final FirebaseUser currentUser = await _auth.currentUser();
-      assert(user.uid == currentUser.uid);
+      user = (await _auth.signInWithCredential(credential)).user;
     } catch (_) {}
     setState(() {
       if (user != null) {
@@ -188,13 +172,6 @@ class _SignInSectionState extends State<_SignInSection> {
           authToken: result.session.token,
           authTokenSecret: result.session.secret);
       user = (await _auth.signInWithCredential(credential)).user;
-      assert(user.email != null);
-      assert(user.displayName != null);
-      assert(!user.isAnonymous);
-      assert(await user.getIdToken() != null);
-
-      final FirebaseUser currentUser = await _auth.currentUser();
-      assert(user.uid == currentUser.uid);
     } catch (_) {}
     setState(() {
       if (user != null) {

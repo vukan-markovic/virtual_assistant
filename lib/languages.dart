@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences_settings/shared_preferences_settings.dart';
 
 class Languages extends StatefulWidget {
-  Languages({Key key, this.title, this.language}) : super(key: key);
+  Languages({Key key, this.language}) : super(key: key);
 
-  final String title;
   final String language;
 
   @override
@@ -15,7 +14,7 @@ class _LanguagesState extends State<Languages> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: new AppBar(title: new Text("Languages")),
+        appBar: new AppBar(title: new Text("Assistant language")),
         body: SingleChildScrollView(
           child: RadioSettingsTile(
               settingKey: 'radiokey',

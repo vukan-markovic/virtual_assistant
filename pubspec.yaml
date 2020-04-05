@@ -21,12 +21,17 @@ dependencies:
   flutter_tts: ^0.9.1
   firebase_ml_vision: ^0.9.3+8
   image_picker: ^0.6.4
-  soundpool: ^1.0.1
   speech_to_text: ^2.0.1
   shared_preferences_settings: ^1.2.0 
+  transparent_image: ^1.0.0
+  google_fonts: ^0.3.10
+  share: ^0.6.3+6
+  webview_flutter: ^0.3.19+9
 
 dev_dependencies:
   flutter_test:
+    sdk: flutter
+  flutter_localizations:
     sdk: flutter
 
 flutter:

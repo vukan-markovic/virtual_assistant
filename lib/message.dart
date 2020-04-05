@@ -1,19 +1,32 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+import 'package:transparent_image/transparent_image.dart';
+import 'package:virtual_assistant/menuOption.dart';
+import 'package:share/share.dart';
 
 class ChatMessage extends StatelessWidget {
-  ChatMessage({this.text, this.name, this.type, this.photo});
+  ChatMessage(
+      {this.text,
+      this.name,
+      this.type,
+      this.photo,
+      this.animationController,
+      this.image});
 
+  final AnimationController animationController;
   final String text;
   final String name;
   final bool type;
   final String photo;
+  final File image;
 
   List<Widget> otherMessage(context) {
     return <Widget>[
       new Container(
         margin: const EdgeInsets.only(right: 16.0),
         child: new CircleAvatar(
-          child: new Image.asset("img/ic_launcher.png"), 
+          child: new Image.asset("img/ic_launcher.png"),
           // backgroundColor: Colors.transparent
         ),
       ),
@@ -31,9 +44,26 @@ class ChatMessage extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.only(
                     top: 10.0, bottom: 10.0, left: 10.0, right: 10.0),
-                child: new Text(
-                  text,
-                  style: TextStyle(color: Colors.black),
+                child: GestureDetector(
+                  child: new Text(
+                    text,
+                    style: TextStyle(color: Colors.black),
+                  ),
+                  onLongPress: () {
+                    PopupMenuButton<Choice>(
+                      onSelected: share(),
+                      itemBuilder: (BuildContext context) {
+                        return const <Choice>[
+                          const Choice(title: 'Share', icon: Icons.share)
+                        ].map((Choice choice) {
+                          return PopupMenuItem<Choice>(
+                            value: choice,
+                            child: Text(choice.title),
+                          );
+                        }).toList();
+                      },
+                    );
+                  },
                 ),
               ),
             ),
@@ -41,6 +71,10 @@ class ChatMessage extends StatelessWidget {
         ),
       ),
     ];
+  }
+
+  share() {
+    Share.share(text);
   }
 
   List<Widget> myMessage(context) {
@@ -58,10 +92,12 @@ class ChatMessage extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.only(
                     top: 10.0, bottom: 10.0, left: 10.0, right: 10.0),
-                child: new Text(
-                  text,
-                  style: TextStyle(color: Colors.white),
-                ),
+                child: image != null
+                    ? Image.file(image)
+                    : new Text(
+                        text,
+                        style: TextStyle(color: Colors.white),
+                      ),
               ),
             ),
           ],
@@ -69,19 +105,27 @@ class ChatMessage extends StatelessWidget {
       ),
       new Container(
         margin: const EdgeInsets.only(left: 16.0),
-        child: new CircleAvatar(child: new Image.network(this.photo)),
+        child:
+            // ClipRRect(borderRadius: BorderRadius.circular(15.0),child: ,clipBehavior: Clip.hardEdge,
+            new CircleAvatar(
+                child: new FadeInImage.memoryNetwork(
+                    placeholder: kTransparentImage, image: this.photo)),
       ),
     ];
   }
 
   @override
   Widget build(BuildContext context) {
-    return new Container(
-      margin: const EdgeInsets.symmetric(vertical: 10.0),
-      child: new Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: this.type ? myMessage(context) : otherMessage(context),
-      ),
+    return new SizeTransition(
+      axisAlignment: 0.0,
+      sizeFactor: new CurvedAnimation(
+          parent: animationController, curve: Curves.easeOut),
+      child: new Container(
+          margin: const EdgeInsets.symmetric(vertical: 10.0),
+          child: new Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: this.type ? myMessage(context) : otherMessage(context),
+          )),
     );
   }
 }

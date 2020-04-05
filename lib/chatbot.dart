@@ -9,6 +9,7 @@ import 'package:speech_to_text/speech_recognition_result.dart';
 import 'package:speech_to_text/speech_to_text.dart';
 import 'package:translator/translator.dart';
 import 'package:virtual_assistant/languages.dart';
+import 'package:virtual_assistant/localization.dart';
 import 'package:virtual_assistant/login.dart';
 import 'package:virtual_assistant/menuOption.dart';
 import 'dart:io';
@@ -28,7 +29,9 @@ class Chatbot extends StatefulWidget {
 
 enum TtsState { playing, stopped }
 
-class _ChatbotState extends State<Chatbot> {
+class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
+  bool isPressed = false;
+  bool isLoading;
   final List<ChatMessage> _messages = <ChatMessage>[];
   final translator = new GoogleTranslator();
   final TextEditingController _textController = new TextEditingController();
@@ -38,7 +41,9 @@ class _ChatbotState extends State<Chatbot> {
   String language = "en";
   File _image;
   FlutterTts flutterTts;
+  String imageLabels;
   double volume = 0.5;
+  bool _camera = false;
   double pitch = 1.0;
   double rate = 0.5;
   String newVoiceText;
@@ -46,9 +51,7 @@ class _ChatbotState extends State<Chatbot> {
   get isPlaying => ttsState == TtsState.playing;
   get isStopped => ttsState == TtsState.stopped;
   bool _hasSpeech = false;
-  bool _stressTest = false;
   double level = 0.0;
-  int _stressLoops = 0;
   String lastWords = "";
   String lastError = "";
   String lastStatus = "";
@@ -56,18 +59,34 @@ class _ChatbotState extends State<Chatbot> {
   List<LocaleName> _localeNames = [];
   final SpeechToText speech = SpeechToText();
   Map<String, String> speakLanguages = {};
-  // languages.first;
-
-  // void onCurrentLocale(String locale) {
-  //   setState(
-  //       () => selectedLang = languages.firstWhere((l) => l.code == locale));
-  // }
+  ImageLabeler labeler = FirebaseVision.instance.imageLabeler();
+  TextRecognizer textRecognizer = FirebaseVision.instance.textRecognizer();
 
   @override
   initState() {
     super.initState();
     initTts();
     initSpeechState();
+    response("hi there");
+  }
+
+  Route _createRoute(StatefulWidget widget) {
+    return PageRouteBuilder(
+      pageBuilder: (context, animation, secondaryAnimation) => widget,
+      transitionsBuilder: (context, animation, secondaryAnimation, child) {
+        var begin = Offset(0.0, 1.0);
+        var end = Offset.zero;
+        var curve = Curves.ease;
+
+        var tween =
+            Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
+
+        return SlideTransition(
+          position: animation.drive(tween),
+          child: child,
+        );
+      },
+    );
   }
 
   Future<void> initSpeechState() async {
@@ -106,8 +125,6 @@ class _ChatbotState extends State<Chatbot> {
       'en',
     );
 
-    print(_currentLocaleId);
-
     speech.listen(
       onResult: resultListener
       // listenFor: Duration(seconds: 2),
@@ -143,20 +160,22 @@ class _ChatbotState extends State<Chatbot> {
   }
 
   void resultListener(SpeechRecognitionResult result) {
-    print("POZVANOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO");
     setState(() {
-      Fluttertoast.showToast(
-          msg: result.recognizedWords,
-          toastLength: Toast.LENGTH_SHORT,
-          gravity: ToastGravity.CENTER,
-          timeInSecForIosWeb: 1,
-          backgroundColor: Colors.red,
-          textColor: Colors.white,
-          fontSize: 16.0);
+      if (result.recognizedWords.isNotEmpty) {
+        Fluttertoast.showToast(
+            msg: result.recognizedWords,
+            toastLength: Toast.LENGTH_SHORT,
+            gravity: ToastGravity.CENTER,
+            timeInSecForIosWeb: 1,
+            backgroundColor: Colors.red,
+            textColor: Colors.white,
+            fontSize: 16.0);
+      }
 
       if (!speech.isListening && lastWords != result.recognizedWords) {
         lastWords = result.recognizedWords;
         handleSubmitted(result.recognizedWords);
+        isPressed = false;
       }
     });
   }
@@ -215,13 +234,12 @@ class _ChatbotState extends State<Chatbot> {
     }
   }
 
-  Future _stop() async {
-    var result = await flutterTts.stop();
-    if (result == 1) setState(() => ttsState = TtsState.stopped);
-  }
-
   @override
   void dispose() {
+    labeler.close();
+    textRecognizer.close();
+    for (ChatMessage message in _messages)
+      message.animationController.dispose();
     super.dispose();
     flutterTts.stop();
   }
@@ -231,65 +249,69 @@ class _ChatbotState extends State<Chatbot> {
       _selectedChoice = choice;
       if (_selectedChoice.title == "Sign out")
         _signOut();
-      else if (_selectedChoice.title == "Languages")
-        Navigator.of(context).push(
-          MaterialPageRoute<void>(
-              builder: (_) => Languages(language: language)),
-        );
-      else if (_selectedChoice.title == "Speach languages") {
-        Navigator.of(context).push(MaterialPageRoute<void>(
-          builder: (_) => SpeachLanguages(
+      else if (_selectedChoice.title == "Assistant language")
+        Navigator.of(context).push(_createRoute(Languages(language: language)));
+      else if (_selectedChoice.title == "Your speach language") {
+        Navigator.of(context).push(_createRoute(
+          SpeachLanguages(
             language: language,
             speakLanguages: speakLanguages,
           ),
         ));
+      } else if (_selectedChoice.title == "Delete account") {
+        _auth.currentUser().then((onValue) => () {
+              onValue.delete();
+              Navigator.of(context).push(_createRoute(SignInPage()));
+            });
       }
     });
   }
 
+  // If you receive compilation errors, try an earlier version of ML Kit: Image Labeling.
+
   Future<List<String>> detectLabels(File image) async {
     final FirebaseVisionImage visionImage = FirebaseVisionImage.fromFile(image);
-    final ImageLabeler labeler = FirebaseVision.instance.imageLabeler();
     final List<ImageLabel> labels = await labeler.processImage(visionImage);
-    List<String> texts;
+    List<String> texts = [];
     for (ImageLabel label in labels) {
       texts.add(label.text);
     }
-    labeler.close();
+
     return texts;
   }
 
-  // void detectText(File image) async {
-  //   final FirebaseVisionImage visionImage = FirebaseVisionImage.fromFile(image);
-  //   final TextRecognizer textRecognizer =
-  //       FirebaseVision.instance.textRecognizer();
-  //   final VisionText visionText =
-  //       await textRecognizer.processImage(visionImage);
+  Future<String> detectText(File image) async {
+    final FirebaseVisionImage visionImage = FirebaseVisionImage.fromFile(image);
+    final VisionText visionText =
+        await textRecognizer.processImage(visionImage);
+    return visionText.text;
+  }
 
-  //   String text = visionText.text;
-
-  //   for (TextBlock block in visionText.blocks) {
-  //     final String text = block.text;
-  //     final List<RecognizedLanguage> languages = block.recognizedLanguages;
-  //   }
-
-  //   textRecognizer.close();
-  // }
+  // Image.file(_image)
 
   Future getImageCamera() async {
     var image = await ImagePicker.pickImage(source: ImageSource.camera);
 
-    setState(() {
-      _image = image;
-    });
+    if (image != null) {
+      setState(() {
+        _image = image;
+        isLoading = true;
+
+        handleSubmitted("text");
+      });
+    }
   }
 
   Future getImageGallery() async {
     var image = await ImagePicker.pickImage(source: ImageSource.gallery);
-
-    setState(() {
-      _image = image;
-    });
+    if (image != null) {
+      setState(() {
+        _image = image;
+        _camera = true;
+        isLoading = true;
+        handleSubmitted("query");
+      });
+    }
   }
 
   void _signOut() async {
@@ -314,8 +336,9 @@ class _ChatbotState extends State<Chatbot> {
               child: new TextField(
                 controller: _textController,
                 onSubmitted: handleSubmitted,
-                decoration:
-                    new InputDecoration.collapsed(hintText: "Send a message"),
+                decoration: new InputDecoration.collapsed(
+                    hintStyle: TextStyle(color: Colors.red),
+                    hintText: "Send a message" /*, border: InputBorder.none*/),
               ),
             ),
             new Container(
@@ -329,9 +352,9 @@ class _ChatbotState extends State<Chatbot> {
             new Container(
               margin: new EdgeInsets.symmetric(horizontal: 4.0),
               child: new IconButton(
-                  icon: new Icon(
-                    Icons.mic, /*color: Colors.blue,*/
-                  ),
+                  icon: new Icon(Icons.mic,
+                      color: (isPressed) ? Colors.red : Colors.redAccent),
+                  // tooltip: "",
                   onPressed: _hasSpeech && !speech.isListening
                       ? startListening
                       : stopListening),
@@ -343,92 +366,154 @@ class _ChatbotState extends State<Chatbot> {
   }
 
   void response(query) async {
-    _textController.clear();
-    AuthGoogle authGoogle = await AuthGoogle(
-            fileJson: "assets/virtual-assistant-htiehx-78c19d0cb278.json")
-        .build();
-    Dialogflow dialogflow =
-        Dialogflow(authGoogle: authGoogle, language: Language.english);
-    AIResponse response = await dialogflow.detectIntent(query);
-
     String myValue = await Settings().getString(
       'radiokey',
       'en',
     );
-    assert(myValue.isNotEmpty);
-    String rsp = await response.getMessage().translate(to: myValue);
-
-    ChatMessage message = new ChatMessage(
-      text: rsp ?? "What?",
-      // new TypeMessage(response.getListMessage()[0]).platform,
-      name: "Alex",
-      type: false,
-    );
-
     if (await flutterTts.isLanguageAvailable(myValue))
       await flutterTts.setLanguage(myValue);
+    ChatMessage message;
 
-    newVoiceText = message.text;
-    setState(() {
-      _messages.insert(0, message);
-      flag = true;
-      speak();
-    });
+    if (_image != null) {
+      if (_camera) {
+        detectText(_image).then((onValue) {
+          message = new ChatMessage(
+            text: onValue.toString(),
+            name: "Alex",
+            type: false,
+            animationController: new AnimationController(
+              duration: new Duration(milliseconds: 700),
+              vsync: this,
+            ),
+          );
+          newVoiceText = message.text;
+          setState(() {
+            _messages.insert(0, message);
+            flag = true;
+            speak();
+          });
+          message.animationController.forward();
+        });
+      } else {
+        detectLabels(_image).then((onValue) {
+          message = new ChatMessage(
+            text: onValue.toString(),
+            name: "Alex",
+            type: false,
+            animationController: new AnimationController(
+              duration: new Duration(milliseconds: 700),
+              vsync: this,
+            ),
+          );
+          newVoiceText = message.text;
+          setState(() {
+            _messages.insert(0, message);
+            flag = true;
+            speak();
+          });
+          message.animationController.forward();
+        });
+      }
+    } else {
+      _textController.clear();
+      AuthGoogle authGoogle = await AuthGoogle(
+              fileJson: "assets/virtual-assistant-htiehx-78c19d0cb278.json")
+          .build();
+      Dialogflow dialogflow =
+          Dialogflow(authGoogle: authGoogle, language: Language.english);
+      AIResponse response = await dialogflow.detectIntent(query);
+      String rsp = await response.getMessage().translate(to: myValue);
+
+      message = new ChatMessage(
+        text: rsp ?? "What?",
+        // new TypeMessage(response.getListMessage()[0]).platform,
+        name: "Alex",
+        type: false,
+        animationController: new AnimationController(
+          duration: new Duration(milliseconds: 700),
+          vsync: this,
+        ),
+      );
+
+      newVoiceText = message.text;
+      setState(() {
+        _messages.insert(0, message);
+        flag = true;
+        speak();
+      });
+      message.animationController.forward();
+    }
   }
 
   void handleSubmitted(String text) async {
-    try {
-      final result = await InternetAddress.lookup('google.com');
-      if (result.isNotEmpty && result[0].rawAddress.isNotEmpty) {
-        if (text.isNotEmpty) {
-          if (flag) {
+    // try {
+    var s = "";
+    final result = await InternetAddress.lookup('google.com');
+    if (result.isNotEmpty && result[0].rawAddress.isNotEmpty) {
+      if (text.trim().isNotEmpty) {
+        if (flag) {
+          ChatMessage message;
+          if (_image != null) {
+            message = new ChatMessage(
+                image: _image,
+                name: widget.user.displayName,
+                type: true,
+                animationController: new AnimationController(
+                  duration: new Duration(milliseconds: 700),
+                  vsync: this,
+                ),
+                photo: widget.user.photoUrl);
+          } else {
             _textController.clear();
-
-            var s = await text.translate(to: 'en');
-
-            ChatMessage message = new ChatMessage(
+            s = await text.translate(to: 'en');
+            message = new ChatMessage(
                 text: text,
                 name: widget.user.displayName,
                 type: true,
+                animationController: new AnimationController(
+                  duration: new Duration(milliseconds: 700),
+                  vsync: this,
+                ),
                 photo: widget.user.photoUrl);
-
-            setState(() {
-              _messages.insert(0, message);
-              flag = false;
-            });
-            response(s);
-          } else {
-            // Fluttertoast.showToast(
-            //     msg: "Wait for the bot to respond first!",
-            //     toastLength: Toast.LENGTH_SHORT,
-            //     gravity: ToastGravity.CENTER,
-            //     timeInSecForIosWeb: 1,
-            //     backgroundColor: Colors.red,
-            //     textColor: Colors.white,
-            //     fontSize: 16.0);
           }
+          setState(() {
+            _messages.insert(0, message);
+            flag = false;
+          });
+          message.animationController.forward();
+          response(s);
         } else {
-          // Fluttertoast.showToast(
-          //     msg: "You must enter the message first!",
-          //     toastLength: Toast.LENGTH_SHORT,
-          //     gravity: ToastGravity.CENTER,
-          //     timeInSecForIosWeb: 1,
-          //     backgroundColor: Colors.red,
-          //     textColor: Colors.white,
-          //     fontSize: 16.0);
+          Fluttertoast.showToast(
+              msg: "Wait for the bot to respond first!",
+              toastLength: Toast.LENGTH_SHORT,
+              gravity: ToastGravity.CENTER,
+              timeInSecForIosWeb: 1,
+              backgroundColor: Colors.red,
+              textColor: Colors.white,
+              fontSize: 16.0);
         }
+      } else {
+        Fluttertoast.showToast(
+            msg: "You must enter the message first!",
+            toastLength: Toast.LENGTH_SHORT,
+            gravity: ToastGravity.CENTER,
+            timeInSecForIosWeb: 1,
+            backgroundColor: Colors.red,
+            textColor: Colors.white,
+            fontSize: 16.0);
       }
-    } catch (_) {
-      Fluttertoast.showToast(
-          msg:
-              "You must be connected to the internet to communicate with the assistant!",
-          toastLength: Toast.LENGTH_SHORT,
-          gravity: ToastGravity.CENTER,
-          timeInSecForIosWeb: 1,
-          backgroundColor: Colors.red,
-          textColor: Colors.white,
-          fontSize: 16.0);
     }
+    // } catch () {
+    //   Fluttertoast.showToast(
+    //       msg:
+    //           "You must be connected to the internet to communicate with the assistant!",
+    //       toastLength: Toast.LENGTH_SHORT,
+    //       gravity: ToastGravity.CENTER,
+    //       timeInSecForIosWeb: 1,
+    //       backgroundColor: Colors.red,
+    //       textColor: Colors.white,
+    //       fontSize: 16.0);
+    // }
   }
 
   @override
@@ -436,7 +521,12 @@ class _ChatbotState extends State<Chatbot> {
     return new Scaffold(
       //backgroundColor: Color(0xf4f4f4f4f4),
       appBar: new AppBar(
-        title: new Text("Virtual assistant"),
+        title: new Text(DemoLocalizations.of(context).title),
+        // leading: IconButton(
+        //   icon: Icon(Icons.menu),
+        //   tooltip: 'Navigation menu',
+        //   onPressed: null,
+        // ),
         actions: <Widget>[
           PopupMenuButton<Choice>(
             onSelected: _select,
@@ -449,6 +539,11 @@ class _ChatbotState extends State<Chatbot> {
               }).toList();
             },
           ),
+          IconButton(
+              icon: Icon(Icons.add_a_photo),
+              onPressed: () => getImageGallery()),
+          IconButton(
+              icon: Icon(Icons.camera), onPressed: () => getImageCamera())
         ],
         //backgroundColor: Colors.blue,
       ),
