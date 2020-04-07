@@ -6,32 +6,28 @@ import 'package:virtual_assistant/login.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
-void main() => runApp(new MyApp());
-
-enum AuthStatus {
-  notSignedIn,
-  signedIn,
-}
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
-      onGenerateTitle: (BuildContext context) =>
-          DemoLocalizations.of(context).title,
+    return MaterialApp(
+      onGenerateTitle: (BuildContext context) => Localization.of(context).title,
       home: MyHomePage(),
-      theme: new ThemeData(
-          brightness: Brightness.dark,
-          primaryColor: Colors.green,
-          primarySwatch: Colors.red,
-          accentColor: Colors.redAccent,
-          textTheme: GoogleFonts.quicksandTextTheme(
-            Theme.of(context).textTheme,
-          )),
+      theme: ThemeData(
+        brightness: Brightness.light,
+        primaryColor: Color(0xffF44336),
+        primaryColorDark: Color(0xffD32F2F),
+        primaryColorLight: Color(0xffFFCDD2),
+        dividerColor: Color(0xffBDBDBD),
+        accentColor: Color(0xffFF4081),
+        iconTheme: IconThemeData(color: Color(0xffFFFFFF)),
+        textTheme: GoogleFonts.sourceSansProTextTheme(Theme.of(context).textTheme),
+      ),
       localizationsDelegates: [
         const DemoLocalizationsDelegate(),
         GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate
       ],
       supportedLocales: [
         const Locale('en', ''),
@@ -49,30 +45,22 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  FirebaseUser currentUser;
-
-  AuthStatus authStatus = AuthStatus.notSignedIn;
+  FirebaseUser _currentUser;
 
   initState() {
     super.initState();
     FirebaseAuth.instance.currentUser().then((user) {
       setState(() {
-        authStatus =
-            user != null ? AuthStatus.signedIn : AuthStatus.notSignedIn;
-        currentUser = user;
+        _currentUser = user;
       });
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    switch (authStatus) {
-      case AuthStatus.notSignedIn:
-        return SignInPage();
-      case AuthStatus.signedIn:
-        return Chatbot(user: currentUser);
-      default:
-        return null;
-    }
+    if (_currentUser == null)
+      return Login();
+    else
+      return Chatbot(user: _currentUser);
   }
 }

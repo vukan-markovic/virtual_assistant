@@ -1,69 +1,62 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
-import 'package:transparent_image/transparent_image.dart';
-import 'package:virtual_assistant/menuOption.dart';
 import 'package:share/share.dart';
 
-class ChatMessage extends StatelessWidget {
-  ChatMessage(
-      {this.text,
-      this.name,
-      this.type,
-      this.photo,
-      this.animationController,
-      this.image});
+class Message extends StatelessWidget {
+  Message({
+    this.text,
+    this.name,
+    this.type,
+    this.avatarImage,
+    this.image,
+    this.animationController,
+  });
 
-  final AnimationController animationController;
   final String text;
   final String name;
   final bool type;
-  final String photo;
+  final String avatarImage;
   final File image;
+  final AnimationController animationController;
 
-  List<Widget> otherMessage(context) {
+  List<Widget> _otherMessage(context) {
     return <Widget>[
-      new Container(
+      Container(
         margin: const EdgeInsets.only(right: 16.0),
-        child: new CircleAvatar(
-          child: new Image.asset("img/ic_launcher.png"),
-          // backgroundColor: Colors.transparent
+        child: CircleAvatar(
+          child: Image.asset("img/ic_launcher.png"),
         ),
       ),
-      new Expanded(
-        child: new Column(
+      Expanded(
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            new Text(this.name,
-                style: new TextStyle(fontWeight: FontWeight.bold)),
-            new Container(
+            Text(
+              this.name,
+            ),
+            Container(
               margin: const EdgeInsets.only(top: 5.0),
               decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                gradient: LinearGradient(
+                    begin: Alignment.topRight,
+                    end: Alignment(0.1, 0.0),
+                    colors: [
+                      Theme.of(context).primaryColor,
+                      Theme.of(context).accentColor,
+                    ]),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(20.0),
+                ),
+              ),
               child: Padding(
                 padding: EdgeInsets.only(
                     top: 10.0, bottom: 10.0, left: 10.0, right: 10.0),
                 child: GestureDetector(
-                  child: new Text(
+                  child: Text(
                     text,
-                    style: TextStyle(color: Colors.black),
+                    style: TextStyle(color: Colors.white),
                   ),
-                  onLongPress: () {
-                    PopupMenuButton<Choice>(
-                      onSelected: share(),
-                      itemBuilder: (BuildContext context) {
-                        return const <Choice>[
-                          const Choice(title: 'Share', icon: Icons.share)
-                        ].map((Choice choice) {
-                          return PopupMenuItem<Choice>(
-                            value: choice,
-                            child: Text(choice.title),
-                          );
-                        }).toList();
-                      },
-                    );
-                  },
+                  onLongPress: () => Share.share(text),
                 ),
               ),
             ),
@@ -73,28 +66,33 @@ class ChatMessage extends StatelessWidget {
     ];
   }
 
-  share() {
-    Share.share(text);
-  }
-
-  List<Widget> myMessage(context) {
+  List<Widget> _myMessage(context) {
     return <Widget>[
-      new Expanded(
-        child: new Column(
+      Expanded(
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: <Widget>[
-            new Text(this.name, style: Theme.of(context).textTheme.subhead),
-            new Container(
+            Text(
+              this.name,
+            ),
+            Container(
               margin: const EdgeInsets.only(top: 5.0),
               decoration: BoxDecoration(
-                  color: Colors.blue,
-                  borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment(0.1, 0.0),
+                    colors: [
+                      Theme.of(context).accentColor,
+                      Theme.of(context).primaryColor,
+                    ]),
+                borderRadius: BorderRadius.all(Radius.circular(20.0)),
+              ),
               child: Padding(
                 padding: EdgeInsets.only(
                     top: 10.0, bottom: 10.0, left: 10.0, right: 10.0),
                 child: image != null
                     ? Image.file(image)
-                    : new Text(
+                    : Text(
                         text,
                         style: TextStyle(color: Colors.white),
                       ),
@@ -103,29 +101,34 @@ class ChatMessage extends StatelessWidget {
           ],
         ),
       ),
-      new Container(
+      Container(
         margin: const EdgeInsets.only(left: 16.0),
-        child:
-            // ClipRRect(borderRadius: BorderRadius.circular(15.0),child: ,clipBehavior: Clip.hardEdge,
-            new CircleAvatar(
-                child: new FadeInImage.memoryNetwork(
-                    placeholder: kTransparentImage, image: this.photo)),
+        child: CircleAvatar(
+          radius: 22.0,
+          backgroundImage: NetworkImage(
+            this.avatarImage,
+          ),
+          backgroundColor: Colors.transparent,
+        ),
       ),
     ];
   }
 
   @override
   Widget build(BuildContext context) {
-    return new SizeTransition(
+    return SizeTransition(
       axisAlignment: 0.0,
-      sizeFactor: new CurvedAnimation(
-          parent: animationController, curve: Curves.easeOut),
+      sizeFactor: CurvedAnimation(
+        parent: animationController,
+        curve: Curves.easeOut,
+      ),
       child: new Container(
-          margin: const EdgeInsets.symmetric(vertical: 10.0),
-          child: new Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: this.type ? myMessage(context) : otherMessage(context),
-          )),
+        margin: const EdgeInsets.symmetric(vertical: 10.0),
+        child: new Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: this.type ? _myMessage(context) : _otherMessage(context),
+        ),
+      ),
     );
   }
 }

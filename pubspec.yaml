@@ -12,7 +12,6 @@ dependencies:
   flutter_dialogflow: ^0.1.0
   firebase_core: ^0.4.4+3
   fluttertoast: ^4.0.0
-  cupertino_icons: ^0.1.2
   firebase_auth: ^0.15.5+3
   google_sign_in: ^4.2.0
   flutter_facebook_login: ^3.0.0
@@ -23,14 +22,10 @@ dependencies:
   image_picker: ^0.6.4
   speech_to_text: ^2.0.1
   shared_preferences_settings: ^1.2.0 
-  transparent_image: ^1.0.0
   google_fonts: ^0.3.10
   share: ^0.6.3+6
-  webview_flutter: ^0.3.19+9
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
   flutter_localizations:
     sdk: flutter
 
@@ -42,11 +37,3 @@ flutter:
     - img/google.png
     - img/twitter.png
     - img/facebook.png
-  
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #         weight: 700
