@@ -19,6 +19,24 @@ class Message extends StatelessWidget {
   final File image;
   final AnimationController animationController;
 
+  @override
+  Widget build(BuildContext context) {
+    return SizeTransition(
+      axisAlignment: 0.0,
+      sizeFactor: CurvedAnimation(
+        parent: animationController,
+        curve: Curves.easeOut,
+      ),
+      child: new Container(
+        margin: const EdgeInsets.symmetric(vertical: 10.0),
+        child: new Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: this.type ? _myMessage(context) : _otherMessage(context),
+        ),
+      ),
+    );
+  }
+
   List<Widget> _otherMessage(context) {
     return <Widget>[
       Container(
@@ -34,29 +52,37 @@ class Message extends StatelessWidget {
             Text(
               this.name,
             ),
-            Container(
-              margin: const EdgeInsets.only(top: 5.0),
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                    begin: Alignment.topRight,
-                    end: Alignment(0.1, 0.0),
-                    colors: [
-                      Theme.of(context).primaryColor,
-                      Theme.of(context).accentColor,
-                    ]),
-                borderRadius: BorderRadius.all(
-                  Radius.circular(20.0),
-                ),
-              ),
-              child: Padding(
-                padding: EdgeInsets.only(
-                    top: 10.0, bottom: 10.0, left: 10.0, right: 10.0),
-                child: GestureDetector(
-                  child: Text(
-                    text,
-                    style: TextStyle(color: Colors.white),
+            Material(
+              elevation: 5.0,
+              child: Container(
+                margin: const EdgeInsets.only(top: 5.0),
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                      begin: Alignment.topRight,
+                      end: Alignment(0.1, 0.0),
+                      colors: [
+                        Theme.of(context).primaryColor,
+                        Theme.of(context).accentColor,
+                      ]),
+                  borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(30.0),
+                    bottomRight: Radius.circular(30.0),
+                    topRight: Radius.circular(30.0),
                   ),
-                  onLongPress: () => Share.share(text),
+                  // BorderRadius.all(
+                  //   Radius.circular(20.0),
+                  // ),
+                ),
+                child: Padding(
+                  padding: EdgeInsets.only(
+                      top: 10.0, bottom: 10.0, left: 10.0, right: 10.0),
+                  child: GestureDetector(
+                    child: Text(
+                      text,
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    onLongPress: () => Share.share(text),
+                  ),
                 ),
               ),
             ),
@@ -78,21 +104,25 @@ class Message extends StatelessWidget {
             Container(
               margin: const EdgeInsets.only(top: 5.0),
               decoration: BoxDecoration(
-                gradient: LinearGradient(
-                    begin: Alignment.topLeft,
-                    end: Alignment(0.1, 0.0),
-                    colors: [
-                      Theme.of(context).accentColor,
-                      Theme.of(context).primaryColor,
-                    ]),
-                borderRadius: BorderRadius.all(Radius.circular(20.0)),
-              ),
+                  gradient: LinearGradient(
+                      begin: Alignment.topLeft,
+                      end: Alignment(0.1, 0.0),
+                      colors: [
+                        Theme.of(context).primaryColor,
+                        Theme.of(context).primaryColorDark,
+                      ]),
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(30.0),
+                      bottomLeft: Radius.circular(30.0),
+                      bottomRight: Radius.circular(30.0))
+                  // BorderRadius.all(Radius.circular(20.0)),
+                  ),
               child: Padding(
                 padding: EdgeInsets.only(
                     top: 10.0, bottom: 10.0, left: 10.0, right: 10.0),
                 child: image != null
                     ? Image.file(image)
-                    : Text(
+                    : SelectableText(
                         text,
                         style: TextStyle(color: Colors.white),
                       ),
@@ -112,23 +142,5 @@ class Message extends StatelessWidget {
         ),
       ),
     ];
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return SizeTransition(
-      axisAlignment: 0.0,
-      sizeFactor: CurvedAnimation(
-        parent: animationController,
-        curve: Curves.easeOut,
-      ),
-      child: new Container(
-        margin: const EdgeInsets.symmetric(vertical: 10.0),
-        child: new Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: this.type ? _myMessage(context) : _otherMessage(context),
-        ),
-      ),
-    );
   }
 }

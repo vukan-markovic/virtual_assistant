@@ -18,11 +18,13 @@ class _SpeechLanguagesState extends State<SpeechLanguages> {
       appBar: AppBar(
         title: Text(Localization.of(context).languages),
       ),
-      body: SingleChildScrollView(
-        child: RadioSettingsTile(
-          settingKey: 'radiokeyspeak',
-          title: Localization.of(context).speechLanguage,
-          values: widget.speechLanguages,
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: RadioSettingsTile(
+            settingKey: 'radiokeyspeak',
+            title: Localization.of(context).speechLanguage,
+            values: widget.speechLanguages,
+          ),
         ),
       ),
     );

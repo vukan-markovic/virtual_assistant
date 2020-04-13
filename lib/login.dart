@@ -23,88 +23,90 @@ class LoginState extends State<Login> {
       appBar: AppBar(
         title: Text(Localization.of(context).login),
       ),
-      body: Builder(builder: (BuildContext context) {
-        return Center(
-          child: ListView(
-            shrinkWrap: true,
-            padding: const EdgeInsets.all(20.0),
-            scrollDirection: Axis.vertical,
-            children: <Widget>[
-              Column(
-                children: <Widget>[
-                  Container(
-                    child: Text(
-                      Localization.of(context).loginMessage,
-                      style: TextStyle(
-                        fontSize: 16.0,
+      body: SafeArea(
+        child: Builder(builder: (BuildContext context) {
+          return Center(
+            child: ListView(
+              shrinkWrap: true,
+              padding: const EdgeInsets.all(20.0),
+              scrollDirection: Axis.vertical,
+              children: <Widget>[
+                Column(
+                  children: <Widget>[
+                    Container(
+                      child: Text(
+                        Localization.of(context).loginMessage,
+                        style: TextStyle(
+                          fontSize: 16.0,
+                        ),
+                      ),
+                      padding: const EdgeInsets.all(16),
+                      alignment: Alignment.center,
+                    ),
+                    Container(
+                      padding: const EdgeInsets.symmetric(vertical: 16.0),
+                      alignment: Alignment.center,
+                      child: RaisedButton.icon(
+                        color: Theme.of(context).accentColor,
+                        onPressed: () async {
+                          _signInWithGoogle();
+                        },
+                        icon: Image.asset(
+                          "img/google.png",
+                          width: 30,
+                          height: 30,
+                        ),
+                        label: Text(
+                          'Sign in with Google',
+                          style: TextStyle(color: Colors.white),
+                        ),
                       ),
                     ),
-                    padding: const EdgeInsets.all(16),
-                    alignment: Alignment.center,
-                  ),
-                  Container(
-                    padding: const EdgeInsets.symmetric(vertical: 16.0),
-                    alignment: Alignment.center,
-                    child: RaisedButton.icon(
-                      color: Theme.of(context).accentColor,
-                      onPressed: () async {
-                        _signInWithGoogle();
-                      },
-                      icon: Image.asset(
-                        "img/google.png",
-                        width: 30,
-                        height: 30,
-                      ),
-                      label: Text(
-                        'Sign in with Google',
-                        style: TextStyle(color: Colors.white),
+                    Container(
+                      padding: const EdgeInsets.symmetric(vertical: 16.0),
+                      alignment: Alignment.center,
+                      child: RaisedButton.icon(
+                        color: Theme.of(context).accentColor,
+                        onPressed: () async {
+                          _signInWithTwitter();
+                        },
+                        icon: Image.asset(
+                          "img/twitter.png",
+                          width: 30,
+                          height: 30,
+                        ),
+                        label: Text(
+                          'Sign in with Twitter',
+                          style: TextStyle(color: Colors.white),
+                        ),
                       ),
                     ),
-                  ),
-                  Container(
-                    padding: const EdgeInsets.symmetric(vertical: 16.0),
-                    alignment: Alignment.center,
-                    child: RaisedButton.icon(
-                      color: Theme.of(context).accentColor,
-                      onPressed: () async {
-                        _signInWithTwitter();
-                      },
-                      icon: Image.asset(
-                        "img/twitter.png",
-                        width: 30,
-                        height: 30,
-                      ),
-                      label: Text(
-                        'Sign in with Twitter',
-                        style: TextStyle(color: Colors.white),
-                      ),
-                    ),
-                  ),
-                  Container(
-                    padding: const EdgeInsets.symmetric(vertical: 16.0),
-                    alignment: Alignment.center,
-                    child: RaisedButton.icon(
-                      color: Theme.of(context).accentColor,
-                      onPressed: () async {
-                        _signInWithFacebook();
-                      },
-                      icon: Image.asset(
-                        "img/facebook.png",
-                        width: 30,
-                        height: 30,
-                      ),
-                      label: Text(
-                        'Sign in with Facebook',
-                        style: TextStyle(color: Colors.white),
+                    Container(
+                      padding: const EdgeInsets.symmetric(vertical: 16.0),
+                      alignment: Alignment.center,
+                      child: RaisedButton.icon(
+                        color: Theme.of(context).accentColor,
+                        onPressed: () async {
+                          _signInWithFacebook();
+                        },
+                        icon: Image.asset(
+                          "img/facebook.png",
+                          width: 30,
+                          height: 30,
+                        ),
+                        label: Text(
+                          'Sign in with Facebook',
+                          style: TextStyle(color: Colors.white),
+                        ),
                       ),
                     ),
-                  ),
-                ],
-              )
-            ],
-          ),
-        );
-      }),
+                  ],
+                )
+              ],
+            ),
+          );
+        }),
+      ),
     );
   }
 

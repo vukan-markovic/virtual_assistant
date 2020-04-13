@@ -24,6 +24,9 @@ dependencies:
   shared_preferences_settings: ^1.2.0 
   google_fonts: ^0.3.10
   share: ^0.6.3+6
+  android_intent: ^0.3.6+1
+  url_launcher: ^5.4.2
+  flutter_webview_plugin: ^0.3.11
 
 dev_dependencies:
   flutter_localizations:
@@ -37,3 +40,4 @@ flutter:
     - img/google.png
     - img/twitter.png
     - img/facebook.png
+    - img/background.png

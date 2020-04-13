@@ -3,9 +3,11 @@ import 'package:firebase_ml_vision/firebase_ml_vision.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dialogflow/dialogflow_v2.dart';
 import 'package:flutter_tts/flutter_tts.dart';
+import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 import 'package:speech_to_text/speech_recognition_result.dart';
 import 'package:speech_to_text/speech_to_text.dart';
 import 'package:translator/translator.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:virtual_assistant/languages.dart';
 import 'package:virtual_assistant/localization.dart';
 import 'package:virtual_assistant/login.dart';
@@ -15,6 +17,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:shared_preferences_settings/shared_preferences_settings.dart';
 import 'package:virtual_assistant/speechLanguages.dart';
 import 'package:virtual_assistant/utilities.dart';
+import 'package:android_intent/android_intent.dart';
 
 class Chatbot extends StatefulWidget {
   Chatbot({Key key, this.user}) : super(key: key);
@@ -27,6 +30,7 @@ class Chatbot extends StatefulWidget {
 enum TtsState { playing, stopped }
 
 class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
+   final flutterWebViewPlugin = FlutterWebviewPlugin();
   bool _isPressed = false;
   final List<Message> _messages = <Message>[];
   final TextEditingController _textController = TextEditingController();
@@ -47,6 +51,76 @@ class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
 
   get isPlaying => _ttsState == TtsState.playing;
   get isStopped => _ttsState == TtsState.stopped;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Theme.of(context).primaryColorLight,
+      appBar: AppBar(
+        title: Text(
+          Localization.of(context).title,
+          style: TextStyle(fontSize: 18.0),
+        ),
+        // leading: IconButton(
+        //   icon: Icon(Icons.menu),
+        //   tooltip: 'Navigation menu',
+        //   onPressed: null,
+        // ),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.add_a_photo),
+            onPressed: () => _getImage(ImageSource.gallery),
+          ),
+          IconButton(
+            icon: Icon(Icons.camera),
+            onPressed: () => _getImage(ImageSource.camera),
+          ),
+          PopupMenuButton<String>(
+            onSelected: _select,
+            itemBuilder: (BuildContext context) {
+              return menuOptions.map((String menuOption) {
+                return PopupMenuItem<String>(
+                  value: menuOption,
+                  child: Text(menuOption),
+                );
+              }).toList();
+            },
+          ),
+        ],
+      ),
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('img/background.png'),
+            fit: BoxFit.cover,
+          ),
+        ),
+        // padding: EdgeInsets.symmetric(vertical: 50.0, horizontal: 15.0),
+        // constraints: BoxConstraints.expand(),
+        child: SafeArea(
+          child: Column(
+            children: <Widget>[
+              Flexible(
+                child: ListView.builder(
+                  padding: EdgeInsets.all(8.0),
+                  reverse: true,
+                  itemBuilder: (_, int index) => _messages[index],
+                  itemCount: _messages.length,
+                ),
+              ),
+              Divider(height: 1.0),
+              Container(
+                decoration: BoxDecoration(
+                  color: Theme.of(context).cardColor,
+                ),
+                child: _buildTextComposer(),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
 
   @override
   initState() {
@@ -285,46 +359,66 @@ class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
         color: Theme.of(context).accentColor,
       ),
       child: Container(
-        margin: const EdgeInsets.symmetric(horizontal: 8.0),
-        child: Row(
-          children: <Widget>[
-            Flexible(
-              child: TextField(
-                controller: _textController,
-                onSubmitted: _question,
-                decoration: InputDecoration.collapsed(
-                  hintText: "Send a message",
-                ),
-              ),
+        decoration: BoxDecoration(
+          border: Border(
+            top: BorderSide(
+              color: Theme.of(context).accentColor,
+              width: 2.0,
             ),
-            Container(
-              margin: EdgeInsets.symmetric(horizontal: 4.0),
-              child: IconButton(
-                icon: Icon(
-                  Icons.send,
-                  color: Theme.of(context).accentColor,
-                ),
-                tooltip: "Send",
-                onPressed: () {
-                  _question(_textController.text);
-                },
-              ),
-            ),
-            Container(
-              margin: EdgeInsets.symmetric(horizontal: 4.0),
-              child: IconButton(
-                  icon: Icon(
-                    Icons.mic,
-                    color: (_isPressed)
-                        ? Theme.of(context).primaryColorDark
-                        : Theme.of(context).accentColor,
+          ),
+        ),
+        child: Container(
+          margin: const EdgeInsets.symmetric(horizontal: 8.0),
+          child: Row(
+            children: <Widget>[
+              Flexible(
+                child: SafeArea(
+                  child: TextField(
+                    toolbarOptions: ToolbarOptions(
+                      selectAll: false,
+                      copy: true,
+                      cut: true,
+                      paste: true,
+                    ),
+                    keyboardType: TextInputType.multiline,
+                    maxLines: null,
+                    controller: _textController,
+                    onSubmitted: _question,
+                    decoration: InputDecoration.collapsed(
+                      hintText: "Send a message",
+                    ),
                   ),
-                  tooltip: "Microphone",
-                  onPressed: _hasSpeech && !_speech.isListening
-                      ? _startListening
-                      : _stopListening),
-            ),
-          ],
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: 4.0),
+                child: IconButton(
+                  icon: Icon(
+                    Icons.send,
+                    color: Theme.of(context).accentColor,
+                  ),
+                  tooltip: "Send",
+                  onPressed: () {
+                    _question(_textController.text);
+                  },
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: 4.0),
+                child: IconButton(
+                    icon: Icon(
+                      Icons.mic,
+                      color: (_isPressed)
+                          ? Theme.of(context).primaryColorDark
+                          : Theme.of(context).accentColor,
+                    ),
+                    tooltip: "Microphone",
+                    onPressed: _hasSpeech && !_speech.isListening
+                        ? _startListening
+                        : _stopListening),
+              ),
+            ],
+          ),
         ),
       ),
     );
@@ -394,14 +488,14 @@ class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
 
     String rsp;
 
-    if (_response.isEmpty && _option)
+    if (_response.isEmpty && _option && _image != null)
       rsp = await "I cannot identify any text in that image"
           .translate(to: myValue);
     else if (_response == "[]" && !_option)
       rsp = await "I cannot identify any object in that image"
           .translate(to: myValue);
     else {
-      if (!_option)
+      if (!_option && _image != null)
         rsp = await ("In this picture I can see: " +
                 _response.substring(1, _response.length - 1).toLowerCase())
             .translate(to: myValue);
@@ -452,8 +546,201 @@ class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
                   .build(),
               language: Language.english)
           .detectIntent(query);
-      _sendResponse(_response.getMessage());
+      handleResponse(_response);
+      // _sendResponse(_response.getMessage());
     }
+  }
+
+  Future<bool> handleResponse(AIResponse response) async {
+    switch (response.queryResult.action) {
+      case "alarm.set":
+        AndroidIntent intent = AndroidIntent(
+          action: 'android.intent.action.SET_ALARM',
+          arguments: <String, dynamic>{
+            // 'android.intent.extra.alarm.DAYS': <int>[2, 3, 4, 5, 6],
+            'android.intent.extra.alarm.HOUR': int.parse(response
+                .queryResult.parameters["time"]
+                .toString()
+                .substring(11, 13)),
+            'android.intent.extra.alarm.MINUTES': int.parse(response
+                .queryResult.parameters["time"]
+                .toString()
+                .substring(14, 16)),
+            'android.intent.extra.alarm.MESSAGE':
+                response.queryResult.parameters["alarm-name"] ?? '',
+            'android.intent.extra.alarm.SKIP_UI': true,
+          },
+        );
+        await intent.launch();
+        break;
+      case "alarm.check":
+        AndroidIntent intent = AndroidIntent(
+          action: 'android.intent.action.SHOW_ALARMS',
+        );
+        await intent.launch();
+        break;
+      case "web.search":
+        print(response.queryResult.parameters['q']);
+        AndroidIntent intent = AndroidIntent(
+            action: 'android.intent.action.WEB_SEARCH',
+            arguments: <String, dynamic>{
+              'query': response.queryResult.parameters['q'],
+            });
+        await intent.launch();
+        break;
+      case "timer.set":
+        print("ALOOOOOOOOOOOOOOOOOOO" +
+            response.queryResult.parameters.toString());
+        AndroidIntent intent = AndroidIntent(
+            action: 'android.intent.action.SET_TIMER',
+            arguments: <String, dynamic>{
+              'android.intent.extra.alarm.LENGTH':
+                  response.queryResult.parameters['seconds'],
+              'android.intent.extra.alarm.SKIP_UI': true,
+            });
+        await intent.launch();
+        break;
+      case "event.create":
+        AndroidIntent intent = AndroidIntent(
+            action: 'android.intent.action.INSERT',
+            arguments: <String, dynamic>{
+              'beginTime':
+                  DateTime.parse(response.queryResult.parameters['date'])
+                      .millisecondsSinceEpoch,
+              'title': response.queryResult.parameters['title'],
+            });
+        print("ALOOOOOOOOOOOOOOOOOOO" +
+            DateTime.parse(response.queryResult.parameters['date'])
+                .millisecondsSinceEpoch
+                .toString());
+        await intent.launch();
+        break;
+      case "camera.open":
+        print("CAMERAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+        AndroidIntent intent = AndroidIntent(
+          action: 'android.media.action.STILL_IMAGE_CAMERA',
+        );
+        await intent.launch();
+        break;
+      case "video.open":
+        AndroidIntent intent = AndroidIntent(
+          action: 'android.media.action.VIDEO_CAMERA',
+        );
+        await intent.launch();
+        break;
+      case "contact.insert":
+        print(response.queryResult.parameters.toString());
+        AndroidIntent intent = AndroidIntent(
+          action: 'android.intent.action.INSERT',
+          type: 'vnd.android.cursor.dir/contact',
+          arguments: <String, dynamic>{
+            'phone': response.queryResult.parameters['phone-number'],
+            'name': response.queryResult.parameters['given-name'],
+          },
+        );
+        await intent.launch();
+        break;
+      case "email.send":
+        // print("EMAILLLLLLLLLLLLLLLLLLLLLL" +
+        //     response.queryResult.parameters.toString());
+        // var array = [];
+        // array.add(response.queryResult.parameters['email']);
+        // AndroidIntent intent = AndroidIntent(
+        //   action: 'android.intent.action.MAIN',
+        //   category: 'android.intent.category.APP_EMAIL',
+        //   arguments: <String, dynamic>{
+        //     'android.intent.extra.EMAIL': array,
+        //     'android.intent.extra.SUBJECT':
+        //         response.queryResult.parameters['subject'],
+        //     'android.intent.extra.TEXT':
+        //         response.queryResult.parameters['text'],
+        //   },
+        // );
+        // await intent.launch();
+        var url = 'mailto:' +
+            response.queryResult.parameters['email'] +
+            '?subject=' +
+            response.queryResult.parameters['subject'] +
+            '&body=' +
+            response.queryResult.parameters['text'];
+        print("URLLLLLLLLLLLLLLLLLLL" + url);
+        if (await canLaunch(url)) {
+          await launch(url);
+        }
+
+        break;
+      case "maps.search":
+        print("MAPAAAAAAAAAAAAAAAAAAA" +
+            response.queryResult.parameters['location'].toString());
+        AndroidIntent intent = AndroidIntent(
+          action: 'android.intent.action.VIEW',
+          data: 'geo:0,0?q=' +
+              response.queryResult.parameters['location']['city']
+                  .toString()
+                  .replaceAll(' ', '+'),
+        );
+        await intent.launch();
+        break;
+      case "call":
+        var url = 'tel:' + response.queryResult.parameters['phone-number'];
+        print("URLLLLLLLLLLLLLLLLLLL" + url);
+        if (await canLaunch(url)) {
+          await launch(url);
+        }
+        // AndroidIntent intent = AndroidIntent(
+        //   action: 'android.intent.action.DIAL',
+        //   data: Uri.parse(
+        //           "tel:" + response.queryResult.parameters['phone-number'])
+        //       .toString(),
+        // );
+        // await intent.launch();
+        break;
+      case "settings":
+        AndroidIntent intent = AndroidIntent(
+          action: 'android.settings.SETTINGS',
+        );
+        await intent.launch();
+        break;
+      case "sms":
+        var url = 'sms:' +
+            response.queryResult.parameters['phone-number'] +
+            '?body=' +
+            response.queryResult.parameters['text'];
+        print("URLLLLLLLLLLLLLLLLLLL" + url);
+        if (await canLaunch(url)) {
+          await launch(url);
+        }
+        // AndroidIntent intent = AndroidIntent(
+        //     action: 'android.intent.action.SEND',
+        //     data: Uri.parse(
+        //             "smsto:" + response.queryResult.parameters['phone-number'])
+        //         .toString(),
+        //     type: 'text/plain',
+        //     arguments: <String, dynamic>{
+        //       'sms_body': response.queryResult.parameters['text'],
+        //     });
+        // await intent.launch();
+        break;
+      case "web_page":
+        // AndroidIntent intent = AndroidIntent(
+        //   action: 'android.intent.action.VIEW',
+        //   data: Uri.parse("https:" + response.queryResult.parameters['url'])
+        //       .toString(),
+        // );
+        // await intent.launch();
+        const url = 'https://flutter.dev';
+        //  closeWebView();
+        // if (await canLaunch(url)) {
+        //   await launch(
+        //     url,
+        //     // forceWebView: true,
+        //     enableJavaScript: true,
+        //   );
+        // }
+        flutterWebViewPlugin.launch(url);
+        break;
+    }
+    return false;
   }
 
   void _question(String text) async {
@@ -463,7 +750,7 @@ class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
 
       if (result.isNotEmpty && result[0].rawAddress.isNotEmpty) {
         if (text.trim().isNotEmpty) {
-          if (_flag) {
+          if (true) {
             Message message;
             if (_image != null) {
               message = Message(
@@ -504,63 +791,5 @@ class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
       Utilities.showToast(
           "You must be connected to the internet to communicate with the assistant!");
     }
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Theme.of(context).primaryColorLight,
-      appBar: AppBar(
-        title: Text(
-          Localization.of(context).title,
-          style: TextStyle(fontSize: 18.0),
-        ),
-        // leading: IconButton(
-        //   icon: Icon(Icons.menu),
-        //   tooltip: 'Navigation menu',
-        //   onPressed: null,
-        // ),
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.add_a_photo),
-            onPressed: () => _getImage(ImageSource.gallery),
-          ),
-          IconButton(
-            icon: Icon(Icons.camera),
-            onPressed: () => _getImage(ImageSource.camera),
-          ),
-          PopupMenuButton<String>(
-            onSelected: _select,
-            itemBuilder: (BuildContext context) {
-              return menuOptions.map((String menuOption) {
-                return PopupMenuItem<String>(
-                  value: menuOption,
-                  child: Text(menuOption),
-                );
-              }).toList();
-            },
-          ),
-        ],
-      ),
-      body: Column(
-        children: <Widget>[
-          Flexible(
-            child: ListView.builder(
-              padding: EdgeInsets.all(8.0),
-              reverse: true,
-              itemBuilder: (_, int index) => _messages[index],
-              itemCount: _messages.length,
-            ),
-          ),
-          Divider(height: 1.0),
-          Container(
-            decoration: BoxDecoration(
-              color: Theme.of(context).cardColor,
-            ),
-            child: _buildTextComposer(),
-          ),
-        ],
-      ),
-    );
   }
 }
