@@ -30,11 +30,11 @@ class Chatbot extends StatefulWidget {
 enum TtsState { playing, stopped }
 
 class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
-   final flutterWebViewPlugin = FlutterWebviewPlugin();
+  final flutterWebViewPlugin = FlutterWebviewPlugin();
   bool _isPressed = false;
   final List<Message> _messages = <Message>[];
   final TextEditingController _textController = TextEditingController();
-  bool _flag = true;
+  bool _isAnswered = true;
   File _image;
   FlutterTts _flutterTts;
   String _newVoiceText;
@@ -61,11 +61,6 @@ class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
           Localization.of(context).title,
           style: TextStyle(fontSize: 18.0),
         ),
-        // leading: IconButton(
-        //   icon: Icon(Icons.menu),
-        //   tooltip: 'Navigation menu',
-        //   onPressed: null,
-        // ),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.add_a_photo),
@@ -95,8 +90,6 @@ class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
             fit: BoxFit.cover,
           ),
         ),
-        // padding: EdgeInsets.symmetric(vertical: 50.0, horizontal: 15.0),
-        // constraints: BoxConstraints.expand(),
         child: SafeArea(
           child: Column(
             children: <Widget>[
@@ -125,8 +118,8 @@ class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
   @override
   initState() {
     super.initState();
+    _response("hi there", true);
     initMenu();
-    _response("hi there");
     _initTts();
     _initSpeechState();
   }
@@ -135,6 +128,7 @@ class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
     menuOptions = <String>[
       'Assistant language',
       'Your speach language',
+      'Clear messages',
       'Sign out',
       'Delete account',
     ];
@@ -250,6 +244,7 @@ class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
     _labeler.close();
     _textRecognizer.close();
     for (Message message in _messages) message.animationController.dispose();
+    flutterWebViewPlugin.dispose();
     super.dispose();
     _flutterTts.stop();
   }
@@ -268,6 +263,11 @@ class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
             speechLanguages: _speechLanguages,
           ),
         ));
+        break;
+      case "Clear messages":
+        setState(() {
+          _messages.clear();
+        });
         break;
       case "Delete account":
         _deleteDialog();
@@ -326,14 +326,12 @@ class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
         await _labeler.processImage(FirebaseVisionImage.fromFile(image));
     List<String> texts = [];
     for (ImageLabel label in labels) texts.add(label.text);
-    print(texts);
     return texts;
   }
 
   Future<String> _detectText(File image) async {
     final VisionText visionText =
         await _textRecognizer.processImage(FirebaseVisionImage.fromFile(image));
-    print(visionText.text);
     return visionText.text;
   }
 
@@ -517,14 +515,14 @@ class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
 
     setState(() {
       _messages.insert(0, message);
-      _flag = true;
+      _isAnswered = true;
     });
 
     message.animationController.forward();
     _speak();
   }
 
-  void _response(query) async {
+  void _response(query, bool welcomeMessage) async {
     if (_image != null) {
       if (_option) {
         _detectText(_image).then((onValue) {
@@ -540,186 +538,152 @@ class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
     } else {
       _textController.clear();
       AIResponse _response = await Dialogflow(
-              authGoogle: await AuthGoogle(
-                      fileJson:
-                          "assets/virtual-assistant-htiehx-78c19d0cb278.json")
-                  .build(),
-              language: Language.english)
-          .detectIntent(query);
-      handleResponse(_response);
-      // _sendResponse(_response.getMessage());
+        authGoogle: await AuthGoogle(
+          fileJson: "assets/virtual-assistant-htiehx-78c19d0cb278.json",
+        ).build(),
+        language: Language.english,
+      ).detectIntent(
+        query,
+      );
+      if (welcomeMessage)
+        _sendResponse(_response.getMessage());
+      else {
+        handleResponse(_response).then((onValue) {
+          if (!onValue) _sendResponse(_response.getMessage());
+        });
+      }
     }
   }
 
   Future<bool> handleResponse(AIResponse response) async {
     switch (response.queryResult.action) {
       case "alarm.set":
-        AndroidIntent intent = AndroidIntent(
-          action: 'android.intent.action.SET_ALARM',
-          arguments: <String, dynamic>{
-            // 'android.intent.extra.alarm.DAYS': <int>[2, 3, 4, 5, 6],
-            'android.intent.extra.alarm.HOUR': int.parse(response
-                .queryResult.parameters["time"]
-                .toString()
-                .substring(11, 13)),
-            'android.intent.extra.alarm.MINUTES': int.parse(response
-                .queryResult.parameters["time"]
-                .toString()
-                .substring(14, 16)),
-            'android.intent.extra.alarm.MESSAGE':
-                response.queryResult.parameters["alarm-name"] ?? '',
-            'android.intent.extra.alarm.SKIP_UI': true,
-          },
-        );
-        await intent.launch();
+        if (response.queryResult.parameters["time"].toString().isNotEmpty) {
+          await AndroidIntent(
+            action: 'android.intent.action.SET_ALARM',
+            arguments: <String, dynamic>{
+              'android.intent.extra.alarm.HOUR': int.parse(response
+                  .queryResult.parameters["time"]
+                  .toString()
+                  .substring(11, 13)),
+              'android.intent.extra.alarm.MINUTES': int.parse(response
+                  .queryResult.parameters["time"]
+                  .toString()
+                  .substring(14, 16)),
+              'android.intent.extra.alarm.MESSAGE':
+                  response.queryResult.parameters["alarm-name"] ?? '',
+              'android.intent.extra.alarm.SKIP_UI': true,
+            },
+          ).launch();
+        } else
+          return false;
         break;
       case "alarm.check":
-        AndroidIntent intent = AndroidIntent(
+        await AndroidIntent(
           action: 'android.intent.action.SHOW_ALARMS',
-        );
-        await intent.launch();
+        ).launch();
         break;
       case "web.search":
-        print(response.queryResult.parameters['q']);
-        AndroidIntent intent = AndroidIntent(
-            action: 'android.intent.action.WEB_SEARCH',
-            arguments: <String, dynamic>{
-              'query': response.queryResult.parameters['q'],
-            });
-        await intent.launch();
+        if (response.queryResult.parameters['q'].toString().isNotEmpty) {
+          await AndroidIntent(
+              action: 'android.intent.action.WEB_SEARCH',
+              arguments: <String, dynamic>{
+                'query': response.queryResult.parameters['q'],
+              }).launch();
+        } else
+          return false;
         break;
       case "timer.set":
-        print("ALOOOOOOOOOOOOOOOOOOO" +
-            response.queryResult.parameters.toString());
-        AndroidIntent intent = AndroidIntent(
-            action: 'android.intent.action.SET_TIMER',
-            arguments: <String, dynamic>{
-              'android.intent.extra.alarm.LENGTH':
-                  response.queryResult.parameters['seconds'],
-              'android.intent.extra.alarm.SKIP_UI': true,
-            });
-        await intent.launch();
-        break;
-      case "event.create":
-        AndroidIntent intent = AndroidIntent(
-            action: 'android.intent.action.INSERT',
-            arguments: <String, dynamic>{
-              'beginTime':
-                  DateTime.parse(response.queryResult.parameters['date'])
-                      .millisecondsSinceEpoch,
-              'title': response.queryResult.parameters['title'],
-            });
-        print("ALOOOOOOOOOOOOOOOOOOO" +
-            DateTime.parse(response.queryResult.parameters['date'])
-                .millisecondsSinceEpoch
-                .toString());
-        await intent.launch();
+        if (response.queryResult.parameters['seconds'].toString().isNotEmpty) {
+          await AndroidIntent(
+              action: 'android.intent.action.SET_TIMER',
+              arguments: <String, dynamic>{
+                'android.intent.extra.alarm.LENGTH':
+                    response.queryResult.parameters['seconds'],
+                'android.intent.extra.alarm.SKIP_UI': true,
+              }).launch();
+        } else
+          return false;
         break;
       case "camera.open":
-        print("CAMERAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
-        AndroidIntent intent = AndroidIntent(
+        await AndroidIntent(
           action: 'android.media.action.STILL_IMAGE_CAMERA',
-        );
-        await intent.launch();
+        ).launch();
         break;
       case "video.open":
-        AndroidIntent intent = AndroidIntent(
+        await AndroidIntent(
           action: 'android.media.action.VIDEO_CAMERA',
-        );
-        await intent.launch();
+        ).launch();
         break;
       case "contact.insert":
-        print(response.queryResult.parameters.toString());
-        AndroidIntent intent = AndroidIntent(
-          action: 'android.intent.action.INSERT',
-          type: 'vnd.android.cursor.dir/contact',
-          arguments: <String, dynamic>{
-            'phone': response.queryResult.parameters['phone-number'],
-            'name': response.queryResult.parameters['given-name'],
-          },
-        );
-        await intent.launch();
+        if (response.queryResult.parameters['phone-number']
+                .toString()
+                .isNotEmpty &&
+            response.queryResult.parameters['given-name']
+                .toString()
+                .isNotEmpty) {
+          await AndroidIntent(
+            action: 'android.intent.action.INSERT',
+            type: 'vnd.android.cursor.dir/contact',
+            arguments: <String, dynamic>{
+              'phone': response.queryResult.parameters['phone-number'],
+              'name': response.queryResult.parameters['given-name'],
+            },
+          ).launch();
+        } else
+          return false;
         break;
       case "email.send":
-        // print("EMAILLLLLLLLLLLLLLLLLLLLLL" +
-        //     response.queryResult.parameters.toString());
-        // var array = [];
-        // array.add(response.queryResult.parameters['email']);
-        // AndroidIntent intent = AndroidIntent(
-        //   action: 'android.intent.action.MAIN',
-        //   category: 'android.intent.category.APP_EMAIL',
-        //   arguments: <String, dynamic>{
-        //     'android.intent.extra.EMAIL': array,
-        //     'android.intent.extra.SUBJECT':
-        //         response.queryResult.parameters['subject'],
-        //     'android.intent.extra.TEXT':
-        //         response.queryResult.parameters['text'],
-        //   },
-        // );
-        // await intent.launch();
-        var url = 'mailto:' +
-            response.queryResult.parameters['email'] +
-            '?subject=' +
-            response.queryResult.parameters['subject'] +
-            '&body=' +
-            response.queryResult.parameters['text'];
-        print("URLLLLLLLLLLLLLLLLLLL" + url);
-        if (await canLaunch(url)) {
-          await launch(url);
-        }
+        if (response.queryResult.parameters['email'].toString().isNotEmpty &&
+            response.queryResult.parameters['text'].toString().isNotEmpty) {
+          var url = 'mailto:' +
+              response.queryResult.parameters['email'] +
+              '?subject=' +
+              response.queryResult.parameters['subject'] +
+              '&body=' +
+              response.queryResult.parameters['text'];
 
+          if (await canLaunch(url)) await launch(url);
+        } else
+          return false;
         break;
       case "maps.search":
-        print("MAPAAAAAAAAAAAAAAAAAAA" +
-            response.queryResult.parameters['location'].toString());
-        AndroidIntent intent = AndroidIntent(
-          action: 'android.intent.action.VIEW',
-          data: 'geo:0,0?q=' +
-              response.queryResult.parameters['location']['city']
-                  .toString()
-                  .replaceAll(' ', '+'),
-        );
-        await intent.launch();
+        if (response.queryResult.parameters['location'].toString().isNotEmpty) {
+          await AndroidIntent(
+            action: 'android.intent.action.VIEW',
+            data: Uri.encodeFull(
+              'geo:0,0?q=' +
+                  response.queryResult.parameters['location']['city']
+                      .toString(),
+            ),
+          ).launch();
+        } else
+          return false;
         break;
       case "call":
-        var url = 'tel:' + response.queryResult.parameters['phone-number'];
-        print("URLLLLLLLLLLLLLLLLLLL" + url);
-        if (await canLaunch(url)) {
-          await launch(url);
-        }
-        // AndroidIntent intent = AndroidIntent(
-        //   action: 'android.intent.action.DIAL',
-        //   data: Uri.parse(
-        //           "tel:" + response.queryResult.parameters['phone-number'])
-        //       .toString(),
-        // );
-        // await intent.launch();
+        if (response.queryResult.parameters['phone-number']
+            .toString()
+            .isNotEmpty) {
+          var url = 'tel:' + response.queryResult.parameters['phone-number'];
+          if (await canLaunch(url)) await launch(url);
+        } else
+          return false;
         break;
       case "settings":
-        AndroidIntent intent = AndroidIntent(
-          action: 'android.settings.SETTINGS',
-        );
-        await intent.launch();
+        await AndroidIntent(action: 'android.settings.SETTINGS').launch();
         break;
       case "sms":
-        var url = 'sms:' +
-            response.queryResult.parameters['phone-number'] +
-            '?body=' +
-            response.queryResult.parameters['text'];
-        print("URLLLLLLLLLLLLLLLLLLL" + url);
-        if (await canLaunch(url)) {
-          await launch(url);
-        }
-        // AndroidIntent intent = AndroidIntent(
-        //     action: 'android.intent.action.SEND',
-        //     data: Uri.parse(
-        //             "smsto:" + response.queryResult.parameters['phone-number'])
-        //         .toString(),
-        //     type: 'text/plain',
-        //     arguments: <String, dynamic>{
-        //       'sms_body': response.queryResult.parameters['text'],
-        //     });
-        // await intent.launch();
+        if (response.queryResult.parameters['phone-number']
+                .toString()
+                .isNotEmpty &&
+            response.queryResult.parameters['text'].toString().isNotEmpty) {
+          var url = 'sms:' +
+              response.queryResult.parameters['phone-number'] +
+              '?body=' +
+              response.queryResult.parameters['text'];
+          if (await canLaunch(url)) await launch(url);
+        } else
+          return false;
         break;
       case "web_page":
         // AndroidIntent intent = AndroidIntent(
@@ -728,19 +692,56 @@ class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
         //       .toString(),
         // );
         // await intent.launch();
-        const url = 'https://flutter.dev';
         //  closeWebView();
-        // if (await canLaunch(url)) {
+        // if (await canLaunch(url))
         //   await launch(
         //     url,
         //     // forceWebView: true,
         //     enableJavaScript: true,
         //   );
-        // }
-        flutterWebViewPlugin.launch(url);
+        //
+        // flutterWebViewPlugin.launch(url);
+        // flutterWebViewPlugin.close();
+        Navigator.of(context).push(
+          MaterialPageRoute<void>(
+            builder: (_) => new WebviewScaffold(
+              url: "https://" + response.queryResult.parameters['url'],
+              appBar: new AppBar(
+                title: Text(
+                  Localization.of(context).title,
+                  style: TextStyle(fontSize: 18.0),
+                ),
+              ),
+            ),
+          ),
+        );
         break;
+      case "application_details":
+        await AndroidIntent(
+          action: 'action_application_details_settings',
+          data: 'package:vukan.com.virtualassistant',
+        ).launch();
+        break;
+      case "navigation":
+        if (response.queryResult.parameters['location'].toString().isNotEmpty) {
+          await AndroidIntent(
+            action: 'action_view',
+            data: Uri.encodeFull(
+              'google.navigation:q=' +
+                  Uri.encodeFull(
+                    response.queryResult.parameters['location']['city'],
+                  ),
+            ),
+            package: 'com.google.android.apps.maps',
+          ).launch();
+        } else
+          return false;
+        break;
+      default:
+        return false;
     }
-    return false;
+    _isAnswered = true;
+    return true;
   }
 
   void _question(String text) async {
@@ -750,7 +751,7 @@ class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
 
       if (result.isNotEmpty && result[0].rawAddress.isNotEmpty) {
         if (text.trim().isNotEmpty) {
-          if (true) {
+          if (_isAnswered) {
             Message message;
             if (_image != null) {
               message = Message(
@@ -778,10 +779,10 @@ class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
             }
             setState(() {
               _messages.insert(0, message);
-              _flag = false;
+              _isAnswered = false;
             });
             message.animationController.forward();
-            _response(s);
+            _response(s, false);
           } else
             Utilities.showToast("Wait for the bot to respond first!");
         } else

@@ -22,7 +22,9 @@ class MyApp extends StatelessWidget {
         dividerColor: Color(0xffBDBDBD),
         accentColor: Color(0xffFF4081),
         iconTheme: IconThemeData(color: Color(0xffFFFFFF)),
-        textTheme: GoogleFonts.sourceSansProTextTheme(Theme.of(context).textTheme),
+        textTheme: GoogleFonts.sourceSansProTextTheme(
+          Theme.of(context).textTheme,
+        ),
       ),
       localizationsDelegates: [
         const DemoLocalizationsDelegate(),

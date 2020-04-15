@@ -52,37 +52,32 @@ class Message extends StatelessWidget {
             Text(
               this.name,
             ),
-            Material(
-              elevation: 5.0,
-              child: Container(
-                margin: const EdgeInsets.only(top: 5.0),
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                      begin: Alignment.topRight,
-                      end: Alignment(0.1, 0.0),
-                      colors: [
-                        Theme.of(context).primaryColor,
-                        Theme.of(context).accentColor,
-                      ]),
-                  borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(30.0),
-                    bottomRight: Radius.circular(30.0),
-                    topRight: Radius.circular(30.0),
-                  ),
-                  // BorderRadius.all(
-                  //   Radius.circular(20.0),
-                  // ),
+            Container(
+              margin: const EdgeInsets.only(top: 5.0),
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topRight,
+                  end: Alignment(0.1, 0.0),
+                  colors: [
+                    Theme.of(context).primaryColor,
+                    Theme.of(context).accentColor,
+                  ],
                 ),
-                child: Padding(
-                  padding: EdgeInsets.only(
-                      top: 10.0, bottom: 10.0, left: 10.0, right: 10.0),
-                  child: GestureDetector(
-                    child: Text(
-                      text,
-                      style: TextStyle(color: Colors.white),
-                    ),
-                    onLongPress: () => Share.share(text),
+                borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(30.0),
+                  bottomRight: Radius.circular(30.0),
+                  topRight: Radius.circular(30.0),
+                ),
+              ),
+              child: Padding(
+                padding: EdgeInsets.only(
+                    top: 10.0, bottom: 10.0, left: 10.0, right: 10.0),
+                child: GestureDetector(
+                  child: Text(
+                    text,
+                    style: TextStyle(color: Colors.white),
                   ),
+                  onLongPress: () => Share.share(text),
                 ),
               ),
             ),
@@ -104,19 +99,20 @@ class Message extends StatelessWidget {
             Container(
               margin: const EdgeInsets.only(top: 5.0),
               decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                      begin: Alignment.topLeft,
-                      end: Alignment(0.1, 0.0),
-                      colors: [
-                        Theme.of(context).primaryColor,
-                        Theme.of(context).primaryColorDark,
-                      ]),
-                  borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(30.0),
-                      bottomLeft: Radius.circular(30.0),
-                      bottomRight: Radius.circular(30.0))
-                  // BorderRadius.all(Radius.circular(20.0)),
-                  ),
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment(0.1, 0.0),
+                  colors: [
+                    Theme.of(context).primaryColor,
+                    Theme.of(context).primaryColorDark,
+                  ],
+                ),
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(30.0),
+                  bottomLeft: Radius.circular(30.0),
+                  bottomRight: Radius.circular(30.0),
+                ),
+              ),
               child: Padding(
                 padding: EdgeInsets.only(
                     top: 10.0, bottom: 10.0, left: 10.0, right: 10.0),
