@@ -21,7 +21,7 @@ class Localization {
       'loginMessage': 'Sign in to chat with assistant'
     },
     'it': {
-      'title': 'Asistente virtual',
+      'title': 'Assistente virtuale',
       'languages': 'Lingue',
       'speechLanguage': 'Select your speech language',
       'share': 'Share',

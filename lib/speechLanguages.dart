@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences_settings/shared_preferences_settings.dart';
+import 'package:virtual_assistant/ad.dart';
 import 'package:virtual_assistant/localization.dart';
 
 class SpeechLanguages extends StatefulWidget {
@@ -12,6 +13,16 @@ class SpeechLanguages extends StatefulWidget {
 }
 
 class _SpeechLanguagesState extends State<SpeechLanguages> {
+  Ad ad = new Ad();
+
+  @override
+  void initState() {
+    super.initState();
+    ad.incrementCounter('speech').then((onValue) {
+      if (onValue == 1) ad.showAd();
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences_settings/shared_preferences_settings.dart';
+import 'package:virtual_assistant/ad.dart';
 
 class Languages extends StatefulWidget {
   Languages({Key key}) : super(key: key);
@@ -9,6 +10,16 @@ class Languages extends StatefulWidget {
 }
 
 class _LanguagesState extends State<Languages> {
+  Ad ad = new Ad();
+
+  @override
+  void initState() {
+    super.initState();
+    ad.incrementCounter('language').then((onValue) {
+      if (onValue == 1) ad.showAd();
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

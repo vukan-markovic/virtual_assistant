@@ -5,8 +5,13 @@ import 'package:virtual_assistant/localization.dart';
 import 'package:virtual_assistant/login.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  Crashlytics.instance.enableInDevMode = true;
+  FlutterError.onError = Crashlytics.instance.recordFlutterError;
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override

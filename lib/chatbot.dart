@@ -3,7 +3,9 @@ import 'package:firebase_ml_vision/firebase_ml_vision.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dialogflow/dialogflow_v2.dart';
 import 'package:flutter_tts/flutter_tts.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
+import 'package:permission_handler/permission_handler.dart';
 import 'package:speech_to_text/speech_recognition_result.dart';
 import 'package:speech_to_text/speech_to_text.dart';
 import 'package:translator/translator.dart';
@@ -24,12 +26,12 @@ class Chatbot extends StatefulWidget {
   final FirebaseUser user;
 
   @override
-  _ChatbotState createState() => _ChatbotState();
+  ChatbotState createState() => ChatbotState();
 }
 
 enum TtsState { playing, stopped }
 
-class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
+class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
   final flutterWebViewPlugin = FlutterWebviewPlugin();
   bool _isPressed = false;
   final List<Message> _messages = <Message>[];
@@ -249,20 +251,35 @@ class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
     _flutterTts.stop();
   }
 
-  void _select(String menuOption) {
+  void _select(String menuOption) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
     switch (menuOption) {
       case "Sign out":
         _signOut();
         break;
       case "Assistant language":
-        Navigator.of(context).push(_createRoute(Languages()));
+        if (prefs.getInt('language') == null || prefs.getInt('language') == 0)
+          dialog(
+              context,
+              "For a lifetime access to assistant language setup, watch the ad",
+              "I accept",
+              "Cancel");
+        else
+          Navigator.of(context).push(_createRoute(Languages()));
         break;
       case "Your speach language":
-        Navigator.of(context).push(_createRoute(
-          SpeechLanguages(
-            speechLanguages: _speechLanguages,
-          ),
-        ));
+        if (prefs.getInt('speech') == null || prefs.getInt('speech') == 0)
+          dialog(
+              context,
+              "For a lifetime access to speach language setup, watch the ad",
+              "I accept",
+              "Cancel");
+        else
+          Navigator.of(context).push(_createRoute(
+            SpeechLanguages(
+              speechLanguages: _speechLanguages,
+            ),
+          ));
         break;
       case "Clear messages":
         setState(() {
@@ -270,55 +287,9 @@ class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
         });
         break;
       case "Delete account":
-        _deleteDialog();
+        dialog(context, "Are you sure?", "Yes", "No");
         break;
     }
-  }
-
-  Future<void> _deleteDialog() {
-    return showDialog<void>(
-      context: context,
-      barrierDismissible: false,
-      builder: (BuildContext context) {
-        return SimpleDialog(
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(20.0),
-          ),
-          backgroundColor: Theme.of(context).primaryColorLight,
-          title: Text(
-            'Are you sure?',
-            textAlign: TextAlign.center,
-          ),
-          children: <Widget>[
-            SimpleDialogOption(
-              child: RaisedButton(
-                color: Theme.of(context).accentColor,
-                child: Text(
-                  "Yes",
-                  style: TextStyle(color: Colors.white),
-                ),
-                onPressed: () {
-                  Navigator.pop(context);
-                  widget.user.delete();
-                  Utilities.showToast("Account is deleted!");
-                  Utilities.pushPage(context, Login());
-                },
-              ),
-            ),
-            SimpleDialogOption(
-              child: RaisedButton(
-                color: Theme.of(context).accentColor,
-                child: Text(
-                  'No',
-                  style: TextStyle(color: Colors.white),
-                ),
-                onPressed: () => Navigator.pop(context),
-              ),
-            ),
-          ],
-        );
-      },
-    );
   }
 
   Future<List<String>> _detectLabels(File image) async {
@@ -342,7 +313,7 @@ class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
       setState(() {
         _image = image;
       });
-      _dialog();
+      dialog(context, "Select an option", "Identify text", "Identify labels");
     }
   }
 
@@ -422,59 +393,6 @@ class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
     );
   }
 
-  Future<void> _dialog() async {
-    return showDialog<void>(
-      context: context,
-      barrierDismissible: false,
-      builder: (BuildContext context) {
-        return SimpleDialog(
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(20.0),
-          ),
-          backgroundColor: Theme.of(context).primaryColorLight,
-          title: Text(
-            "Select an option",
-            textAlign: TextAlign.center,
-          ),
-          children: <Widget>[
-            SimpleDialogOption(
-              child: RaisedButton(
-                color: Theme.of(context).accentColor,
-                child: Text(
-                  "Identify text",
-                  style: TextStyle(color: Colors.white),
-                ),
-                onPressed: () {
-                  setState(() {
-                    _option = true;
-                  });
-                  Navigator.pop(context);
-                  _question("query");
-                },
-              ),
-            ),
-            SimpleDialogOption(
-              child: RaisedButton(
-                color: Theme.of(context).accentColor,
-                child: Text(
-                  'Identify labels',
-                  style: TextStyle(color: Colors.white),
-                ),
-                onPressed: () {
-                  setState(() {
-                    _option = false;
-                  });
-                  Navigator.pop(context);
-                  _question("query");
-                },
-              ),
-            ),
-          ],
-        );
-      },
-    );
-  }
-
   void _sendResponse(String _response) async {
     String myValue = await Settings().getString(
       'radiokey',
@@ -551,15 +469,25 @@ class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
         handleResponse(_response).then((onValue) {
           if (!onValue) _sendResponse(_response.getMessage());
         });
+        _sendResponse(_response.getMessage());
       }
     }
+  }
+
+  void launchIntent(AndroidIntent intent) {
+    intent.canResolveActivity().then((onValue) {
+      if (onValue)
+        intent.launch();
+      else
+        _response("intentFail", false);
+    });
   }
 
   Future<bool> handleResponse(AIResponse response) async {
     switch (response.queryResult.action) {
       case "alarm.set":
         if (response.queryResult.parameters["time"].toString().isNotEmpty) {
-          await AndroidIntent(
+          launchIntent(AndroidIntent(
             action: 'android.intent.action.SET_ALARM',
             arguments: <String, dynamic>{
               'android.intent.extra.alarm.HOUR': int.parse(response
@@ -574,46 +502,46 @@ class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
                   response.queryResult.parameters["alarm-name"] ?? '',
               'android.intent.extra.alarm.SKIP_UI': true,
             },
-          ).launch();
+          ));
         } else
           return false;
         break;
       case "alarm.check":
-        await AndroidIntent(
+        launchIntent(AndroidIntent(
           action: 'android.intent.action.SHOW_ALARMS',
-        ).launch();
+        ));
         break;
       case "web.search":
         if (response.queryResult.parameters['q'].toString().isNotEmpty) {
-          await AndroidIntent(
+          launchIntent(AndroidIntent(
               action: 'android.intent.action.WEB_SEARCH',
               arguments: <String, dynamic>{
                 'query': response.queryResult.parameters['q'],
-              }).launch();
+              }));
         } else
           return false;
         break;
       case "timer.set":
         if (response.queryResult.parameters['seconds'].toString().isNotEmpty) {
-          await AndroidIntent(
+          launchIntent(AndroidIntent(
               action: 'android.intent.action.SET_TIMER',
               arguments: <String, dynamic>{
                 'android.intent.extra.alarm.LENGTH':
                     response.queryResult.parameters['seconds'],
                 'android.intent.extra.alarm.SKIP_UI': true,
-              }).launch();
+              }));
         } else
           return false;
         break;
       case "camera.open":
-        await AndroidIntent(
+        launchIntent(AndroidIntent(
           action: 'android.media.action.STILL_IMAGE_CAMERA',
-        ).launch();
+        ));
         break;
       case "video.open":
-        await AndroidIntent(
+        launchIntent(AndroidIntent(
           action: 'android.media.action.VIDEO_CAMERA',
-        ).launch();
+        ));
         break;
       case "contact.insert":
         if (response.queryResult.parameters['phone-number']
@@ -622,14 +550,14 @@ class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
             response.queryResult.parameters['given-name']
                 .toString()
                 .isNotEmpty) {
-          await AndroidIntent(
+          launchIntent(AndroidIntent(
             action: 'android.intent.action.INSERT',
             type: 'vnd.android.cursor.dir/contact',
             arguments: <String, dynamic>{
               'phone': response.queryResult.parameters['phone-number'],
               'name': response.queryResult.parameters['given-name'],
             },
-          ).launch();
+          ));
         } else
           return false;
         break;
@@ -643,34 +571,42 @@ class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
               '&body=' +
               response.queryResult.parameters['text'];
 
-          if (await canLaunch(url)) await launch(url);
+          if (await canLaunch(url))
+            await launch(url);
+          else
+            _response("intentFail", false);
         } else
           return false;
         break;
       case "maps.search":
         if (response.queryResult.parameters['location'].toString().isNotEmpty) {
-          await AndroidIntent(
+          launchIntent(AndroidIntent(
             action: 'android.intent.action.VIEW',
             data: Uri.encodeFull(
               'geo:0,0?q=' +
                   response.queryResult.parameters['location']['city']
                       .toString(),
             ),
-          ).launch();
+          ));
         } else
           return false;
         break;
       case "call":
         if (response.queryResult.parameters['phone-number']
-            .toString()
-            .isNotEmpty) {
-          var url = 'tel:' + response.queryResult.parameters['phone-number'];
-          if (await canLaunch(url)) await launch(url);
+                .toString()
+                .isNotEmpty &&
+            await Permission.phone.request().isGranted) {
+          launchIntent(AndroidIntent(
+            action: 'android.intent.action.CALL',
+            data: Uri.parse(
+                    'tel:' + response.queryResult.parameters['phone-number'])
+                .toString(),
+          ));
         } else
           return false;
         break;
       case "settings":
-        await AndroidIntent(action: 'android.settings.SETTINGS').launch();
+        launchIntent(AndroidIntent(action: 'android.settings.SETTINGS'));
         break;
       case "sms":
         if (response.queryResult.parameters['phone-number']
@@ -681,27 +617,14 @@ class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
               response.queryResult.parameters['phone-number'] +
               '?body=' +
               response.queryResult.parameters['text'];
-          if (await canLaunch(url)) await launch(url);
+          if (await canLaunch(url))
+            await launch(url);
+          else
+            _response("intentFail", false);
         } else
           return false;
         break;
       case "web_page":
-        // AndroidIntent intent = AndroidIntent(
-        //   action: 'android.intent.action.VIEW',
-        //   data: Uri.parse("https:" + response.queryResult.parameters['url'])
-        //       .toString(),
-        // );
-        // await intent.launch();
-        //  closeWebView();
-        // if (await canLaunch(url))
-        //   await launch(
-        //     url,
-        //     // forceWebView: true,
-        //     enableJavaScript: true,
-        //   );
-        //
-        // flutterWebViewPlugin.launch(url);
-        // flutterWebViewPlugin.close();
         Navigator.of(context).push(
           MaterialPageRoute<void>(
             builder: (_) => new WebviewScaffold(
@@ -717,14 +640,14 @@ class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
         );
         break;
       case "application_details":
-        await AndroidIntent(
+        launchIntent(AndroidIntent(
           action: 'action_application_details_settings',
           data: 'package:vukan.com.virtualassistant',
-        ).launch();
+        ));
         break;
       case "navigation":
         if (response.queryResult.parameters['location'].toString().isNotEmpty) {
-          await AndroidIntent(
+          launchIntent(AndroidIntent(
             action: 'action_view',
             data: Uri.encodeFull(
               'google.navigation:q=' +
@@ -733,7 +656,7 @@ class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
                   ),
             ),
             package: 'com.google.android.apps.maps',
-          ).launch();
+          ));
         } else
           return false;
         break;
@@ -767,6 +690,7 @@ class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
             } else {
               _textController.clear();
               s = await text.translate(to: 'en');
+              if (s == null || s.isEmpty) s = 'qqqq';
               message = Message(
                   text: text,
                   name: widget.user.displayName,
@@ -792,5 +716,75 @@ class _ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
       Utilities.showToast(
           "You must be connected to the internet to communicate with the assistant!");
     }
+  }
+
+  Future<void> dialog(BuildContext context, String title, String option1,
+      String option2) async {
+    return showDialog<void>(
+      context: context,
+      barrierDismissible: false,
+      builder: (BuildContext context) {
+        return SimpleDialog(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20.0),
+          ),
+          backgroundColor: Theme.of(context).primaryColorLight,
+          title: Text(
+            title,
+            textAlign: TextAlign.center,
+          ),
+          children: <Widget>[
+            SimpleDialogOption(
+              child: RaisedButton(
+                color: Theme.of(context).accentColor,
+                child: Text(
+                  option1,
+                  style: TextStyle(color: Colors.white),
+                ),
+                onPressed: () {
+                  Navigator.pop(context);
+                  if (title == "Select an option") {
+                    setState(() {
+                      _option = true;
+                    });
+                    _question("query");
+                  } else if (title == "Are you sure?") {
+                    widget.user.delete();
+                    Utilities.showToast("Account is deleted!");
+                    Utilities.pushPage(context, Login());
+                  } else if (title ==
+                      "For a lifetime access to assistant language setup, watch the ad")
+                    Navigator.of(context).push(_createRoute(Languages()));
+                  else
+                    Navigator.of(context).push(_createRoute(
+                      SpeechLanguages(
+                        speechLanguages: _speechLanguages,
+                      ),
+                    ));
+                },
+              ),
+            ),
+            SimpleDialogOption(
+              child: RaisedButton(
+                color: Theme.of(context).accentColor,
+                child: Text(
+                  option2,
+                  style: TextStyle(color: Colors.white),
+                ),
+                onPressed: () {
+                  Navigator.pop(context);
+                  if (title == "Select an option") {
+                    setState(() {
+                      _option = false;
+                    });
+                    _question("query");
+                  }
+                },
+              ),
+            ),
+          ],
+        );
+      },
+    );
   }
 }
