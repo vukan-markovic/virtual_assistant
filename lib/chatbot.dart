@@ -642,7 +642,7 @@ class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
       case "application_details":
         launchIntent(AndroidIntent(
           action: 'action_application_details_settings',
-          data: 'package:vukan.com.virtualassistant',
+          data: 'package:vukan.com.virtual_assistant',
         ));
         break;
       case "navigation":
