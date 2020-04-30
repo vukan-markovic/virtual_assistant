@@ -131,6 +131,8 @@ class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
       'Assistant language',
       'Your speach language',
       'Clear messages',
+      'Privacy Policy',
+      'Terms & Conditions',
       'Sign out',
       'Delete account',
     ];
@@ -288,6 +290,14 @@ class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
         break;
       case "Delete account":
         dialog(context, "Are you sure?", "Yes", "No");
+        break;
+      case "Privacy Policy":
+        Utilities.pushWebPage(context,
+            "https://sites.google.com/view/virtual-assistantprivacypolicy");
+        break;
+      case "Terms & Conditions":
+        Utilities.pushWebPage(context,
+            "https://sites.google.com/view/virtualassistanttermscondition");
         break;
     }
   }
@@ -469,7 +479,6 @@ class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
         handleResponse(_response).then((onValue) {
           if (!onValue) _sendResponse(_response.getMessage());
         });
-        _sendResponse(_response.getMessage());
       }
     }
   }
@@ -625,19 +634,8 @@ class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
           return false;
         break;
       case "web_page":
-        Navigator.of(context).push(
-          MaterialPageRoute<void>(
-            builder: (_) => new WebviewScaffold(
-              url: "https://" + response.queryResult.parameters['url'],
-              appBar: new AppBar(
-                title: Text(
-                  Localization.of(context).title,
-                  style: TextStyle(fontSize: 18.0),
-                ),
-              ),
-            ),
-          ),
-        );
+        Utilities.pushWebPage(
+            context, "https://" + response.queryResult.parameters['url']);
         break;
       case "application_details":
         launchIntent(AndroidIntent(
