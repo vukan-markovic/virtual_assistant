@@ -51,6 +51,10 @@ android {
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         multiDexEnabled true
+
+ 	    // ndk {
+        //     abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+        // }
     }
 
     signingConfigs {

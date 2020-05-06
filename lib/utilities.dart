@@ -1,7 +1,7 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-
 import 'localization.dart';
 
 class Utilities {
@@ -34,5 +34,34 @@ class Utilities {
         ),
       ),
     );
+  }
+
+  static Route createRoute(StatefulWidget widget) {
+    return PageRouteBuilder(
+      pageBuilder: (context, animation, secondaryAnimation) => widget,
+      transitionsBuilder: (context, animation, secondaryAnimation, child) {
+        return SlideTransition(
+          position: animation.drive(
+            Tween(
+              begin: Offset(0.0, 1.0),
+              end: Offset.zero,
+            ).chain(
+              CurveTween(curve: Curves.ease),
+            ),
+          ),
+          child: child,
+        );
+      },
+    );
+  }
+
+  static Future<bool> isConnected() async {
+    try {
+      final result = await InternetAddress.lookup('google.com');
+      if (result.isNotEmpty && result[0].rawAddress.isNotEmpty) return true;
+      return false;
+    } catch (_) {
+      return false;
+    }
   }
 }

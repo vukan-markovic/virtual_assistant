@@ -10,6 +10,7 @@ import 'package:speech_to_text/speech_recognition_result.dart';
 import 'package:speech_to_text/speech_to_text.dart';
 import 'package:translator/translator.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:virtual_assistant/credits.dart';
 import 'package:virtual_assistant/languages.dart';
 import 'package:virtual_assistant/localization.dart';
 import 'package:virtual_assistant/login.dart';
@@ -133,28 +134,10 @@ class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
       'Clear messages',
       'Privacy Policy',
       'Terms & Conditions',
+      'Credits',
       'Sign out',
       'Delete account',
     ];
-  }
-
-  Route _createRoute(StatefulWidget widget) {
-    return PageRouteBuilder(
-      pageBuilder: (context, animation, secondaryAnimation) => widget,
-      transitionsBuilder: (context, animation, secondaryAnimation, child) {
-        return SlideTransition(
-          position: animation.drive(
-            Tween(
-              begin: Offset(0.0, 1.0),
-              end: Offset.zero,
-            ).chain(
-              CurveTween(curve: Curves.ease),
-            ),
-          ),
-          child: child,
-        );
-      },
-    );
   }
 
   Future<void> _initSpeechState() async {
@@ -267,7 +250,7 @@ class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
               "I accept",
               "Cancel");
         else
-          Navigator.of(context).push(_createRoute(Languages()));
+          Navigator.of(context).push(Utilities.createRoute(Languages()));
         break;
       case "Your speach language":
         if (prefs.getInt('speech') == null || prefs.getInt('speech') == 0)
@@ -277,7 +260,7 @@ class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
               "I accept",
               "Cancel");
         else
-          Navigator.of(context).push(_createRoute(
+          Navigator.of(context).push(Utilities.createRoute(
             SpeechLanguages(
               speechLanguages: _speechLanguages,
             ),
@@ -299,6 +282,11 @@ class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
         Utilities.pushWebPage(context,
             "https://sites.google.com/view/virtualassistanttermscondition");
         break;
+      case "Credits":
+        Navigator.of(context).push(Utilities.createRoute(
+          Credits(),
+        ));
+        break;
     }
   }
 
@@ -313,6 +301,7 @@ class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
   Future<String> _detectText(File image) async {
     final VisionText visionText =
         await _textRecognizer.processImage(FirebaseVisionImage.fromFile(image));
+    if (visionText.text == null || visionText.text.trim().isEmpty) return "[]";
     return visionText.text;
   }
 
@@ -413,14 +402,15 @@ class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
       await _flutterTts.setLanguage(myValue);
 
     String rsp;
-
-    if (_response.isEmpty && _option && _image != null)
-      rsp = await "I cannot identify any text in that image"
-          .translate(to: myValue);
-    else if (_response == "[]" && !_option)
-      rsp = await "I cannot identify any object in that image"
-          .translate(to: myValue);
-    else {
+    print(_response);
+    if (_response == "[]" && _image != null) {
+      if (_option)
+        rsp = await "I cannot identify any text in that image"
+            .translate(to: myValue);
+      else
+        rsp = await "I cannot identify any object in that image"
+            .translate(to: myValue);
+    } else {
       if (!_option && _image != null)
         rsp = await ("In this picture I can see: " +
                 _response.substring(1, _response.length - 1).toLowerCase())
@@ -428,6 +418,8 @@ class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
       else
         rsp = await _response.translate(to: myValue);
     }
+
+    _image = null;
 
     Message message = Message(
       text: rsp,
@@ -454,12 +446,10 @@ class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
     if (_image != null) {
       if (_option) {
         _detectText(_image).then((onValue) {
-          _image = null;
           _sendResponse(onValue);
         });
       } else {
         _detectLabels(_image).then((onValue) {
-          _image = null;
           _sendResponse(onValue.toString());
         });
       }
@@ -666,11 +656,10 @@ class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
   }
 
   void _question(String text) async {
-    try {
-      var s = "";
-      final result = await InternetAddress.lookup('google.com');
+    var s = "";
 
-      if (result.isNotEmpty && result[0].rawAddress.isNotEmpty) {
+    Utilities.isConnected().then((onValue) async {
+      if (onValue) {
         if (text.trim().isNotEmpty) {
           if (_isAnswered) {
             Message message;
@@ -709,11 +698,10 @@ class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
             Utilities.showToast("Wait for the bot to respond first!");
         } else
           Utilities.showToast("You must enter the message first!");
-      }
-    } catch (_) {
-      Utilities.showToast(
-          "You must be connected to the internet to communicate with the assistant!");
-    }
+      } else
+        Utilities.showToast(
+            "You must be connected to the internet to communicate with the assistant!");
+    });
   }
 
   Future<void> dialog(BuildContext context, String title, String option1,
@@ -747,18 +735,37 @@ class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
                     });
                     _question("query");
                   } else if (title == "Are you sure?") {
-                    widget.user.delete();
-                    Utilities.showToast("Account is deleted!");
-                    Utilities.pushPage(context, Login());
+                    Utilities.isConnected().then((onValue) {
+                      if (onValue) {
+                        widget.user.delete();
+                        Utilities.showToast("Account is deleted!");
+                        Utilities.pushPage(context, Login());
+                      } else
+                        Utilities.showToast(
+                            "You must be connected to the internet to delete account!");
+                    });
                   } else if (title ==
                       "For a lifetime access to assistant language setup, watch the ad")
-                    Navigator.of(context).push(_createRoute(Languages()));
+                    Utilities.isConnected().then((onValue) {
+                      if (onValue)
+                        Navigator.of(context)
+                            .push(Utilities.createRoute(Languages()));
+                      else
+                        Utilities.showToast(
+                            "You must be connected to the internet!");
+                    });
                   else
-                    Navigator.of(context).push(_createRoute(
-                      SpeechLanguages(
-                        speechLanguages: _speechLanguages,
-                      ),
-                    ));
+                    Utilities.isConnected().then((onValue) {
+                      if (onValue)
+                        Navigator.of(context).push(Utilities.createRoute(
+                          SpeechLanguages(
+                            speechLanguages: _speechLanguages,
+                          ),
+                        ));
+                      else
+                        Utilities.showToast(
+                            "You must be connected to the internet!");
+                    });
                 },
               ),
             ),
