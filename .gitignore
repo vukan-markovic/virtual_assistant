@@ -31,6 +31,7 @@
 /build/
 key.jks
 android/key.properties
+android/app/google-services.json
 assets/virtual-assistant-service-account.json
 
 # Web related
