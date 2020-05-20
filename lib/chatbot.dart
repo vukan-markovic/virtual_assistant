@@ -457,7 +457,7 @@ class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
       _textController.clear();
       AIResponse _response = await Dialogflow(
         authGoogle: await AuthGoogle(
-          fileJson: "assets/virtual-assistant-htiehx-78c19d0cb278.json",
+          fileJson: "assets/virtual-assistant-service-account.json",
         ).build(),
         language: Language.english,
       ).detectIntent(

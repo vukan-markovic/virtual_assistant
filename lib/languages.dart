@@ -35,7 +35,7 @@ class _LanguagesState extends State<Languages> {
               'af': 'Afrikaans',
               'sq': 'Albanian',
               'ar': 'Arabic',
-              'it': 'Azerbaijani',
+              'az': 'Azerbaijani',
               'eu': 'Basque',
               'be': 'Belarusian',
               'bn': 'Bengali',

@@ -2,7 +2,7 @@ name: virtual_assistant
 description: A virtual assistant Flutter project.
 
 version: 1.0.1+1
-
+ 
 environment:
   sdk: ">=2.1.0 <3.0.0"
 
@@ -12,17 +12,17 @@ dependencies:
   flutter_dialogflow: ^0.1.0
   firebase_core: ^0.4.4+3
   fluttertoast: ^4.0.0
-  firebase_auth: ^0.15.5+3
+  firebase_auth: ^0.16.0
   google_sign_in: ^4.2.0
   flutter_facebook_login: ^3.0.0
   flutter_twitter_login: ^1.1.0
   translator: ^0.1.4
-  flutter_tts: ^0.9.1
+  flutter_tts: ^1.2.0
   firebase_ml_vision: ^0.9.3+8
   image_picker: ^0.6.4
   speech_to_text: ^2.0.1
   shared_preferences_settings: ^1.2.0 
-  google_fonts: ^0.3.10
+  google_fonts: ^1.1.0
   share: ^0.6.3+6
   android_intent: ^0.3.7
   url_launcher: ^5.4.2
@@ -41,7 +41,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/virtual-assistant-htiehx-78c19d0cb278.json
+    - assets/virtual-assistant-service-account.json
     - img/ic_launcher.png
     - img/google.png
     - img/twitter.png
