@@ -15,12 +15,13 @@ class Ad {
   }
 
   void showAd() {
-    FirebaseAdMob.instance.initialize(
-      appId: FirebaseAdMob.testAppId
-    );
+    FirebaseAdMob.instance.initialize(appId: FirebaseAdMob.testAppId
+        // appId: Credentials.admob_app_id
+        );
 
     RewardedVideoAd.instance.load(
       adUnitId: RewardedVideoAd.testAdUnitId,
+      // adUnitId: Credentials.admob_ad_unit_id,
       targetingInfo: targetingInfo,
     );
 

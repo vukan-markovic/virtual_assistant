@@ -12,7 +12,6 @@ import 'package:translator/translator.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:virtual_assistant/credits.dart';
 import 'package:virtual_assistant/languages.dart';
-import 'package:virtual_assistant/localization.dart';
 import 'package:virtual_assistant/login.dart';
 import 'dart:io';
 import 'package:virtual_assistant/message.dart';
@@ -61,16 +60,16 @@ class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
       backgroundColor: Theme.of(context).primaryColorLight,
       appBar: AppBar(
         title: Text(
-          Localization.of(context).title,
+          'Virtual assistant',
           style: TextStyle(fontSize: 18.0),
         ),
         actions: <Widget>[
           IconButton(
-            icon: Icon(Icons.add_a_photo),
+            icon: Icon(Icons.add_photo_alternate),
             onPressed: () => _getImage(ImageSource.gallery),
           ),
           IconButton(
-            icon: Icon(Icons.camera),
+            icon: Icon(Icons.add_a_photo),
             onPressed: () => _getImage(ImageSource.camera),
           ),
           PopupMenuButton<String>(
@@ -87,12 +86,6 @@ class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
         ],
       ),
       body: Container(
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('img/background.png'),
-            fit: BoxFit.cover,
-          ),
-        ),
         child: SafeArea(
           child: Column(
             children: <Widget>[
@@ -130,7 +123,7 @@ class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
   void initMenu() {
     menuOptions = <String>[
       'Assistant language',
-      'Your speach language',
+      'Your speech language',
       'Clear messages',
       'Privacy Policy',
       'Terms & Conditions',
@@ -312,7 +305,7 @@ class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
       setState(() {
         _image = image;
       });
-      dialog(context, "Select an option", "Identify text", "Identify labels");
+      dialog(context, "Select an option", "Identify text", "Identify objects");
     }
   }
 
@@ -402,7 +395,7 @@ class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
       await _flutterTts.setLanguage(myValue);
 
     String rsp;
-    print(_response);
+
     if (_response == "[]" && _image != null) {
       if (_option)
         rsp = await "I cannot identify any text in that image"

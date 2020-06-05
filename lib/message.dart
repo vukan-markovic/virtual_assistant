@@ -71,7 +71,11 @@ class Message extends StatelessWidget {
               ),
               child: Padding(
                 padding: EdgeInsets.only(
-                    top: 10.0, bottom: 10.0, left: 10.0, right: 10.0),
+                  top: 10.0,
+                  bottom: 10.0,
+                  left: 10.0,
+                  right: 10.0,
+                ),
                 child: GestureDetector(
                   child: Text(
                     text,

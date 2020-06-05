@@ -4,7 +4,7 @@ import 'package:flutter_twitter_login/flutter_twitter_login.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:virtual_assistant/chatbot.dart';
 import 'package:flutter_facebook_login/flutter_facebook_login.dart';
-import 'package:virtual_assistant/localization.dart';
+import 'package:virtual_assistant/credentials.dart';
 import 'package:virtual_assistant/utilities.dart';
 
 class Login extends StatefulWidget {
@@ -21,7 +21,7 @@ class LoginState extends State<Login> {
     return Scaffold(
       backgroundColor: Theme.of(context).primaryColorLight,
       appBar: AppBar(
-        title: Text(Localization.of(context).login),
+        title: Text('Login'),
       ),
       body: SafeArea(
         child: Builder(builder: (BuildContext context) {
@@ -35,7 +35,7 @@ class LoginState extends State<Login> {
                   children: <Widget>[
                     Container(
                       child: Text(
-                        Localization.of(context).loginMessage,
+                        'Sign in to chat with assistant',
                         style: TextStyle(
                           fontSize: 16.0,
                         ),
@@ -147,8 +147,8 @@ class LoginState extends State<Login> {
   void _signInWithTwitter() async {
     try {
       final TwitterLoginResult result = await TwitterLogin(
-        consumerKey: '44mkQlM6NuSJLteObmHosVior',
-        consumerSecret: 'YSAGPCXOKTQm333pxKBlr98AvX3hDtD2cGHoLpnfZZb6ZUrSQf',
+        consumerKey: Credentials.twitter_consumerKey,
+        consumerSecret: Credentials.twitter_consumerSecret,
       ).authorize();
       _user = (await _auth.signInWithCredential(
               TwitterAuthProvider.getCredential(

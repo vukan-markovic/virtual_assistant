@@ -2,7 +2,6 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'localization.dart';
 
 class Utilities {
   static void showToast(String message) {
@@ -27,7 +26,7 @@ class Utilities {
           url: url,
           appBar: new AppBar(
             title: Text(
-              Localization.of(context).title,
+              'Virtual assistant',
               style: TextStyle(fontSize: 18.0),
             ),
           ),

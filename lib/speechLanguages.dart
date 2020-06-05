@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences_settings/shared_preferences_settings.dart';
 import 'package:virtual_assistant/ad.dart';
-import 'package:virtual_assistant/localization.dart';
 
 class SpeechLanguages extends StatefulWidget {
   SpeechLanguages({Key key, this.speechLanguages}) : super(key: key);
-
   final Map<String, String> speechLanguages;
 
   @override
@@ -27,13 +25,13 @@ class _SpeechLanguagesState extends State<SpeechLanguages> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(Localization.of(context).languages),
+        title: Text('Languages'),
       ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: RadioSettingsTile(
             settingKey: 'radiokeyspeak',
-            title: Localization.of(context).speechLanguage,
+            title: 'Select your speech language',
             values: widget.speechLanguages,
           ),
         ),

@@ -34,10 +34,6 @@ dependencies:
   permission_handler: ^5.0.0+hotfix.3
   shared_preferences: ^0.5.6+3
 
-dev_dependencies:
-  flutter_localizations:
-    sdk: flutter
-
 flutter:
   uses-material-design: true
   assets:
@@ -46,4 +42,3 @@ flutter:
     - img/google.png
     - img/twitter.png
     - img/facebook.png
-    - img/background.png

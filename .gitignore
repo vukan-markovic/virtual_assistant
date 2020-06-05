@@ -32,7 +32,9 @@
 key.jks
 android/key.properties
 android/app/google-services.json
+android/app/src/main/res/values/strings.xml
 assets/virtual-assistant-service-account.json
+lib/credentials.dart
 
 # Web related
 lib/generated_plugin_registrant.dart

@@ -1,14 +1,13 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:virtual_assistant/chatbot.dart';
-import 'package:virtual_assistant/localization.dart';
 import 'package:virtual_assistant/login.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
+import 'package:firebase_analytics/firebase_analytics.dart';
+import 'package:firebase_analytics/observer.dart';
 
 void main() {
-  Crashlytics.instance.enableInDevMode = true;
   FlutterError.onError = Crashlytics.instance.recordFlutterError;
   runApp(MyApp());
 }
@@ -17,8 +16,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      onGenerateTitle: (BuildContext context) => Localization.of(context).title,
+      onGenerateTitle: (BuildContext context) => 'Virtual assistant',
       home: MyHomePage(),
+      navigatorObservers: [
+        FirebaseAnalyticsObserver(analytics: FirebaseAnalytics()),
+      ],
       theme: ThemeData(
         brightness: Brightness.light,
         primaryColor: Color(0xffF44336),
@@ -31,15 +33,6 @@ class MyApp extends StatelessWidget {
           Theme.of(context).textTheme,
         ),
       ),
-      localizationsDelegates: [
-        const DemoLocalizationsDelegate(),
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate
-      ],
-      supportedLocales: [
-        const Locale('en', ''),
-        const Locale('it', ''),
-      ],
     );
   }
 }
