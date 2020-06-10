@@ -1,6 +1,8 @@
 import 'package:firebase_admob/firebase_admob.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'credentials.dart';
+
 class Ad {
   static const MobileAdTargetingInfo targetingInfo = MobileAdTargetingInfo(
     nonPersonalizedAds: true,
@@ -15,13 +17,12 @@ class Ad {
   }
 
   void showAd() {
-    FirebaseAdMob.instance.initialize(appId: FirebaseAdMob.testAppId
-        // appId: Credentials.admob_app_id
-        );
+    FirebaseAdMob.instance.initialize(
+      appId: Credentials.admob_app_id,
+    );
 
     RewardedVideoAd.instance.load(
-      adUnitId: RewardedVideoAd.testAdUnitId,
-      // adUnitId: Credentials.admob_ad_unit_id,
+      adUnitId: Credentials.admob_ad_unit_id,
       targetingInfo: targetingInfo,
     );
 
