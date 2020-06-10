@@ -33,6 +33,7 @@ enum TtsState { playing, stopped }
 
 class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
   final flutterWebViewPlugin = FlutterWebviewPlugin();
+  final picker = ImagePicker();
   bool _isPressed = false;
   final List<Message> _messages = <Message>[];
   final TextEditingController _textController = TextEditingController();
@@ -299,11 +300,11 @@ class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
   }
 
   Future _getImage(ImageSource source) async {
-    var image = await ImagePicker.pickImage(source: source);
+    var image = await picker.getImage(source: source);
 
     if (image != null) {
       setState(() {
-        _image = image;
+        _image = File(image.path);
       });
       dialog(context, "Select an option", "Identify text", "Identify objects");
     }
@@ -491,8 +492,7 @@ class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
                   .toString()
                   .substring(14, 16)),
               'android.intent.extra.alarm.MESSAGE':
-                  response.queryResult.parameters["alarm-name"] ?? '',
-              'android.intent.extra.alarm.SKIP_UI': true,
+                  response.queryResult.parameters["alarm-name"] ?? ''
             },
           ));
         } else
@@ -519,8 +519,7 @@ class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
               action: 'android.intent.action.SET_TIMER',
               arguments: <String, dynamic>{
                 'android.intent.extra.alarm.LENGTH':
-                    response.queryResult.parameters['seconds'],
-                'android.intent.extra.alarm.SKIP_UI': true,
+                    response.queryResult.parameters['seconds']
               }));
         } else
           return false;
@@ -574,11 +573,8 @@ class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
         if (response.queryResult.parameters['location'].toString().isNotEmpty) {
           launchIntent(AndroidIntent(
             action: 'android.intent.action.VIEW',
-            data: Uri.encodeFull(
-              'geo:0,0?q=' +
-                  response.queryResult.parameters['location']['city']
-                      .toString(),
-            ),
+            data: Uri.encodeFull('geo:0,0?q=' +
+                chooseLocation(response.queryResult.parameters['location'])),
           ));
         } else
           return false;
@@ -618,7 +614,7 @@ class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
         break;
       case "web_page":
         Utilities.pushWebPage(
-            context, "https://" + response.queryResult.parameters['url']);
+            context, "http://" + response.queryResult.parameters['url']);
         break;
       case "application_details":
         launchIntent(AndroidIntent(
@@ -630,12 +626,8 @@ class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
         if (response.queryResult.parameters['location'].toString().isNotEmpty) {
           launchIntent(AndroidIntent(
             action: 'action_view',
-            data: Uri.encodeFull(
-              'google.navigation:q=' +
-                  Uri.encodeFull(
-                    response.queryResult.parameters['location']['city'],
-                  ),
-            ),
+            data: Uri.encodeFull('google.navigation:q=' +
+                chooseLocation(response.queryResult.parameters['location'])),
             package: 'com.google.android.apps.maps',
           ));
         } else
@@ -646,6 +638,28 @@ class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
     }
     _isAnswered = true;
     return true;
+  }
+
+  String chooseLocation(Map param) {
+    if (param['city'].toString().isNotEmpty)
+      return param['city'].toString();
+    else if (param['island'].toString().isNotEmpty)
+      return param['island'].toString();
+    else if (param['shortcut'].toString().isNotEmpty)
+      return param['shortcut'].toString();
+    else if (param['street-address'].toString().isNotEmpty)
+      return param['street-address'].toString();
+    else if (param['business-name'].toString().isNotEmpty)
+      return param['business-name'].toString();
+    else if (param['subadmin-area'].toString().isNotEmpty)
+      return param['subadmin-area'].toString();
+    else if (param['zip-code'].toString().isNotEmpty)
+      return param['zip-code'].toString();
+    else if (param['country'].toString().isNotEmpty)
+      return param['country'].toString();
+    else if (param['admin-area'].toString().isNotEmpty)
+      return param['admin-area'].toString();
+    return param['city'].toString();
   }
 
   void _question(String text) async {
