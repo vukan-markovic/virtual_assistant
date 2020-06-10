@@ -25,7 +25,7 @@ class _SpeechLanguagesState extends State<SpeechLanguages> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Languages'),
+        title: Text('Speech languages'),
       ),
       body: SafeArea(
         child: SingleChildScrollView(

@@ -246,7 +246,7 @@ class ChatbotState extends State<Chatbot> with TickerProviderStateMixin {
         else
           Navigator.of(context).push(Utilities.createRoute(Languages()));
         break;
-      case "Your speach language":
+      case "Your speech language":
         if (prefs.getInt('speech') == null || prefs.getInt('speech') == 0)
           dialog(
               context,
