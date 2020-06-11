@@ -32,3 +32,13 @@ More information about Dialogflow can be found at the following links:
 Flutter plugin for Dialogflow which was used in this project can be found here: [Dialogflow Flutter plugin](https://github.com/VictorRancesCode/flutter_dialogflow).
 
 For more info on using Firebase with Flutter visit: [Flutter Firebase documentation](https://flutter.dev/docs/development/data-and-backend/firebase). 
+
+## Running project 
+
+To run this project locally you must provide following: 
+- Replace Credentials.admob_app_id and Credentials.admob_app_id constants in ad.dart file with your own Admob credentials to show ads. More on Admob on this site: [Admob](https://admob.google.com/home/)
+- Replace Credentials.twitter_consumerKey and Credentials.twitter_consumerSecret constants in login.dart file with your own Twitter keys to use Twitter login. Find more about Twitter login here: [Twitter developer site](https://developer.twitter.com/en)
+- Add your own service account file to assets folder to communicate with your Dialogflow agent. More on building Dialogflow agents and set up sevice accounts on following links: [Build agent](https://cloud.google.com/dialogflow/docs/quick/build-agent), [Setup service account](https://cloud.google.com/dialogflow/docs/quick/setup)
+- Connect app with your own Firebase project. More on that here: [Adding Firebase to Android application](https://firebase.google.com/docs/android/setup)
+- Add strings.xml file where you should add facebook_app_id and fb_login_protocol_scheme strings which represents keys used for Facebook login, and the already mentioned admob_app_id string for displaying advertisements
+- This is release version of application. To run your own release version you must provide your own files for app signing. To get information on how to build and release an Android app check out the following link: [Building the app for release](https://flutter.dev/docs/deployment/android#building-the-app-for-release)
