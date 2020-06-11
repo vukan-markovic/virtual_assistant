@@ -16,7 +16,7 @@ It can also recognize objects and text in the images you upload.
 
 ## Getting Started
 
-This project is built using Flutter.
+This project is built using Flutter, Dialogflow and Firebase.
 
 A few resources to get you started if this is your first Flutter project:
 
@@ -24,3 +24,11 @@ A few resources to get you started if this is your first Flutter project:
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
 For help getting started with Flutter, view [online documentation](https://flutter.dev/docs), which offers tutorials, samples, guidance on mobile development, and a full API reference.
+
+More information about Dialogflow can be found at the following links:
+- [Dialogflow website](https://dialogflow.com)
+- [Dialogflow documentation](https://cloud.google.com/dialogflow)
+
+Flutter plugin for Dialogflow which was used in this project can be found here: [Dialogflow Flutter plugin](https://github.com/VictorRancesCode/flutter_dialogflow)
+
+For more info on using Firebase with Flutter visit: [Flutter Firebase documentation](https://flutter.dev/docs/development/data-and-backend/firebase) 
