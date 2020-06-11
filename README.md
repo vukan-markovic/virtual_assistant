@@ -10,17 +10,9 @@ You can communicate with the assistant via voice or text, and it supports multip
 
 It can also recognize objects and text in the images you upload.
 
-![App icon](https://lh3.googleusercontent.com/xa3fFsrdPmYV4TOkPa0OJhdOsFiMLyALr9sIqQliUEuoMzZXL_nHlcZDOvuaTCsLF_s=w720-h310-rw) ![App icon](https://lh3.googleusercontent.com/XI9RXV_p0E6OmnazI3AoyW82Ybd5xJqeUHJYi05iyZw5-qjIi45NY7DkU_MNAWeKY5Cs=w720-h310-rw) ![App icon](https://lh3.googleusercontent.com/-qEQEW2fYumQpOhN7vjdajUM6HHut6OYzwrHDr5mx1qjQSCWHN7THLXfjrC9fN4dqtA=w720-h310-rw)
+![Login page](https://lh3.googleusercontent.com/xa3fFsrdPmYV4TOkPa0OJhdOsFiMLyALr9sIqQliUEuoMzZXL_nHlcZDOvuaTCsLF_s=w720-h310-rw) ![Chatbot page 1](https://lh3.googleusercontent.com/XI9RXV_p0E6OmnazI3AoyW82Ybd5xJqeUHJYi05iyZw5-qjIi45NY7DkU_MNAWeKY5Cs=w720-h310-rw) ![Chatbot page 2](https://lh3.googleusercontent.com/-qEQEW2fYumQpOhN7vjdajUM6HHut6OYzwrHDr5mx1qjQSCWHN7THLXfjrC9fN4dqtA=w720-h310-rw) ![Assistant language settings](https://lh3.googleusercontent.com/kNnGG_YBXtxeVyDwZkbS-FwhYfWZlw8-HiALnXO2--BMH4ybk34Ad13Er7s53N6pVSg=w720-h310-rw)
 
-![App icon](https://lh3.googleusercontent.com/kNnGG_YBXtxeVyDwZkbS-FwhYfWZlw8-HiALnXO2--BMH4ybk34Ad13Er7s53N6pVSg=w720-h310-rw)
-
-![App icon](https://lh3.googleusercontent.com/g9IvUbuyMHlkVP2oKx2D279V1s4ULdC87k3-fFrjVcGNF75AAZw5VfdyFBp2nrVnswe9=w720-h310-rw)
-
-![App icon](https://lh3.googleusercontent.com/Yxx4HJA43a0W5sM__eCUH-u-8YGO2zQ9NCg7XCfruIy7VSLeyDWCMqjoendPsNiBhg=w720-h310-rw)
-
-![App icon](https://lh3.googleusercontent.com/Hxau6AMID9Ug4cVF6y9AD5wORCoWz8WQbGwhblrq3TaNVucMpyS-2aKE-awMY2sYaQ=w720-h310-rw)
-
-![App icon](https://lh3.googleusercontent.com/LT-ntK-QoB76la_SiCVJTMXwecHaqdAI212oMn0knOFGcr5whUX-6z378ytDmhdxgQ=w720-h310-rw)
+![Chatbot page 3](https://lh3.googleusercontent.com/g9IvUbuyMHlkVP2oKx2D279V1s4ULdC87k3-fFrjVcGNF75AAZw5VfdyFBp2nrVnswe9=w720-h310-rw) ![Speech language settings](https://lh3.googleusercontent.com/Yxx4HJA43a0W5sM__eCUH-u-8YGO2zQ9NCg7XCfruIy7VSLeyDWCMqjoendPsNiBhg=w720-h310-rw) ![Chatbot page 4](https://lh3.googleusercontent.com/Hxau6AMID9Ug4cVF6y9AD5wORCoWz8WQbGwhblrq3TaNVucMpyS-2aKE-awMY2sYaQ=w720-h310-rw) ![Options menu](https://lh3.googleusercontent.com/LT-ntK-QoB76la_SiCVJTMXwecHaqdAI212oMn0knOFGcr5whUX-6z378ytDmhdxgQ=w720-h310-rw)
 
 ## Getting Started
 
