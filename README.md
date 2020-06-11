@@ -29,6 +29,6 @@ More information about Dialogflow can be found at the following links:
 - [Dialogflow website](https://dialogflow.com)
 - [Dialogflow documentation](https://cloud.google.com/dialogflow)
 
-Flutter plugin for Dialogflow which was used in this project can be found here: [Dialogflow Flutter plugin](https://github.com/VictorRancesCode/flutter_dialogflow)
+Flutter plugin for Dialogflow which was used in this project can be found here: [Dialogflow Flutter plugin](https://github.com/VictorRancesCode/flutter_dialogflow).
 
-For more info on using Firebase with Flutter visit: [Flutter Firebase documentation](https://flutter.dev/docs/development/data-and-backend/firebase) 
+For more info on using Firebase with Flutter visit: [Flutter Firebase documentation](https://flutter.dev/docs/development/data-and-backend/firebase). 
