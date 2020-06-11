@@ -10,11 +10,7 @@ You can communicate with the assistant via voice or text, and it supports multip
 
 It can also recognize objects and text in the images you upload.
 
-![App icon](https://lh3.googleusercontent.com/xa3fFsrdPmYV4TOkPa0OJhdOsFiMLyALr9sIqQliUEuoMzZXL_nHlcZDOvuaTCsLF_s=w720-h310-rw)
-
-![App icon](https://lh3.googleusercontent.com/XI9RXV_p0E6OmnazI3AoyW82Ybd5xJqeUHJYi05iyZw5-qjIi45NY7DkU_MNAWeKY5Cs=w720-h310-rw)
-
-![App icon](https://lh3.googleusercontent.com/-qEQEW2fYumQpOhN7vjdajUM6HHut6OYzwrHDr5mx1qjQSCWHN7THLXfjrC9fN4dqtA=w720-h310-rw)
+![App icon](https://lh3.googleusercontent.com/xa3fFsrdPmYV4TOkPa0OJhdOsFiMLyALr9sIqQliUEuoMzZXL_nHlcZDOvuaTCsLF_s=w720-h310-rw) ![App icon](https://lh3.googleusercontent.com/XI9RXV_p0E6OmnazI3AoyW82Ybd5xJqeUHJYi05iyZw5-qjIi45NY7DkU_MNAWeKY5Cs=w720-h310-rw) ![App icon](https://lh3.googleusercontent.com/-qEQEW2fYumQpOhN7vjdajUM6HHut6OYzwrHDr5mx1qjQSCWHN7THLXfjrC9fN4dqtA=w720-h310-rw)
 
 ![App icon](https://lh3.googleusercontent.com/kNnGG_YBXtxeVyDwZkbS-FwhYfWZlw8-HiALnXO2--BMH4ybk34Ad13Er7s53N6pVSg=w720-h310-rw)
 
