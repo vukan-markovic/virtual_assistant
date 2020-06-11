@@ -1,6 +1,5 @@
 import 'package:firebase_admob/firebase_admob.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
 import 'credentials.dart';
 
 class Ad {
