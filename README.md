@@ -1,6 +1,12 @@
-# virtual_assistant
+# Virtual assistant
 
-A new Flutter project.
+Virtual Assistant is an application that you can chat with and that can give you advice, jokes, quotes or lyrics.
+
+It can also perform tasks such as setting alarms, setting timers, converting units of measure and currencies, finding the meaning of words in a dictionary, finding a location on a map, finding news, providing weather information, opening a web page, and initiating actions such as adding a new contact, the Internet search, navigate, email or text, or make a phone call.
+
+You can communicate with the assistant via voice or text, and it supports multiple languages.
+
+It can also recognize objects and text in the images you upload.
 
 ## Getting Started
 
