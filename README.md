@@ -4,7 +4,7 @@
 
 Virtual Assistant is an application that you can chat with and that can give you advice, jokes, quotes or lyrics.
 
-It can also perform tasks such as setting alarms, setting timers, converting units of measure and currencies, finding the meaning of words in a dictionary, finding a location on a map, finding news, providing weather information, opening a web page, and initiating actions such as adding a new contact, the Internet search, navigate, email or text, or make a phone call.
+It can also perform tasks such as setting alarms, setting timers, converting units of measure and currencies, finding the meaning of words in a dictionary, finding a location on a map, finding news, providing weather information, opening a web page, and initiating actions such as adding a new contact, the internet search, navigation, sending email or text, or make a phone call.
 
 You can communicate with the assistant via voice or text, and it supports multiple languages.
 
