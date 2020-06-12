@@ -1,0 +1,98 @@
+[
+  {
+    "id": "068bdaf8-411e-445c-beb6-37af4e115e41",
+    "data": [
+      {
+        "text": "Give me a quote.",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "2e42e254-26bb-4801-929f-d602f3fd3951",
+    "data": [
+      {
+        "text": "How about a quote?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c843926a-3c89-455a-8177-f1ab70230d17",
+    "data": [
+      {
+        "text": "Give me some inspiration.",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "680b99c3-6c4f-43f8-83d6-777beb467294",
+    "data": [
+      {
+        "text": "Supply me with a quote.",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "51fbd4fc-4085-4b43-b0c3-2cbcbc4238c0",
+    "data": [
+      {
+        "text": "random quote",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b60cc2c4-5719-4ccd-b06a-08b4a30e3fbc",
+    "data": [
+      {
+        "text": "give me quote",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "3e1e20cd-d41b-430d-9abe-56c9f3ecd020",
+    "data": [
+      {
+        "text": "generate quote",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "51feddda-44de-4a90-a236-2e61244a92c1",
+    "data": [
+      {
+        "text": "quote",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "id": "abd646e6-053a-491c-a1ed-e6f34cc07fe9",
+  "name": "smalltalk.UserClarify",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "Sorry if I wasn\u0027t too clear.",
+            "Sorry if I understood you incorrectly.",
+            "I\u0027m still learning. I may misinterpret things from time to time.",
+            "Maybe I misunderstood what you said.",
+            "Sorry, looks like I misunderstood what you said."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

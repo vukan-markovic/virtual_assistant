@@ -1,0 +1,72 @@
+[
+  {
+    "id": "112d2a21-36bc-4873-9a43-8493de88ab4a",
+    "data": [
+      {
+        "text": "show settings",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "5d05c9b6-4544-4ec3-88c8-8c0863cac4e9",
+    "data": [
+      {
+        "text": "show me my settings",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "eda8f866-b198-4dda-8bfa-075bbfb8c13d",
+    "data": [
+      {
+        "text": "open",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " settings app",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "9d1d99e8-1243-44aa-a1f1-6a390af921f5",
+    "data": [
+      {
+        "text": "open",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " settings",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b77b8c02-8d21-47b3-8d5b-b4b6f517175e",
+    "data": [
+      {
+        "text": "settings",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

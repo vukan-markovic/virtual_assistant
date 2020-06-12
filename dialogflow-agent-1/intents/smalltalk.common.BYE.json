@@ -1,0 +1,39 @@
+{
+  "id": "b2a08e4e-a964-483a-a37e-ed8e03422fdd",
+  "name": "smalltalk.common.BYE",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "smalltalk.greetings.bye",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            ":+1: Speak to you soon!",
+            "Bye!",
+            "Goodbye!",
+            "I\u0027ll see you soon!",
+            "It\u0027s been a pleasure chatting with you, bye!",
+            "Bye, I hope you come back!"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

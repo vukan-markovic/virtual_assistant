@@ -1,0 +1,157 @@
+[
+  {
+    "id": "124fd941-c0d3-4644-892c-e6972f86bdb5",
+    "data": [
+      {
+        "text": "find word ",
+        "userDefined": false
+      },
+      {
+        "text": "phone",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " in dictionary",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "81e8e7e0-8e86-46e3-9a0e-65480f8c7804",
+    "data": [
+      {
+        "text": "can you find ",
+        "userDefined": false
+      },
+      {
+        "text": "word",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " mouse in dictionary?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "5091966d-6669-4fb7-a613-c0cc90c4eda7",
+    "data": [
+      {
+        "text": "what does a ",
+        "userDefined": false
+      },
+      {
+        "text": "house",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " mean?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ee819c8e-925e-4411-9d64-668be382b8e2",
+    "data": [
+      {
+        "text": "what does a ",
+        "userDefined": false
+      },
+      {
+        "text": "dog",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " mean?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "20cae458-a5b2-473c-95a1-ea74e7258fd3",
+    "data": [
+      {
+        "text": "what",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " is meaning of word ",
+        "userDefined": false
+      },
+      {
+        "text": "car",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "5dbaabce-daf5-44b3-8094-0147f5fe1e88",
+    "data": [
+      {
+        "text": "what is ",
+        "userDefined": false
+      },
+      {
+        "text": "hello",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0da29415-0978-489d-adc7-939a1d192e0a",
+    "data": [
+      {
+        "text": "define ",
+        "userDefined": false
+      },
+      {
+        "text": "android",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

@@ -1,0 +1,94 @@
+[
+  {
+    "id": "a8db99e0-82d9-48c0-9720-51b670a6e0b2",
+    "data": [
+      {
+        "text": "i ",
+        "userDefined": false
+      },
+      {
+        "text": "want",
+        "alias": "music-artist",
+        "meta": "@music-artist",
+        "userDefined": false
+      },
+      {
+        "text": " to record a video",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "89b8539d-6e8a-48d3-ba03-0d817035fd70",
+    "data": [
+      {
+        "text": "open",
+        "alias": "open",
+        "meta": "@open",
+        "userDefined": false
+      },
+      {
+        "text": " video app",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "02911330-4ba4-44c8-a151-d3c49cf84590",
+    "data": [
+      {
+        "text": "open",
+        "alias": "open",
+        "meta": "@open",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "camera",
+        "alias": "location",
+        "meta": "@sys.location",
+        "userDefined": false
+      },
+      {
+        "text": " video",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "1b058030-d83b-4b5e-bab7-c98c81a16041",
+    "data": [
+      {
+        "text": "record a video",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "68aee1f9-ecef-4d1a-8205-86b9f47b735f",
+    "data": [
+      {
+        "text": "video",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

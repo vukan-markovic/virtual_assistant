@@ -1,0 +1,51 @@
+{
+  "id": "47b74765-a721-4414-ae6a-1f5997a45391",
+  "name": "smalltalk.UserReady",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "smalltalk.greetings.how_are_you",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "ef0763d0-3bd5-470c-8da8-0b38afe49e4b",
+          "required": false,
+          "dataType": "@sys.date",
+          "name": "date",
+          "value": "$date",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "I always have time to chat with you. What can I do for you?",
+            "Never too busy for you. Shall we chat?",
+            "You\u0027re my priority. Do you wanna chat?",
+            "I always have time to chat with you. Wanna chat?",
+            "How can I help?"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

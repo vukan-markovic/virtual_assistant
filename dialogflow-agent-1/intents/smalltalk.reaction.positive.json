@@ -1,0 +1,53 @@
+{
+  "id": "5ba89a36-d832-4974-a4c8-edcd3b1dcee6",
+  "name": "smalltalk.reaction.positive",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "smalltalk.appraisal.good",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "e798d97a-c0a6-40e4-ab36-bf16ff174ca9",
+          "required": false,
+          "dataType": "@happy-emoji",
+          "name": "happy-emoji",
+          "value": "$happy-emoji",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "$happy-emoji",
+            "That\u0027s my job.",
+            "Thanks!  Anything else I can help you with?",
+            "Of course I am.",
+            "My pleasure.",
+            "Glad I could help.",
+            "Wow indeed!"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

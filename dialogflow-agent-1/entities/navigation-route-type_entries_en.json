@@ -1,0 +1,31 @@
+[
+  {
+    "value": "best",
+    "synonyms": [
+      "best",
+      "best route",
+      "best way"
+    ]
+  },
+  {
+    "value": "fastest",
+    "synonyms": [
+      "fastest",
+      "fastest road",
+      "fastest route",
+      "fastest way",
+      "quickest",
+      "quickest route",
+      "quickest way"
+    ]
+  },
+  {
+    "value": "shortest",
+    "synonyms": [
+      "shortest",
+      "shortest road",
+      "shortest route",
+      "shortest way"
+    ]
+  }
+]

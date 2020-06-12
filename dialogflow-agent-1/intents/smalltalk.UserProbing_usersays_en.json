@@ -1,0 +1,654 @@
+[
+  {
+    "id": "b0c3aaf8-dbef-4d73-8fc3-7f105248adf2",
+    "data": [
+      {
+        "text": "testing chatbot",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "9e06aa30-3c1e-48c2-afee-1743e8391099",
+    "data": [
+      {
+        "text": "test",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "3cb664c1-be0a-4fb2-93ce-10407d6f158e",
+    "data": [
+      {
+        "text": "I am testing ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "cd088399-7fa3-4407-958e-e7ef87a71f61",
+    "data": [
+      {
+        "text": "I want to test ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "1df52fb3-f8c5-4d58-b465-0351f6becae4",
+    "data": [
+      {
+        "text": "Does this work?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "dcd28dcb-68d4-448e-8e99-56a8daf08b11",
+    "data": [
+      {
+        "text": "testing bot",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c98aa8a4-27dc-4a79-86b8-025dff243143",
+    "data": [
+      {
+        "text": "let me test ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "7bf27a09-2dee-48a5-aa17-f6686ee46103",
+    "data": [
+      {
+        "text": "just testing ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b2c7684f-84ac-46c2-8465-1872effd48ad",
+    "data": [
+      {
+        "text": "can I test ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ee407043-94d1-4bb1-b0e0-b57de4aeb569",
+    "data": [
+      {
+        "text": "are ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " sure",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d067b605-2262-43aa-a41e-2c25a810d330",
+    "data": [
+      {
+        "text": "I\u0027m going to test",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "950c4a6c-77b4-4a34-888c-0c3085341c05",
+    "data": [
+      {
+        "text": "I\u0027ll test",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "193400cd-2b1e-4cbe-88a2-7574876983e6",
+    "data": [
+      {
+        "text": "let me test",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "34e71dcc-7c2c-464e-9223-aa6fdfaba6a3",
+    "data": [
+      {
+        "text": "testing ",
+        "userDefined": false
+      },
+      {
+        "text": "123",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f1ff704a-40b4-4352-a855-a3e82b2dd4bf",
+    "data": [
+      {
+        "text": "testing",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "1dac1d21-28c2-4f5e-98c4-3e3f84b3001f",
+    "data": [
+      {
+        "text": "this is a test",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "34f241bd-d0c6-4704-996b-1c9d67577da9",
+    "data": [
+      {
+        "text": "let\u0027s test this",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d223b2c9-459e-4a4d-8825-96b96e9232f0",
+    "data": [
+      {
+        "text": "I will test it",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "716c226c-8f20-4502-bf7d-699938bdd11d",
+    "data": [
+      {
+        "text": "I will test ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b1db3f5a-f47c-4abb-815f-b078e6286c70",
+    "data": [
+      {
+        "text": "do ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " want to eat",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4567662a-6142-4025-9cf0-a28336bf284e",
+    "data": [
+      {
+        "text": "are ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " hungry",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "6c0f03e1-ee6a-40d6-8be8-8100cf898428",
+    "data": [
+      {
+        "text": "would ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " like to eat?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "aaf0e3c4-86ea-43a5-91c6-b0df7a83b19c",
+    "data": [
+      {
+        "text": "news for ",
+        "userDefined": false
+      },
+      {
+        "text": "Toronto",
+        "alias": "geo-city",
+        "meta": "@sys.geo-city",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "e6ec1324-fbdd-4ed8-88af-545c127e28cb",
+    "data": [
+      {
+        "text": "Can you tell me the news?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f9ab0bd9-b205-4acf-99fd-d98d27018280",
+    "data": [
+      {
+        "text": "What is the latest news?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "6d353ed8-544e-4913-a50e-029d3304b7f2",
+    "data": [
+      {
+        "text": "what time is it?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "2e3b2261-773b-4d66-84de-d62355abdb39",
+    "data": [
+      {
+        "text": "do you have the time?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "45da61a8-d42a-41e8-b0b7-ef48165634a3",
+    "data": [
+      {
+        "text": "tell me the time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "56a5a337-90cf-4b2a-916f-d7b564d66a36",
+    "data": [
+      {
+        "text": "I need the time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "5caa5b74-370e-45b9-9ba3-3ef299910398",
+    "data": [
+      {
+        "text": "Do ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " know the time?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ec3a82a3-b0b1-45a5-aae9-3a8cb790640e",
+    "data": [
+      {
+        "text": "What day is it?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "3bd8e4cb-3ed7-4b25-8081-b14ed496b9fd",
+    "data": [
+      {
+        "text": "What is the weather in ",
+        "userDefined": false
+      },
+      {
+        "text": "Canada",
+        "alias": "geo-country",
+        "meta": "@sys.geo-country",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "14d2027c-432d-43d6-9626-05612b733844",
+    "data": [
+      {
+        "text": "do ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " know the weather",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "5bc5de79-793f-45f7-898f-e95e72806b7b",
+    "data": [
+      {
+        "text": "weather",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ae0831e3-6840-4d02-855d-3495598fd312",
+    "data": [
+      {
+        "text": "can ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " tell me the weather",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "fa0d5949-b3eb-40bf-8a87-9988eaec4750",
+    "data": [
+      {
+        "text": "What\u0027s the weather?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ca8548af-eceb-4b5f-b9d1-8d045fd3178d",
+    "data": [
+      {
+        "text": "what\u0027s the weather down south?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "cd2561c8-0bce-4437-a22f-f56d406a19a5",
+    "data": [
+      {
+        "text": "what\u0027s the weather in ",
+        "userDefined": false
+      },
+      {
+        "text": "san fran",
+        "alias": "geo-city",
+        "meta": "@sys.geo-city",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "3250fa40-1801-4f0e-83aa-71ffa4f14f97",
+    "data": [
+      {
+        "text": "what\u0027s the weather in ",
+        "userDefined": false
+      },
+      {
+        "text": "san francisco",
+        "alias": "geo-city",
+        "meta": "@sys.geo-city",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "404c9d1a-9ab4-4a63-95e7-b9ff2ba48947",
+    "data": [
+      {
+        "text": "what is the weather in ",
+        "userDefined": false
+      },
+      {
+        "text": "montreal",
+        "alias": "geo-city",
+        "meta": "@sys.geo-city",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c3732d39-a7f7-4a2e-a79d-00a95900e715",
+    "data": [
+      {
+        "text": "weather please",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "be32f61f-8238-4d50-b0dc-c30dd9093f88",
+    "data": [
+      {
+        "text": "what\u0027s the weather in ",
+        "userDefined": false
+      },
+      {
+        "text": "texas",
+        "alias": "geo-city",
+        "meta": "@sys.geo-city",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

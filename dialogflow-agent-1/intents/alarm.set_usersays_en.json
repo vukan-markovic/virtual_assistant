@@ -1,0 +1,447 @@
+[
+  {
+    "id": "f5654e85-e7bd-48cd-a0c2-ea93529b31e8",
+    "data": [
+      {
+        "text": "wake me up at ",
+        "userDefined": false
+      },
+      {
+        "text": "6",
+        "alias": "time",
+        "meta": "@sys.time",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "bd941a7e-0e2d-4432-9cad-c4f360a6c148",
+    "data": [
+      {
+        "text": "new alarm called ",
+        "userDefined": false
+      },
+      {
+        "text": "Gym",
+        "alias": "alarm-name",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " at ",
+        "userDefined": false
+      },
+      {
+        "text": "10",
+        "alias": "time",
+        "meta": "@sys.time",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "9c84069a-9a38-4373-855a-3dc2ea0a518a",
+    "data": [
+      {
+        "text": "set alarm at ",
+        "userDefined": false
+      },
+      {
+        "text": "8 am",
+        "alias": "time",
+        "meta": "@sys.time",
+        "userDefined": true
+      },
+      {
+        "text": " in the morning",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "03471b5a-dd5a-40a2-976a-81417f7e24fc",
+    "data": [
+      {
+        "text": "I need an alarm set at ",
+        "userDefined": false
+      },
+      {
+        "text": "4 am",
+        "alias": "time",
+        "meta": "@sys.time",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b532c1ab-0aa4-4e2a-a77b-ff345c4958b2",
+    "data": [
+      {
+        "text": "could you set an alarm for ",
+        "userDefined": false
+      },
+      {
+        "text": "6 am",
+        "alias": "time",
+        "meta": "@sys.time",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "1d3258c2-421e-4c0d-9925-37da536567e3",
+    "data": [
+      {
+        "text": "set alarm for ",
+        "userDefined": false
+      },
+      {
+        "text": "10 am",
+        "alias": "time",
+        "meta": "@sys.time",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "41895dd2-c35e-4da0-9c37-0b8311d8e95a",
+    "data": [
+      {
+        "text": "could you set an alarm at ",
+        "userDefined": false
+      },
+      {
+        "text": "9 am",
+        "alias": "time",
+        "meta": "@sys.time",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "69cd38be-2780-463b-85f6-202f06fc377e",
+    "data": [
+      {
+        "text": "wake me up",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "cb6bc0f6-134c-47a5-882c-382a68ecdeb3",
+    "data": [
+      {
+        "text": "set new alarm for ",
+        "userDefined": false
+      },
+      {
+        "text": "9 am",
+        "alias": "time",
+        "meta": "@sys.time",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "221c858d-c3b4-4309-a3f6-f8e8c40e757a",
+    "data": [
+      {
+        "text": "set new alarm for ",
+        "userDefined": false
+      },
+      {
+        "text": "10 pm",
+        "alias": "time",
+        "meta": "@sys.time",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "071c98e2-fb05-4ff3-889a-0bce617cb0bf",
+    "data": [
+      {
+        "text": "alarm for ",
+        "userDefined": false
+      },
+      {
+        "text": "tomorrow",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " at ",
+        "userDefined": false
+      },
+      {
+        "text": "8 pm",
+        "alias": "time",
+        "meta": "@sys.time",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "7784bd12-90d4-4481-8edb-4c790d4688d8",
+    "data": [
+      {
+        "text": "alarm for ",
+        "userDefined": false
+      },
+      {
+        "text": "9 am",
+        "alias": "time",
+        "meta": "@sys.time",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a06519a7-1d70-4238-89de-0c63c35be607",
+    "data": [
+      {
+        "text": "I\u0027d like to set an alarm at ",
+        "userDefined": false
+      },
+      {
+        "text": "7 am",
+        "alias": "time",
+        "meta": "@sys.time",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d283782e-f190-45cb-8ace-91e712a2edf2",
+    "data": [
+      {
+        "text": "I want to wake at ",
+        "userDefined": false
+      },
+      {
+        "text": "7 am",
+        "alias": "time",
+        "meta": "@sys.time",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4d9aeaa4-82f9-4a14-8485-cb8c03095948",
+    "data": [
+      {
+        "text": "could you set an alarm",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "85bd0b21-5dbb-43ee-a11f-e65c09f082c5",
+    "data": [
+      {
+        "text": "set an alarm",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "2c5af804-9a86-41b4-bac6-1c36ef7008f8",
+    "data": [
+      {
+        "text": "wake me up at ",
+        "userDefined": false
+      },
+      {
+        "text": "8",
+        "alias": "time",
+        "meta": "@sys.time",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "3a8ddf4f-ecfa-4b32-a459-e6a108c381c9",
+    "data": [
+      {
+        "text": "new alarm called ",
+        "userDefined": false
+      },
+      {
+        "text": "Gym",
+        "alias": "alarm-name",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "fa2c0e42-1b2e-4cb7-ac63-c25426009505",
+    "data": [
+      {
+        "text": "wake me up ",
+        "userDefined": false
+      },
+      {
+        "text": "in 8 hours",
+        "alias": "time",
+        "meta": "@sys.time",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "01bff9f5-cf97-4b3f-bd15-219a5783a94a",
+    "data": [
+      {
+        "text": "new alarm",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "30ed62fd-d94c-4767-9d93-88dfd8aea42e",
+    "data": [
+      {
+        "text": "alarm",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "1f331204-e4d7-4723-9790-3dcd36dfc740",
+    "data": [
+      {
+        "text": "I\u0027d like to set an alarm for ",
+        "userDefined": false
+      },
+      {
+        "text": "7 pm",
+        "alias": "time",
+        "meta": "@sys.time",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0b340c43-2c81-48e6-87e6-791a93f43368",
+    "data": [
+      {
+        "text": "set alarm ",
+        "userDefined": false
+      },
+      {
+        "text": "Work",
+        "alias": "alarm-name",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "tomorrow",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " at ",
+        "userDefined": false
+      },
+      {
+        "text": "9 pm",
+        "alias": "time",
+        "meta": "@sys.time",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "9ae6ceac-6470-436c-a4cd-a939ab268926",
+    "data": [
+      {
+        "text": "wake me up at ",
+        "userDefined": false
+      },
+      {
+        "text": "9 am",
+        "alias": "time",
+        "meta": "@sys.time",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

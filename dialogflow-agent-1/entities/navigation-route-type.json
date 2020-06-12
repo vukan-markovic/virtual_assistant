@@ -1,0 +1,9 @@
+{
+  "id": "0438e7ce-1411-47bf-b186-400c8c43344f",
+  "name": "navigation-route-type",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

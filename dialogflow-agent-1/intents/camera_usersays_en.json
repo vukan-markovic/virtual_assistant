@@ -1,0 +1,113 @@
+[
+  {
+    "id": "8d7efd0f-73b6-4346-a37e-3ec92f97464d",
+    "data": [
+      {
+        "text": "I want to take a picture",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e53cfff5-67c6-49ac-8378-ad7935d95d5a",
+    "data": [
+      {
+        "text": "Open",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "camera",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " application",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "515606b4-4ce2-4b0a-8166-a71cd39cdc9d",
+    "data": [
+      {
+        "text": "camera",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "46fafd02-5d27-4d10-ac9b-b9bc3bff71c7",
+    "data": [
+      {
+        "text": "open",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "camera",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "fe63736e-85bd-4ab6-b214-53ae5bc12ee8",
+    "data": [
+      {
+        "text": "open",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "camera",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " app",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4520e225-c10f-4619-886a-7ef24e5ad59f",
+    "data": [
+      {
+        "text": "Take a picture",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

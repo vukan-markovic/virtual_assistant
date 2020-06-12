@@ -1,0 +1,190 @@
+[
+  {
+    "id": "cca6bb68-3546-43c3-ad6e-2611f6725260",
+    "data": [
+      {
+        "text": "show me ",
+        "userDefined": false
+      },
+      {
+        "text": "all",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " my alarms",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "643ce38f-eebb-4265-bc62-cfe36f5b786d",
+    "data": [
+      {
+        "text": "check ",
+        "userDefined": false
+      },
+      {
+        "text": "all",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " my alarms",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ace07946-24ef-4aff-8d5f-a1d1ecdad94c",
+    "data": [
+      {
+        "text": "my alarms",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "76fa27f6-38dd-478a-9c81-cedfe6054c15",
+    "data": [
+      {
+        "text": "is my alarm set",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b04ce8d7-d466-4725-952d-9fdea281d224",
+    "data": [
+      {
+        "text": "all",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " my alarms",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "aade7d28-b896-40f0-98a9-88cde6925ebb",
+    "data": [
+      {
+        "text": "what time did you set the alarm for",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "74c64407-f248-4cde-9f13-b16c4f3b05a7",
+    "data": [
+      {
+        "text": "for what time do I have my alarm set",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "197f2f61-ade9-44bf-ab38-bd2cbccea681",
+    "data": [
+      {
+        "text": "pull up the list of ",
+        "userDefined": false
+      },
+      {
+        "text": "all",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " my alarms",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c163952d-5ee8-498e-b7ac-3c91c1554b1a",
+    "data": [
+      {
+        "text": "do I have any alarms set",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "64de4da6-30e6-4c84-96bc-f1c0787cc52e",
+    "data": [
+      {
+        "text": "show my alarms",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "cf7b7052-9316-4d9a-a73d-ad9ea06b95a7",
+    "data": [
+      {
+        "text": "alarms list",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c5cad08d-b781-4dc1-820d-839adc701e95",
+    "data": [
+      {
+        "text": "I\u0027d like to see my alarms",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "dcd51513-8715-44d3-9636-c018cc34d1c9",
+    "data": [
+      {
+        "text": "what time is my alarm set for",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

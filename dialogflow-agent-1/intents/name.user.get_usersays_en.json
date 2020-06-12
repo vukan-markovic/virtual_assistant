@@ -1,0 +1,309 @@
+[
+  {
+    "id": "7f99c2e2-10b8-4c95-8e0b-4075d3a90ce5",
+    "data": [
+      {
+        "text": "what is my ",
+        "userDefined": false
+      },
+      {
+        "text": "nickname",
+        "alias": "type",
+        "meta": "@name-type",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "6f8f2d9d-59b2-41de-bd84-1e23170be389",
+    "data": [
+      {
+        "text": "my ",
+        "userDefined": false
+      },
+      {
+        "text": "last name",
+        "alias": "type",
+        "meta": "@name-type",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4caea2a9-3f8a-42ea-a876-12af150abd62",
+    "data": [
+      {
+        "text": "how did I teach you to address me",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "23a5bdbc-c834-40c6-9b88-f01a9ebbcf0a",
+    "data": [
+      {
+        "text": "do I have a name",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "2b68128d-c8a2-4cfb-873f-e2523a482d77",
+    "data": [
+      {
+        "text": "my ",
+        "userDefined": false
+      },
+      {
+        "text": "name",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "853e0b56-f2cd-4dcd-a3ad-57301362f30a",
+    "data": [
+      {
+        "text": "do I have a ",
+        "userDefined": false
+      },
+      {
+        "text": "middle name",
+        "alias": "type",
+        "meta": "@name-type",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "70004857-5b8a-4a85-a890-12d1bed03585",
+    "data": [
+      {
+        "text": "can you say my ",
+        "userDefined": false
+      },
+      {
+        "text": "first name",
+        "alias": "type",
+        "meta": "@name-type",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "202bdbe6-c333-4184-b8ea-ffdfbbdaf7fe",
+    "data": [
+      {
+        "text": "I",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " forgot my ",
+        "userDefined": false
+      },
+      {
+        "text": "nickname",
+        "alias": "type",
+        "meta": "@name-type",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "97af6ee1-131c-4e2a-8e30-2030fe744c10",
+    "data": [
+      {
+        "text": "what is my ",
+        "userDefined": false
+      },
+      {
+        "text": "name",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "7acf6b48-da5c-4938-8ef2-661c651b01ac",
+    "data": [
+      {
+        "text": "tell me my ",
+        "userDefined": false
+      },
+      {
+        "text": "surname",
+        "alias": "type",
+        "meta": "@name-type",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "72dc7b9f-1f7f-4b6d-ad5f-b98d6b71e6e4",
+    "data": [
+      {
+        "text": "do you remember my ",
+        "userDefined": false
+      },
+      {
+        "text": "middle name",
+        "alias": "type",
+        "meta": "@name-type",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "892eb84f-1f02-45ce-9c1c-318f2b1ec0e3",
+    "data": [
+      {
+        "text": "how ",
+        "userDefined": false
+      },
+      {
+        "text": "do",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " you ",
+        "userDefined": false
+      },
+      {
+        "text": "address",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " me",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d829733e-eaab-49d8-9a20-bef4e7155e00",
+    "data": [
+      {
+        "text": "tell me my ",
+        "userDefined": false
+      },
+      {
+        "text": "last name",
+        "alias": "type",
+        "meta": "@name-type",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "9f93277e-a2e7-4db2-a183-edee17d67e91",
+    "data": [
+      {
+        "text": "can you ",
+        "userDefined": false
+      },
+      {
+        "text": "say",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " my ",
+        "userDefined": false
+      },
+      {
+        "text": "name",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e8490ea5-0479-44ba-b3db-ad6086f60862",
+    "data": [
+      {
+        "text": "what are you supposed ",
+        "userDefined": false
+      },
+      {
+        "text": "to",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " call me",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e5df6c6b-da82-4846-8f98-4ea8ffa3c90e",
+    "data": [
+      {
+        "text": "do",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " you remember my ",
+        "userDefined": false
+      },
+      {
+        "text": "surname",
+        "alias": "type",
+        "meta": "@name-type",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

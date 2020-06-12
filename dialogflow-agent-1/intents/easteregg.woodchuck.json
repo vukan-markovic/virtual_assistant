@@ -1,0 +1,37 @@
+{
+  "id": "c21aa009-b390-42a7-bf86-1c458a17086f",
+  "name": "easteregg.woodchuck",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "easteregg.woodchuck",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "All I know is that Chuck Norris would chuck twice as much.",
+            "As much wood as a woodchuck could if a woodchuck could chuck wood!",
+            "Exactly 119 pieces and 7 sticks. I know some woodchucks in the neighborhood.",
+            "This was answered in a scientific journal Annals of Improbable Research in 1995, in a paper entitled \"The Ability of Woodchucks to Chuck Cellulose Fibers\". I won\u0027t spoil it for you. You\u0027re welcome!"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

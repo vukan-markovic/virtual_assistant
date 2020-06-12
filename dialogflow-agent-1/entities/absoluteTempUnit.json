@@ -1,0 +1,9 @@
+{
+  "id": "0a7e7c44-c5d9-4eb0-9a30-fce92a8ff37a",
+  "name": "absoluteTempUnit",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

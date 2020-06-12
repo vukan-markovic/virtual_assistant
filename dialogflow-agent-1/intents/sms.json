@@ -1,0 +1,80 @@
+{
+  "id": "2cff1b51-cad5-475d-967d-0c0e63fdacf1",
+  "name": "sms",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "sms",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "1a0b8c40-e0c9-485a-a8b9-38704215fc52",
+          "required": true,
+          "dataType": "@sys.phone-number",
+          "name": "phone-number",
+          "value": "$phone-number",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Phone number?"
+            },
+            {
+              "lang": "en",
+              "value": "Number?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "a887eb43-d93a-416b-9429-a4c8ff6734f9",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "text",
+          "value": "$text",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Message?"
+            },
+            {
+              "lang": "en",
+              "value": "What is the content of message?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "An sms has been sent",
+            "I sent a text message."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

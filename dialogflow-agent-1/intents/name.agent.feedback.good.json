@@ -1,0 +1,50 @@
+{
+  "id": "007964c6-4413-434e-a0e1-22fa48133537",
+  "name": "name.agent.feedback.good",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "name.agent.feedback.good",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "f2e790eb-8142-441b-89bd-09fbdb7d53af",
+          "required": false,
+          "dataType": "@name-type",
+          "name": "type",
+          "value": "$type",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "Thank you!",
+            "Thank you very much, i like your name too.",
+            "Thanks, your name is also very nice.",
+            "I\u0027m so glad you like it."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

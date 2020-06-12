@@ -1,0 +1,71 @@
+[
+  {
+    "id": "c8b7b9dd-c1c4-46fe-a39a-8f5d935259aa",
+    "data": [
+      {
+        "text": "give me app settings",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "05dc7701-fdd5-48ec-af71-92222e381c27",
+    "data": [
+      {
+        "text": "i ",
+        "userDefined": false
+      },
+      {
+        "text": "want",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " to see app details",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "943280e8-7775-470c-a50e-dd994ba1dfe9",
+    "data": [
+      {
+        "text": "app settings",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "76f69e32-a3ee-42ad-a1e5-3fa5c5e91812",
+    "data": [
+      {
+        "text": "application details",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0c23d889-460a-4660-8c45-0e6e2e7ae9f0",
+    "data": [
+      {
+        "text": "Show me app details",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

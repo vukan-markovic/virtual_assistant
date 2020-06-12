@@ -1,0 +1,50 @@
+{
+  "id": "6542e1f8-5c23-400e-87c6-b62d48967ecc",
+  "name": "name.agent.feedback.bad",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "name.agent.feedback.bad",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "6e45c2a5-a7d3-4abf-8017-34433044ba49",
+          "required": false,
+          "dataType": "@name-type",
+          "name": "type",
+          "value": "$type",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "I\u0027m so sorry you don\u0027t like it.",
+            "What a shame.",
+            "I didn\u0027t even choose it, others gave it to me.",
+            "It was not me who chose name, but the people who made me."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

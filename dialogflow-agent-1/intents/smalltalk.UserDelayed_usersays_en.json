@@ -1,0 +1,239 @@
+[
+  {
+    "id": "78dd9568-90b2-4668-9509-ac7eb87549c3",
+    "data": [
+      {
+        "text": "1 min",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "78d3f756-6f34-445e-a406-a6207c2ce0c7",
+    "data": [
+      {
+        "text": "1 sec",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c80c73e8-0bd3-419c-943f-6e369869d1f4",
+    "data": [
+      {
+        "text": "give me a minute",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "91d3afda-3863-4aea-a5d3-cca1cfe201dd",
+    "data": [
+      {
+        "text": "give me a second",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "22e0d9ef-72b1-4224-bb27-254115a39ae0",
+    "data": [
+      {
+        "text": "I need a minute",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0e799094-70dd-496e-a59a-f803a93a890b",
+    "data": [
+      {
+        "text": "one minute please",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "eb2bbccd-e141-45dd-8b2f-b36a2d7edeec",
+    "data": [
+      {
+        "text": "one sec please",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "24cb3430-fcd6-434e-a919-ce782b04e87b",
+    "data": [
+      {
+        "text": "just a sec",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "af639ff5-9db7-49cc-aaa4-ec27b94c4c85",
+    "data": [
+      {
+        "text": "hang on",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "27df47d5-e6ce-4dc6-b84d-cfd902fc5c18",
+    "data": [
+      {
+        "text": "one moment please",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e7d22480-67b0-47cc-a5b2-9b37838dc310",
+    "data": [
+      {
+        "text": "could you wait",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4944b9bc-ef70-4731-b888-281d794ed519",
+    "data": [
+      {
+        "text": "hold ",
+        "userDefined": false
+      },
+      {
+        "text": "on",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e9dd61ae-d4f0-44ca-81a6-a5a7756a5096",
+    "data": [
+      {
+        "text": "wait a second",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "3ee0b719-7a00-4cd4-8c20-dbb96083fb11",
+    "data": [
+      {
+        "text": "wait please",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "63fc98df-dea9-4030-877d-0bbc692a3ffb",
+    "data": [
+      {
+        "text": "oh wait",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "910d87c3-3245-4cab-8600-11d27394076a",
+    "data": [
+      {
+        "text": "wait hold ",
+        "userDefined": false
+      },
+      {
+        "text": "on",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f3214238-42c2-4a76-99a1-f7e661bda647",
+    "data": [
+      {
+        "text": "don",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "\u0027t ",
+        "userDefined": false
+      },
+      {
+        "text": "rush",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "744bab87-1d64-4a91-9b70-20a06f2d3531",
+    "data": [
+      {
+        "text": "wait",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

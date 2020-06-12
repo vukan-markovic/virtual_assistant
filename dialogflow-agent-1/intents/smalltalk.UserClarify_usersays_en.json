@@ -1,0 +1,203 @@
+[
+  {
+    "id": "9f674d32-c766-4316-86c2-ac7ed1e3c8a3",
+    "data": [
+      {
+        "text": "I don\u0027t get this",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "757f7e65-7136-45b4-8d92-eb7047362e6b",
+    "data": [
+      {
+        "text": "What\u0027s this?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "2d397246-da1a-449c-a7a7-b0b83c0f3212",
+    "data": [
+      {
+        "text": "What are you talking about?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "3db546b6-6a25-4e1f-b1b1-5da1626656ea",
+    "data": [
+      {
+        "text": "I don\u0027t get it",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e31467e1-e9d9-4c07-b745-f10e5f1cee55",
+    "data": [
+      {
+        "text": "what does that mean",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "95a92a23-53dd-4f07-9860-38424fedfc24",
+    "data": [
+      {
+        "text": "what are ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " talking about?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "98c987d4-ee52-4afa-b654-3474826306ad",
+    "data": [
+      {
+        "text": "huh?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d15f355f-7e57-472d-a979-999df634114d",
+    "data": [
+      {
+        "text": "I don\u0027t understand",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "3b3e1982-a4e4-4ff8-aec0-f4168abcb6e2",
+    "data": [
+      {
+        "text": "I\u0027m not too sure",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a219f1f2-e2a2-47ed-9c32-68607933be45",
+    "data": [
+      {
+        "text": "I\u0027m not sure",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "896afbaa-1d2a-4386-aa2b-04393ce367ea",
+    "data": [
+      {
+        "text": "not sure",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "7a82ac50-9f6a-470d-814b-87ef1bc967b3",
+    "data": [
+      {
+        "text": "what do you mean",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "9dacd5f1-885c-4a7a-81a7-c5429962f879",
+    "data": [
+      {
+        "text": "but what do you mean",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "00f0ed89-f58b-4b78-817f-28f753a8a954",
+    "data": [
+      {
+        "text": "what do you mean exactly",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "1eaee71a-89cf-43b0-a0c5-20778596531c",
+    "data": [
+      {
+        "text": "what exactly do you mean",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "5403a35a-bffc-4fa1-861a-209b2eff57ae",
+    "data": [
+      {
+        "text": "is that what you mean",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "id": "3e5882a7-fa6e-4b5f-a138-74091114e4bc",
+  "name": "navigation-road-type",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

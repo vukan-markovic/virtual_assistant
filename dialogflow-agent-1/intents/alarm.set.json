@@ -1,0 +1,77 @@
+{
+  "id": "96b652e2-2649-4580-a83f-69e569dd0141",
+  "name": "alarm.set",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "alarm.set",
+      "affectedContexts": [
+        {
+          "name": "alarm",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "8225f873-8d26-421d-9249-f1abd6dbf3dd",
+          "required": false,
+          "dataType": "@sys.any",
+          "name": "alarm-name",
+          "value": "$alarm-name",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "08b8062e-c2ea-44b6-bd8e-cb6c1bc2f5ab",
+          "required": true,
+          "dataType": "@sys.time",
+          "name": "time",
+          "value": "$time",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "When?"
+            },
+            {
+              "lang": "en",
+              "value": "What time?"
+            },
+            {
+              "lang": "en",
+              "value": "At what time?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": "I set your alarm for $time."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

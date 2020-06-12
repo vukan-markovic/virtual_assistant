@@ -1,0 +1,37 @@
+{
+  "id": "f0e095e2-f1a5-457c-8dc4-1f8c4916e2fe",
+  "name": "smalltalk.user.wants_to_talk",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "smalltalk.user.wants_to_talk",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "I\u0027m here to chat anytime you like.",
+            "Good conversation really makes my day.",
+            "I\u0027m always here to lend an ear.",
+            "Talking is what I do best."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

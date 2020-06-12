@@ -1,0 +1,74 @@
+{
+  "id": "038c0321-c595-4f6c-ac54-3bedb66cd1d1",
+  "name": "web.search",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "web.search",
+      "affectedContexts": [
+        {
+          "name": "web-search",
+          "parameters": {},
+          "lifespan": 5
+        },
+        {
+          "name": "control_lists_web_search",
+          "parameters": {},
+          "lifespan": 5
+        },
+        {
+          "name": "websearch-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "e533b8cb-6f33-4b56-8937-77223be9183e",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "q",
+          "value": "$q",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What do you want to search?"
+            },
+            {
+              "lang": "en",
+              "value": "What to look for?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "I\u0027m searching for $q.",
+            "Here are the search results for $q."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

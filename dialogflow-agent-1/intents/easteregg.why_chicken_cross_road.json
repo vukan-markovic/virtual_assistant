@@ -1,0 +1,36 @@
+{
+  "id": "91630746-a2a2-4a62-85f4-d7952d8e8290",
+  "name": "easteregg.why_chicken_cross_road",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "easteregg.why_chicken_cross_road",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "To complete another level of Angry Birds.",
+            "It was Chuck Norris\u0027s chicken. That\u0027s what she does.",
+            "To get to the other slide."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

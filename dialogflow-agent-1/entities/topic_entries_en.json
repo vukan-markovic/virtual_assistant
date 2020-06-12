@@ -1,0 +1,135 @@
+[
+  {
+    "value": "arts",
+    "synonyms": [
+      "arts"
+    ]
+  },
+  {
+    "value": "business",
+    "synonyms": [
+      "business"
+    ]
+  },
+  {
+    "value": "consulting",
+    "synonyms": [
+      "consulting"
+    ]
+  },
+  {
+    "value": "crime",
+    "synonyms": [
+      "crime"
+    ]
+  },
+  {
+    "value": "education",
+    "synonyms": [
+      "education"
+    ]
+  },
+  {
+    "value": "fashion",
+    "synonyms": [
+      "fashion"
+    ]
+  },
+  {
+    "value": "finance",
+    "synonyms": [
+      "finance"
+    ]
+  },
+  {
+    "value": "financial",
+    "synonyms": [
+      "financial"
+    ]
+  },
+  {
+    "value": "football",
+    "synonyms": [
+      "football"
+    ]
+  },
+  {
+    "value": "game",
+    "synonyms": [
+      "game"
+    ]
+  },
+  {
+    "value": "hockey",
+    "synonyms": [
+      "hockey"
+    ]
+  },
+  {
+    "value": "international",
+    "synonyms": [
+      "international"
+    ]
+  },
+  {
+    "value": "local",
+    "synonyms": [
+      "local"
+    ]
+  },
+  {
+    "value": "music",
+    "synonyms": [
+      "music"
+    ]
+  },
+  {
+    "value": "political",
+    "synonyms": [
+      "political"
+    ]
+  },
+  {
+    "value": "politics",
+    "synonyms": [
+      "politics"
+    ]
+  },
+  {
+    "value": "science",
+    "synonyms": [
+      "science"
+    ]
+  },
+  {
+    "value": "space",
+    "synonyms": [
+      "space"
+    ]
+  },
+  {
+    "value": "sports",
+    "synonyms": [
+      "sports"
+    ]
+  },
+  {
+    "value": "technology",
+    "synonyms": [
+      "tech",
+      "technology"
+    ]
+  },
+  {
+    "value": "world",
+    "synonyms": [
+      "world"
+    ]
+  },
+  {
+    "value": "world politics",
+    "synonyms": [
+      "world politics"
+    ]
+  }
+]

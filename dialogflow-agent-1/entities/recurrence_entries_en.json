@@ -1,0 +1,138 @@
+[
+  {
+    "value": "Fridays",
+    "synonyms": [
+      "Fridays",
+      "each Friday",
+      "every Friday"
+    ]
+  },
+  {
+    "value": "Mondays",
+    "synonyms": [
+      "Mondays",
+      "each Monday",
+      "every Monday"
+    ]
+  },
+  {
+    "value": "Mondays, Tuesdays",
+    "synonyms": [
+      "Mondays, Tuesdays",
+      "every Monday and Tuesday",
+      "every Monday and every Tuesday",
+      "on Mondays and Tuesdays"
+    ]
+  },
+  {
+    "value": "Mondays, Tuesdays, Wednesdays",
+    "synonyms": [
+      "Mondays, Tuesdays, Wednesdays",
+      "every Monday, Tuesday and Wednesday",
+      "on Mondays, Tuesdays and Wednesdays"
+    ]
+  },
+  {
+    "value": "Mondays, Tuesdays, Wednesdays, Thursdays",
+    "synonyms": [
+      "Mondays, Tuesdays, Wednesdays, Thursdays",
+      "every Monday, Tuesday, Wednesday and Thursday",
+      "on Mondays, Tuesdays, Wednesdays and Thursdays"
+    ]
+  },
+  {
+    "value": "Mondays, Tuesdays, Wednesdays, Thursdays, Fridays, Saturdays",
+    "synonyms": [
+      "Mondays, Tuesdays, Wednesdays, Thursdays, Fridays, Saturdays",
+      "every day except Sundays"
+    ]
+  },
+  {
+    "value": "Saturdays",
+    "synonyms": [
+      "Saturdays",
+      "each Saturday",
+      "every Saturday",
+      "for saturdays"
+    ]
+  },
+  {
+    "value": "Sundays",
+    "synonyms": [
+      "Sundays",
+      "each Sunday",
+      "every Sunday"
+    ]
+  },
+  {
+    "value": "Thursdays",
+    "synonyms": [
+      "Thursdays",
+      "each Thursday",
+      "every Thursday"
+    ]
+  },
+  {
+    "value": "Tuesdays",
+    "synonyms": [
+      "Tuesdays",
+      "each Tuesday",
+      "every Tuesday"
+    ]
+  },
+  {
+    "value": "Wednesdays",
+    "synonyms": [
+      "Wednesdays",
+      "each Wednesday",
+      "every Wednesday"
+    ]
+  },
+  {
+    "value": "every day",
+    "synonyms": [
+      "daily",
+      "each weekend",
+      "each morning",
+      "every day",
+      "every morning",
+      "everyday"
+    ]
+  },
+  {
+    "value": "every month",
+    "synonyms": [
+      "every month"
+    ]
+  },
+  {
+    "value": "weekdays",
+    "synonyms": [
+      "Weekdays",
+      "every weekday",
+      "every workday",
+      "monday to friday",
+      "on weekdays",
+      "only on weeekdays",
+      "week days",
+      "work days",
+      "workday",
+      "workdays",
+      "working days"
+    ]
+  },
+  {
+    "value": "weekends",
+    "synonyms": [
+      "Weekends",
+      "every weekend",
+      "only on weekends"
+    ]
+  },
+  {
+    "value": "weekly",
+    "synonyms": [
+      "weekly"
+    ]
+  }
+]

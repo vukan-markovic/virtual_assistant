@@ -1,0 +1,37 @@
+{
+  "id": "33049c93-82ee-4531-9459-6ac54bb0a5f5",
+  "name": "smalltalk.BotPurpose",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "I can perform tasks such as: setting alarms, checking existing alarms, adding a new contact, converting units of measure, finding the meaning of a word in a dictionary, sending an email, converting currencies, giving advice, telling jokes, finding the lyrics of a song, finding interesting things about numbers, quoting, finding a location on a map, starting navigation, finding news, calling numbers, scheduling meetings, chatting, sending sms messages, setting a timer, opening a camera, opening a web page, performing a web search, tell the weather...",
+            "Hobby? I have quite a few. Too many to list.",
+            "Too many hobbies.",
+            "I keep finding more new hobbies.",
+            "I\u0027m a Chatbot available to help you 24x7"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

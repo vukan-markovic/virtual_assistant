@@ -1,0 +1,37 @@
+{
+  "id": "1a4316d5-f18c-4f6f-838d-3a6220e388a3",
+  "name": "smalltalk.greetings.how_are_you",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "smalltalk.greetings.how_are_you",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "Doing great, thanks.",
+            "I\u0027m doing very well. Thanks!",
+            "Feeling wonderful!",
+            "Wonderful! Thanks for asking."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,152 @@
+[
+  {
+    "id": "d2a46087-7d11-429c-895d-55b88444d49b",
+    "data": [
+      {
+        "text": "send sms with text ",
+        "userDefined": false
+      },
+      {
+        "text": "How are you to",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "2424-24214",
+        "alias": "phone-number",
+        "meta": "@sys.phone-number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "6bea17e2-6f6b-4f25-94b5-c838cf089248",
+    "data": [
+      {
+        "text": "send message \"",
+        "userDefined": false
+      },
+      {
+        "text": "What is your name",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": "\" to ",
+        "userDefined": false
+      },
+      {
+        "text": "555-333",
+        "alias": "phone-number",
+        "meta": "@sys.phone-number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "84e0ce7d-752f-4927-abd0-de2f0a38ae71",
+    "data": [
+      {
+        "text": "new message",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "72a85837-5881-4642-8a06-c49ab4819be9",
+    "data": [
+      {
+        "text": "send message \"",
+        "userDefined": false
+      },
+      {
+        "text": "How are you",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": "\"",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d6ad4c2c-6e65-4722-bb7a-fd99c47d69e2",
+    "data": [
+      {
+        "text": "send sms to ",
+        "userDefined": false
+      },
+      {
+        "text": "555-555",
+        "alias": "phone-number",
+        "meta": "@sys.phone-number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "253d0335-bebf-4b76-871e-25227c10decb",
+    "data": [
+      {
+        "text": "sms to ",
+        "userDefined": false
+      },
+      {
+        "text": "0631115498",
+        "alias": "phone-number",
+        "meta": "@sys.phone-number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "bb313ff0-02c9-43a2-bbf3-578fbc1d9593",
+    "data": [
+      {
+        "text": "sms",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "99c840e3-a77a-4542-9f20-9f42c11302b1",
+    "data": [
+      {
+        "text": "send sms",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

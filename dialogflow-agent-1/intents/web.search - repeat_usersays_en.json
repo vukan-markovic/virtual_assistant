@@ -1,0 +1,122 @@
+[
+  {
+    "id": "63e9917a-ef83-4cdb-b3da-a3ef23eb2641",
+    "data": [
+      {
+        "text": "do it again",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "1dc84e24-5254-4789-9c19-5000a9cf6c74",
+    "data": [
+      {
+        "text": "say it again",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "6f48d628-e6a4-4b4d-8b0d-ce642a843cbd",
+    "data": [
+      {
+        "text": "say the same again",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "2fd0204c-574a-43e6-9438-155f5032762e",
+    "data": [
+      {
+        "text": "repeat these results",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "df60834b-e96a-467e-99e3-01efac85a253",
+    "data": [
+      {
+        "text": "could you repeat that",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "edeb0809-f7af-4f87-ad27-7b71219c73c9",
+    "data": [
+      {
+        "text": "please repeat that",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "fd964d21-3c65-46e1-b9af-2725264e6fac",
+    "data": [
+      {
+        "text": "repeat",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "95b6fb28-d980-465d-8b11-9b3f1a6762e8",
+    "data": [
+      {
+        "text": "repeat what you\u0027ve just said",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "7fbe4bef-26e0-4a9d-bf31-f246b91be921",
+    "data": [
+      {
+        "text": "come again",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "9df639e3-1aa8-4fce-bd6b-d8a1a5790962",
+    "data": [
+      {
+        "text": "repeat it",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

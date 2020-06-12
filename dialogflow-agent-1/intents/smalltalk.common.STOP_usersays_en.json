@@ -1,0 +1,504 @@
+[
+  {
+    "id": "c0389e2b-f17b-4fcb-85c4-5f14de6cc0cb",
+    "data": [
+      {
+        "text": "please stop this now",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4da367b7-5b85-4ea1-a6fc-547baf30c30e",
+    "data": [
+      {
+        "text": "enough please",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "aa330023-ae11-48fc-b2c7-8520017f7b06",
+    "data": [
+      {
+        "text": "stop this now",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "fefaafd4-b4da-4887-af3a-b303b9630c93",
+    "data": [
+      {
+        "text": "stop doing that",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "9db9a660-360c-457d-be87-f2266f6ce7d1",
+    "data": [
+      {
+        "text": "please stop this",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "1d3c48bb-b170-45dd-bb6a-1690f237e5ec",
+    "data": [
+      {
+        "text": "now you\u0027re fired",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "dcf77629-b23b-4222-9665-9b98ccc37cc2",
+    "data": [
+      {
+        "text": "I will fire ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b94e8af3-c3fa-4cac-b263-6f3577912695",
+    "data": [
+      {
+        "text": "you are fired",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "95ee79da-329a-407b-a8ce-aca3fe8d0702",
+    "data": [
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " should be fired",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c3c2ed05-21cb-40f1-bfb2-954db762e616",
+    "data": [
+      {
+        "text": "we\u0027re done",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "1e8740af-0dcb-4b06-8dc3-66022e2aaad5",
+    "data": [
+      {
+        "text": "I\u0027m done here",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "f3a76825-4579-4f0a-9a37-433b240e1aa5",
+    "data": [
+      {
+        "text": "I\u0027m finished here",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "021c5cbc-f46e-4f97-98e2-c1854d3cda36",
+    "data": [
+      {
+        "text": "I\u0027m finished with ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8666baba-dfb4-4346-bab3-2bb9fa0e1a88",
+    "data": [
+      {
+        "text": "It\u0027s over",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b546566d-c2d1-4f0a-9728-0b82b1207525",
+    "data": [
+      {
+        "text": "I want to fire ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e011c78b-38c5-4170-a8bf-672f50b6e24e",
+    "data": [
+      {
+        "text": "I\u0027m firing ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "14444c58-884e-45f2-9555-d7480496f056",
+    "data": [
+      {
+        "text": "you are dismissed",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "493cadc1-197a-4473-af21-30d0301403bb",
+    "data": [
+      {
+        "text": "time to fire ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "9708f084-0ddc-4280-b0dd-3342bf887474",
+    "data": [
+      {
+        "text": "you\u0027re fired",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8df27e12-274a-4598-a2a3-9d3f6bef9514",
+    "data": [
+      {
+        "text": "you\u0027ve been terminated",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8c0571f0-1d93-4ddd-ad87-4e6510cf7bf4",
+    "data": [
+      {
+        "text": "stop bugging me",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "23d30546-5866-4532-8f0c-7c3c2302722a",
+    "data": [
+      {
+        "text": "stop immediately",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f238277b-3f7c-4ac2-a13c-06860a1a1341",
+    "data": [
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " need to stop",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f564cb32-d8ad-47e9-ad66-eeef1d7c425d",
+    "data": [
+      {
+        "text": "How do ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " stop?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a47791b0-2ef7-42a6-a944-8ac8830dd626",
+    "data": [
+      {
+        "text": "quit",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "721b4d1b-ad12-4cc8-8ade-3441e71224c5",
+    "data": [
+      {
+        "text": "please stop messaging me",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "dc5a2579-acf6-45c4-b388-60018c6762b7",
+    "data": [
+      {
+        "text": "please don\u0027t message",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "042137ff-fd3e-4da0-ba2f-40d8cbc74bf5",
+    "data": [
+      {
+        "text": "don\u0027t message me",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "53bfcf09-1830-4573-9d0c-caeb2eafd9e6",
+    "data": [
+      {
+        "text": "I don\u0027t want to ",
+        "userDefined": false
+      },
+      {
+        "text": "chat",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "74930f1e-a036-43b6-bb09-c5831d968835",
+    "data": [
+      {
+        "text": "Stop sending me messages immediately",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "961ed0af-13e2-4624-9cbc-328d505da128",
+    "data": [
+      {
+        "text": "No messages please",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "2cb70b69-39d3-4b8a-bff6-4eec2c2962fd",
+    "data": [
+      {
+        "text": "stop sending me messages now",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4e82f14c-f015-41b4-bd56-de6db37a8e72",
+    "data": [
+      {
+        "text": "why do ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " keep sending me messages",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "cda3160e-24c3-44d0-b013-ef4b8be581f9",
+    "data": [
+      {
+        "text": "stop sending me messages",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d137f0f9-f400-4ed3-a5d8-a8b9ba8dab96",
+    "data": [
+      {
+        "text": "please stop",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "60ff6aea-17c6-4dd6-ba9b-6121eaec617f",
+    "data": [
+      {
+        "text": "stop this",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d26feed4-63d8-4343-8815-1d6ab665ba29",
+    "data": [
+      {
+        "text": "done",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

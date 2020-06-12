@@ -1,0 +1,84 @@
+{
+  "id": "3229f465-63c2-4825-95ac-68e51d92939d",
+  "name": "News",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "news.search",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "abecb0b5-bcd6-404b-9f80-35fd06e67c11",
+          "required": false,
+          "dataType": "@sys.any",
+          "name": "keyword",
+          "value": "$keyword",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "6c9c3981-70a0-4fd6-8f4a-ae1dd60d8a3b",
+          "required": false,
+          "dataType": "@sys.date-time",
+          "name": "date",
+          "value": "$date",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "d1c76294-425a-4f62-a977-7243a076af37",
+          "required": false,
+          "dataType": "@topic",
+          "name": "category",
+          "value": "$category",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "5e8855d3-21ab-4ee8-a040-f77be60c0f96",
+          "required": false,
+          "dataType": "@news-source",
+          "name": "source",
+          "value": "$source",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "Sorry, i didn\u0027t find any news.",
+            "I can\u0027t find any news."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

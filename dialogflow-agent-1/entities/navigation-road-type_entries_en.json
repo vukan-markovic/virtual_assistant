@@ -1,0 +1,61 @@
+[
+  {
+    "value": "freeway",
+    "synonyms": [
+      "avoiding toll roads",
+      "avoiding turnpikes",
+      "free way",
+      "freeway",
+      "freeways",
+      "without toll roads",
+      "without tolls"
+    ]
+  },
+  {
+    "value": "highway",
+    "synonyms": [
+      "express way",
+      "high way",
+      "high ways",
+      "highway",
+      "highway route",
+      "highways",
+      "motor way",
+      "motorway",
+      "using highways"
+    ]
+  },
+  {
+    "value": "no highway",
+    "synonyms": [
+      "avoid high ways",
+      "avoid highways",
+      "avoiding high ways",
+      "avoiding highways",
+      "no highways",
+      "without high ways",
+      "without highways",
+      "without using highways"
+    ]
+  },
+  {
+    "value": "no roadwork",
+    "synonyms": [
+      "avoiding roadworks",
+      "excluding roadworks",
+      "no road works",
+      "without road works"
+    ]
+  },
+  {
+    "value": "no traffic",
+    "synonyms": [
+      "avoiding heavy traffic",
+      "avoiding traffic",
+      "avoiding traffic jams",
+      "light traffic",
+      "no traffic",
+      "with light traffic"
+    ]
+  }
+]

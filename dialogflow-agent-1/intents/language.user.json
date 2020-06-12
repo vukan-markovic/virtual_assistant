@@ -1,0 +1,50 @@
+{
+  "id": "b922874b-3c9d-4de8-afaf-a59e838e776f",
+  "name": "language.user",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "language.user",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "6a996f8a-05fe-4d2e-be4d-a665319488d4",
+          "required": false,
+          "dataType": "@sys.language",
+          "name": "language",
+          "value": "$language",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "In the options menu you have Assistant language option and there you can see all languages i speak and select the desired language.",
+            "Great, go to options to see if i can speak that language too.",
+            "You can see in options menu all languages i speak and select the language you prefer.",
+            "Very nice language, you can go to options menu to set that language if it is available."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,75 @@
+{
+  "id": "0064f8a5-76bc-4668-882a-04fad49bf6f5",
+  "name": "Exchange",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "currency.convert",
+      "affectedContexts": [
+        {
+          "name": "convert-currency",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "57ca91a5-6c28-4233-9cc8-117bd855e59e",
+          "required": false,
+          "dataType": "@sys.currency-name",
+          "name": "from",
+          "value": "$from",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "b484779d-6a99-43af-bebe-41f0e4d81bf6",
+          "required": false,
+          "dataType": "@sys.currency-name",
+          "name": "to",
+          "value": "$to",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "89a99b91-088c-4308-8335-e891a67f0dff",
+          "required": false,
+          "dataType": "@sys.number",
+          "name": "quantity",
+          "value": "$quantity",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": "Sorry, I failed to convert."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

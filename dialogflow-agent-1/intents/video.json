@@ -1,0 +1,72 @@
+{
+  "id": "73e4b7f6-f79a-486a-9eff-f53031a6817b",
+  "name": "video",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "video.open",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "f7ccbaba-4d8d-4da1-836a-2cad6afae343",
+          "required": false,
+          "dataType": "@open",
+          "name": "open",
+          "value": "$open",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "ed47947f-af0e-4675-9463-2363d7547a2c",
+          "required": false,
+          "dataType": "@sys.location",
+          "name": "location",
+          "value": "$location",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "4050373f-3c78-4a47-b78d-0e8fd2e38ec0",
+          "required": false,
+          "dataType": "@music-artist",
+          "name": "music-artist",
+          "value": "$music-artist",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "Here is video app.",
+            "I\u0027ll open video application."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,89 @@
+{
+  "id": "9ed61ac5-d1f2-40d6-bcc2-373a756b4720",
+  "name": "email",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "email.send",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "62d3b2ce-2488-4042-ad53-b80e0a656f91",
+          "required": true,
+          "dataType": "@sys.email",
+          "name": "email",
+          "value": "$email",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "To whom should I send?"
+            },
+            {
+              "lang": "en",
+              "value": "The recipient?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "5ab3f886-ff0d-4274-9cd1-d95d1adb6c7b",
+          "required": false,
+          "dataType": "@sys.any",
+          "name": "subject",
+          "value": "$subject",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "03c90842-3d40-4a34-9aaa-b743370818ac",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "text",
+          "value": "$text",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What is the content of email?"
+            },
+            {
+              "lang": "en",
+              "value": "What is the content of the message?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": "An email has been sent."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

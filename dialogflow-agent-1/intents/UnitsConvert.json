@@ -1,0 +1,78 @@
+{
+  "id": "d0588c66-0ffd-4997-a07b-e192938a2f9b",
+  "name": "UnitsConvert",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "units.convert",
+      "affectedContexts": [
+        {
+          "name": "convert-units",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "e7af1f68-8cf8-4948-aac4-fee95cf882a5",
+          "required": false,
+          "dataType": "@sys.number",
+          "name": "amount",
+          "value": "$amount",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "b58cca23-8afb-476f-a4f8-845656095034",
+          "required": false,
+          "dataType": "@unit",
+          "name": "from",
+          "value": "$from",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "fb3aa75f-e9ac-4dfd-80f5-965337fa5e42",
+          "required": false,
+          "dataType": "@unit",
+          "name": "to",
+          "value": "$to",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "Sorry, I failed to convert.",
+            "I failed to convert, can we try again?"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,68 @@
+{
+  "id": "9f346517-4b87-4b0c-b931-3cf693eea866",
+  "name": "maps.search",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "maps.search",
+      "affectedContexts": [
+        {
+          "name": "maps-search",
+          "parameters": {},
+          "lifespan": 3
+        }
+      ],
+      "parameters": [
+        {
+          "id": "1ca94c31-993e-482e-80a5-4c57d4058998",
+          "required": true,
+          "dataType": "@sys.location",
+          "name": "location",
+          "value": "$location",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What do you want to find?"
+            },
+            {
+              "lang": "en",
+              "value": "Location?"
+            },
+            {
+              "lang": "en",
+              "value": "What to search on map?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "Sorry, i can\u0027t find $location on the map.",
+            "I couldn\u0027t find that location on the map."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

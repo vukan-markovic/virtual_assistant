@@ -1,0 +1,169 @@
+[
+  {
+    "id": "e519301f-bec2-4d0e-85d8-bc935ef290b5",
+    "data": [
+      {
+        "text": "send new email with title ",
+        "userDefined": false
+      },
+      {
+        "text": "Kako si",
+        "alias": "subject",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " and message ",
+        "userDefined": false
+      },
+      {
+        "text": "Kako si danas, trebali bi da se vidimo",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f2472271-0f44-4892-8ed0-9da5afab2e40",
+    "data": [
+      {
+        "text": "send email for ",
+        "userDefined": false
+      },
+      {
+        "text": "neko@gmail.com",
+        "alias": "email",
+        "meta": "@sys.email",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b99a6b8e-b766-4f28-98e4-3b783ebaba4a",
+    "data": [
+      {
+        "text": "send email with subject ",
+        "userDefined": false
+      },
+      {
+        "text": "Pitanje",
+        "alias": "subject",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": ", text is ",
+        "userDefined": false
+      },
+      {
+        "text": "Kako si",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4546b81f-9ba6-4468-b988-18a21ce157f5",
+    "data": [
+      {
+        "text": "email",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b5e01e92-8b6f-4937-8d65-1eb906158cb7",
+    "data": [
+      {
+        "text": "new email to ",
+        "userDefined": false
+      },
+      {
+        "text": "sanja.vucic@gmail.com",
+        "alias": "email",
+        "meta": "@sys.email",
+        "userDefined": true
+      },
+      {
+        "text": " with title ",
+        "userDefined": false
+      },
+      {
+        "text": "Naslov",
+        "alias": "subject",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " and content ",
+        "userDefined": false
+      },
+      {
+        "text": "Cao",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "fed59db1-5ca2-413c-807e-8cf800980385",
+    "data": [
+      {
+        "text": "i ",
+        "userDefined": false
+      },
+      {
+        "text": "want",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " to send a new email",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4d846d9b-e7ad-44b7-b195-8b492016fd1b",
+    "data": [
+      {
+        "text": "send an email to ",
+        "userDefined": false
+      },
+      {
+        "text": "vukan.markovic97@gmail.com",
+        "alias": "email",
+        "meta": "@sys.email",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

@@ -1,0 +1,86 @@
+{
+  "id": "12eecad9-689b-42c1-8234-ff8b19ef24d0",
+  "name": "name.agent.change",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "name.agent.change",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "24cedb61-0f22-4c91-8a49-5777eb708763",
+          "required": false,
+          "dataType": "@sys.given-name",
+          "name": "given-name",
+          "value": "$given-name",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "1b08663b-0f99-4011-bbce-0f194a11ef21",
+          "required": false,
+          "dataType": "@sys.last-name",
+          "name": "last-name",
+          "value": "$last-name",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "243ac79e-64d7-4f64-8c6c-ac35455b3857",
+          "required": false,
+          "dataType": "@nick-name",
+          "name": "nick-name",
+          "value": "$nick-name",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "b4177739-66b4-4aea-b66a-e6f794d8aca3",
+          "required": false,
+          "dataType": "@name-type",
+          "name": "type",
+          "value": "$type",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "No, i like my name.",
+            "Alex is great name, why would you want me to change it.",
+            "I\u0027d rather not, I like my current name.",
+            "Alex is a very nice name, I\u0027ll keep it anyway."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

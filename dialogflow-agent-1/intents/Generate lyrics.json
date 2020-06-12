@@ -1,0 +1,71 @@
+{
+  "id": "dc76191c-8ea0-4791-a11b-cbe0ab8e3178",
+  "name": "Generate lyrics",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "music.play",
+      "affectedContexts": [
+        {
+          "name": "play-music",
+          "parameters": {},
+          "lifespan": 5
+        },
+        {
+          "name": "music-player-control",
+          "parameters": {},
+          "lifespan": 3
+        }
+      ],
+      "parameters": [
+        {
+          "id": "55b75a1c-402f-445c-a596-8328adeb7b57",
+          "required": false,
+          "dataType": "@song",
+          "name": "song",
+          "value": "$song",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "888db88b-6d4c-43f7-b826-79613b2defb0",
+          "required": false,
+          "dataType": "@sys.music-artist",
+          "name": "artist",
+          "value": "$artist",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": true
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "I can\u0027t find that song, please try another one?",
+            "I can\u0027t find lyrics of that song, sorry."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

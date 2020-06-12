@@ -1,0 +1,3504 @@
+[
+  {
+    "value": "10 Downing Street",
+    "synonyms": [
+      "10 Downing Street"
+    ]
+  },
+  {
+    "value": "1044 Metro Plus",
+    "synonyms": [
+      "1044 Metro Plus"
+    ]
+  },
+  {
+    "value": "4ni",
+    "synonyms": [
+      "4ni"
+    ]
+  },
+  {
+    "value": "525th Newspaper",
+    "synonyms": [
+      "525th Newspaper"
+    ]
+  },
+  {
+    "value": "ABC",
+    "synonyms": [
+      "ABC"
+    ]
+  },
+  {
+    "value": "ABC Live",
+    "synonyms": [
+      "ABC Live"
+    ]
+  },
+  {
+    "value": "ABS-CBN News",
+    "synonyms": [
+      "ABS-CBN News"
+    ]
+  },
+  {
+    "value": "AIM",
+    "synonyms": [
+      "AIM"
+    ]
+  },
+  {
+    "value": "AM Costa Rica",
+    "synonyms": [
+      "AM Costa Rica"
+    ]
+  },
+  {
+    "value": "ANS",
+    "synonyms": [
+      "ANS"
+    ]
+  },
+  {
+    "value": "ANS Press",
+    "synonyms": [
+      "ANS Press"
+    ]
+  },
+  {
+    "value": "ANSA",
+    "synonyms": [
+      "ANSA"
+    ]
+  },
+  {
+    "value": "Accountancy Age",
+    "synonyms": [
+      "Accountancy Age"
+    ]
+  },
+  {
+    "value": "Addis Tribune",
+    "synonyms": [
+      "Addis Tribune"
+    ]
+  },
+  {
+    "value": "Aegean Times",
+    "synonyms": [
+      "Aegean Times"
+    ]
+  },
+  {
+    "value": "Afgha",
+    "synonyms": [
+      "Afgha"
+    ]
+  },
+  {
+    "value": "Aftenposten",
+    "synonyms": [
+      "Aftenposten"
+    ]
+  },
+  {
+    "value": "Agerpres",
+    "synonyms": [
+      "Agerpres"
+    ]
+  },
+  {
+    "value": "Agra News",
+    "synonyms": [
+      "Agra News"
+    ]
+  },
+  {
+    "value": "Agra Samachar",
+    "synonyms": [
+      "Agra Samachar"
+    ]
+  },
+  {
+    "value": "Aidsmap",
+    "synonyms": [
+      "Aidsmap"
+    ]
+  },
+  {
+    "value": "Aim:Sarajevo",
+    "synonyms": [
+      "Aim:Sarajevo"
+    ]
+  },
+  {
+    "value": "Ain al yaqeen",
+    "synonyms": [
+      "Ain al yaqeen"
+    ]
+  },
+  {
+    "value": "Al Jarida Al Maghriba",
+    "synonyms": [
+      "Al Jarida Al Maghriba"
+    ]
+  },
+  {
+    "value": "Al Jazeera",
+    "synonyms": [
+      "Al Jazeera"
+    ]
+  },
+  {
+    "value": "Al-Aqsa",
+    "synonyms": [
+      "Al-Aqsa"
+    ]
+  },
+  {
+    "value": "Al-Oufok",
+    "synonyms": [
+      "Al-Oufok"
+    ]
+  },
+  {
+    "value": "Al-ahram",
+    "synonyms": [
+      "Al-ahram"
+    ]
+  },
+  {
+    "value": "Alalam",
+    "synonyms": [
+      "Alalam"
+    ]
+  },
+  {
+    "value": "Albanian Daily News",
+    "synonyms": [
+      "Albanian Daily News"
+    ]
+  },
+  {
+    "value": "All Africa",
+    "synonyms": [
+      "All Africa"
+    ]
+  },
+  {
+    "value": "All Headline News",
+    "synonyms": [
+      "All Headline News"
+    ]
+  },
+  {
+    "value": "All India Radio",
+    "synonyms": [
+      "All India Radio"
+    ]
+  },
+  {
+    "value": "Alternative News Center",
+    "synonyms": [
+      "Alternative News Center"
+    ]
+  },
+  {
+    "value": "Amazon",
+    "synonyms": [
+      "Amazon"
+    ]
+  },
+  {
+    "value": "Amin",
+    "synonyms": [
+      "Amin"
+    ]
+  },
+  {
+    "value": "Amnesty International UK",
+    "synonyms": [
+      "Amnesty International UK"
+    ]
+  },
+  {
+    "value": "Ananova",
+    "synonyms": [
+      "Ananova"
+    ]
+  },
+  {
+    "value": "Angola Press",
+    "synonyms": [
+      "Angola Press"
+    ]
+  },
+  {
+    "value": "Angola peace monitor",
+    "synonyms": [
+      "Angola peace monitor"
+    ]
+  },
+  {
+    "value": "Antara",
+    "synonyms": [
+      "Antara"
+    ]
+  },
+  {
+    "value": "Arab Net",
+    "synonyms": [
+      "Arab Net"
+    ]
+  },
+  {
+    "value": "Arab Times Online",
+    "synonyms": [
+      "Arab Times Online"
+    ]
+  },
+  {
+    "value": "Arabuc News",
+    "synonyms": [
+      "Arabuc News"
+    ]
+  },
+  {
+    "value": "Armenia news",
+    "synonyms": [
+      "Armenia news"
+    ]
+  },
+  {
+    "value": "ArmeniaNow",
+    "synonyms": [
+      "ArmeniaNow"
+    ]
+  },
+  {
+    "value": "Army Times",
+    "synonyms": [
+      "Army Times"
+    ]
+  },
+  {
+    "value": "Artit",
+    "synonyms": [
+      "Artit"
+    ]
+  },
+  {
+    "value": "Asahi",
+    "synonyms": [
+      "Asahi"
+    ]
+  },
+  {
+    "value": "Asbarez",
+    "synonyms": [
+      "Asbarez"
+    ]
+  },
+  {
+    "value": "Asia Times",
+    "synonyms": [
+      "Asia Times"
+    ]
+  },
+  {
+    "value": "Athens News",
+    "synonyms": [
+      "Athens News"
+    ]
+  },
+  {
+    "value": "Athens News Agency",
+    "synonyms": [
+      "Athens News Agency"
+    ]
+  },
+  {
+    "value": "Austrian Embassy",
+    "synonyms": [
+      "Austrian Embassy"
+    ]
+  },
+  {
+    "value": "Austrian Radio",
+    "synonyms": [
+      "Austrian Radio"
+    ]
+  },
+  {
+    "value": "Ayna",
+    "synonyms": [
+      "Ayna"
+    ]
+  },
+  {
+    "value": "AzTV",
+    "synonyms": [
+      "AzTV"
+    ]
+  },
+  {
+    "value": "Azadliq",
+    "synonyms": [
+      "Azadliq"
+    ]
+  },
+  {
+    "value": "Azatutyun",
+    "synonyms": [
+      "Azatutyun"
+    ]
+  },
+  {
+    "value": "AzerNEWS",
+    "synonyms": [
+      "AzerNEWS"
+    ]
+  },
+  {
+    "value": "AzerTAc",
+    "synonyms": [
+      "AzerTAc"
+    ]
+  },
+  {
+    "value": "Azerbaijan News",
+    "synonyms": [
+      "Azerbaijan News"
+    ]
+  },
+  {
+    "value": "Azerbaijan Press Agency",
+    "synonyms": [
+      "Azerbaijan Press Agency"
+    ]
+  },
+  {
+    "value": "Azerbaijan Today",
+    "synonyms": [
+      "Azerbaijan Today"
+    ]
+  },
+  {
+    "value": "Azerbaijan.az",
+    "synonyms": [
+      "Azerbaijan.az"
+    ]
+  },
+  {
+    "value": "B4U India",
+    "synonyms": [
+      "B4U India"
+    ]
+  },
+  {
+    "value": "B92",
+    "synonyms": [
+      "B92"
+    ]
+  },
+  {
+    "value": "BBC",
+    "synonyms": [
+      "BBC"
+    ]
+  },
+  {
+    "value": "BBC Jersey",
+    "synonyms": [
+      "BBC Jersey"
+    ]
+  },
+  {
+    "value": "BBC News Africa",
+    "synonyms": [
+      "BBC News Africa"
+    ]
+  },
+  {
+    "value": "Baghdad Bulletin",
+    "synonyms": [
+      "Baghdad Bulletin"
+    ]
+  },
+  {
+    "value": "Bahrain Tribune",
+    "synonyms": [
+      "Bahrain Tribune"
+    ]
+  },
+  {
+    "value": "Baku sun",
+    "synonyms": [
+      "Baku sun"
+    ]
+  },
+  {
+    "value": "Baltic News",
+    "synonyms": [
+      "Baltic News"
+    ]
+  },
+  {
+    "value": "Baltic Times",
+    "synonyms": [
+      "Baltic Times"
+    ]
+  },
+  {
+    "value": "Banadir",
+    "synonyms": [
+      "Banadir"
+    ]
+  },
+  {
+    "value": "Bangkok Post",
+    "synonyms": [
+      "Bangkok Post"
+    ]
+  },
+  {
+    "value": "Basa press",
+    "synonyms": [
+      "Basa press"
+    ]
+  },
+  {
+    "value": "Belfast Telegraph",
+    "synonyms": [
+      "Belfast Telegraph"
+    ]
+  },
+  {
+    "value": "Benin embassy",
+    "synonyms": [
+      "Benin embassy"
+    ]
+  },
+  {
+    "value": "Berita Harian",
+    "synonyms": [
+      "Berita Harian"
+    ]
+  },
+  {
+    "value": "Bhutan Services",
+    "synonyms": [
+      "Bhutan Services"
+    ]
+  },
+  {
+    "value": "Bizim ESR",
+    "synonyms": [
+      "Bizim ESR"
+    ]
+  },
+  {
+    "value": "Bizim Yol",
+    "synonyms": [
+      "Bizim Yol"
+    ]
+  },
+  {
+    "value": "Brisbane Times",
+    "synonyms": [
+      "Brisbane Times"
+    ]
+  },
+  {
+    "value": "Budapest Business Journal",
+    "synonyms": [
+      "Budapest Business Journal"
+    ]
+  },
+  {
+    "value": "Buenos Aires Herald",
+    "synonyms": [
+      "Buenos Aires Herald"
+    ]
+  },
+  {
+    "value": "Bulgarian News Agency",
+    "synonyms": [
+      "Bulgarian News Agency"
+    ]
+  },
+  {
+    "value": "Business Day",
+    "synonyms": [
+      "Business Day"
+    ]
+  },
+  {
+    "value": "Business Weekly",
+    "synonyms": [
+      "Business Weekly"
+    ]
+  },
+  {
+    "value": "Business and political news",
+    "synonyms": [
+      "Business and political news"
+    ]
+  },
+  {
+    "value": "Businessofcinema",
+    "synonyms": [
+      "Businessofcinema"
+    ]
+  },
+  {
+    "value": "CANA News",
+    "synonyms": [
+      "CANA News"
+    ]
+  },
+  {
+    "value": "CBC",
+    "synonyms": [
+      "CBC"
+    ]
+  },
+  {
+    "value": "CHCH Hamilton",
+    "synonyms": [
+      "CHCH Hamilton"
+    ]
+  },
+  {
+    "value": "CNN",
+    "synonyms": [
+      "CNN",
+      "Cable News Network"
+    ]
+  },
+  {
+    "value": "CNN IBN Live",
+    "synonyms": [
+      "CNN IBN Live"
+    ]
+  },
+  {
+    "value": "Cairo Times",
+    "synonyms": [
+      "Cairo Times"
+    ]
+  },
+  {
+    "value": "Cairolive",
+    "synonyms": [
+      "Cairolive"
+    ]
+  },
+  {
+    "value": "Calgary Herald",
+    "synonyms": [
+      "Calgary Herald"
+    ]
+  },
+  {
+    "value": "Canadian Television",
+    "synonyms": [
+      "Canadian Television"
+    ]
+  },
+  {
+    "value": "Capital Daily",
+    "synonyms": [
+      "Capital Daily"
+    ]
+  },
+  {
+    "value": "Caribbean net news",
+    "synonyms": [
+      "Caribbean net news"
+    ]
+  },
+  {
+    "value": "Caucasus News",
+    "synonyms": [
+      "Caucasus News"
+    ]
+  },
+  {
+    "value": "Centralian Advocate",
+    "synonyms": [
+      "Centralian Advocate"
+    ]
+  },
+  {
+    "value": "Channel 4 News",
+    "synonyms": [
+      "Channel 4 News"
+    ]
+  },
+  {
+    "value": "Channel NewsAsia",
+    "synonyms": [
+      "Channel NewsAsia"
+    ]
+  },
+  {
+    "value": "Channel Seven",
+    "synonyms": [
+      "Channel Seven"
+    ]
+  },
+  {
+    "value": "Channel Television",
+    "synonyms": [
+      "Channel Television"
+    ]
+  },
+  {
+    "value": "Channel Ten",
+    "synonyms": [
+      "Channel Ten"
+    ]
+  },
+  {
+    "value": "China Online",
+    "synonyms": [
+      "China Online"
+    ]
+  },
+  {
+    "value": "China Post",
+    "synonyms": [
+      "China Post"
+    ]
+  },
+  {
+    "value": "China\u0027s US embassy",
+    "synonyms": [
+      "China\u0027s US embassy"
+    ]
+  },
+  {
+    "value": "Chinese",
+    "synonyms": [
+      "Chinese"
+    ]
+  },
+  {
+    "value": "Chinese Radio International",
+    "synonyms": [
+      "Chinese Radio International"
+    ]
+  },
+  {
+    "value": "Community Newspapers",
+    "synonyms": [
+      "Community Newspapers"
+    ]
+  },
+  {
+    "value": "Cook Islands News",
+    "synonyms": [
+      "Cook Islands News"
+    ]
+  },
+  {
+    "value": "Costa Blanca News",
+    "synonyms": [
+      "Costa Blanca News"
+    ]
+  },
+  {
+    "value": "Costa Rica News",
+    "synonyms": [
+      "Costa Rica News"
+    ]
+  },
+  {
+    "value": "Courier Mail",
+    "synonyms": [
+      "Courier Mail"
+    ]
+  },
+  {
+    "value": "Crikey",
+    "synonyms": [
+      "Crikey"
+    ]
+  },
+  {
+    "value": "Croatian News Agency",
+    "synonyms": [
+      "Croatian News Agency"
+    ]
+  },
+  {
+    "value": "Croatian Radiotelevision",
+    "synonyms": [
+      "Croatian Radiotelevision"
+    ]
+  },
+  {
+    "value": "Cyprus Corporation",
+    "synonyms": [
+      "Cyprus Corporation"
+    ]
+  },
+  {
+    "value": "Cyprus Mail",
+    "synonyms": [
+      "Cyprus Mail"
+    ]
+  },
+  {
+    "value": "Cyprus News",
+    "synonyms": [
+      "Cyprus News"
+    ]
+  },
+  {
+    "value": "Cyprus News Agency",
+    "synonyms": [
+      "Cyprus News Agency"
+    ]
+  },
+  {
+    "value": "Czech Happenings",
+    "synonyms": [
+      "Czech Happenings"
+    ]
+  },
+  {
+    "value": "DD News",
+    "synonyms": [
+      "DD News"
+    ]
+  },
+  {
+    "value": "DD News Live Streaming",
+    "synonyms": [
+      "DD News Live Streaming"
+    ]
+  },
+  {
+    "value": "Daily Excelsior",
+    "synonyms": [
+      "Daily Excelsior"
+    ]
+  },
+  {
+    "value": "Daily News \u0026 Analysis",
+    "synonyms": [
+      "Daily News \u0026 Analysis"
+    ]
+  },
+  {
+    "value": "Daily Newspaper",
+    "synonyms": [
+      "Daily Newspaper"
+    ]
+  },
+  {
+    "value": "Daily Post",
+    "synonyms": [
+      "Daily Post"
+    ]
+  },
+  {
+    "value": "Daily Telegraph",
+    "synonyms": [
+      "Daily Telegraph"
+    ]
+  },
+  {
+    "value": "Daily Yomiuri",
+    "synonyms": [
+      "Daily Yomiuri"
+    ]
+  },
+  {
+    "value": "Dawn",
+    "synonyms": [
+      "Dawn"
+    ]
+  },
+  {
+    "value": "Dawn News",
+    "synonyms": [
+      "Dawn News"
+    ]
+  },
+  {
+    "value": "Deccan Herald",
+    "synonyms": [
+      "Deccan Herald"
+    ]
+  },
+  {
+    "value": "Dehai",
+    "synonyms": [
+      "Dehai"
+    ]
+  },
+  {
+    "value": "Deutsche Welle",
+    "synonyms": [
+      "Deutsche Welle"
+    ]
+  },
+  {
+    "value": "Di-ve",
+    "synonyms": [
+      "Di-ve"
+    ]
+  },
+  {
+    "value": "EU News European Union News",
+    "synonyms": [
+      "EU News European Union News"
+    ]
+  },
+  {
+    "value": "EU Observer",
+    "synonyms": [
+      "EU Observer"
+    ]
+  },
+  {
+    "value": "EXPRESS",
+    "synonyms": [
+      "EXPRESS"
+    ]
+  },
+  {
+    "value": "East Day",
+    "synonyms": [
+      "East Day"
+    ]
+  },
+  {
+    "value": "Ecologist",
+    "synonyms": [
+      "Ecologist"
+    ]
+  },
+  {
+    "value": "Edmonton Journal",
+    "synonyms": [
+      "Edmonton Journal"
+    ]
+  },
+  {
+    "value": "Egypt Today",
+    "synonyms": [
+      "Egypt Today"
+    ]
+  },
+  {
+    "value": "Eircom.net news",
+    "synonyms": [
+      "Eircom.net news"
+    ]
+  },
+  {
+    "value": "El Khabar",
+    "synonyms": [
+      "El Khabar"
+    ]
+  },
+  {
+    "value": "Elections",
+    "synonyms": [
+      "Elections"
+    ]
+  },
+  {
+    "value": "Epoch Times",
+    "synonyms": [
+      "Epoch Times"
+    ]
+  },
+  {
+    "value": "Estonian news in English from Eesti Rahvusringhääling",
+    "synonyms": [
+      "Estonian news in English from Eesti Rahvusringhääling"
+    ]
+  },
+  {
+    "value": "Estonian news in English from Postimees",
+    "synonyms": [
+      "Estonian news in English from Postimees"
+    ]
+  },
+  {
+    "value": "Ethiopean Review",
+    "synonyms": [
+      "Ethiopean Review"
+    ]
+  },
+  {
+    "value": "Ethiopia News Agency",
+    "synonyms": [
+      "Ethiopia News Agency"
+    ]
+  },
+  {
+    "value": "EurActiv",
+    "synonyms": [
+      "EurActiv"
+    ]
+  },
+  {
+    "value": "Euro News",
+    "synonyms": [
+      "Euro News"
+    ]
+  },
+  {
+    "value": "European Voice",
+    "synonyms": [
+      "European Voice"
+    ]
+  },
+  {
+    "value": "Expatica",
+    "synonyms": [
+      "Expatica"
+    ]
+  },
+  {
+    "value": "FNN",
+    "synonyms": [
+      "FNN"
+    ]
+  },
+  {
+    "value": "Fairfax Archive",
+    "synonyms": [
+      "Fairfax Archive"
+    ]
+  },
+  {
+    "value": "Fairfax Digital",
+    "synonyms": [
+      "Fairfax Digital"
+    ]
+  },
+  {
+    "value": "Far Eastern Economic Review",
+    "synonyms": [
+      "Far Eastern Economic Review"
+    ]
+  },
+  {
+    "value": "Farmers Weekly interactive",
+    "synonyms": [
+      "Farmers Weekly interactive"
+    ]
+  },
+  {
+    "value": "Fiji Corporation",
+    "synonyms": [
+      "Fiji Corporation"
+    ]
+  },
+  {
+    "value": "Fiji Government Online Portal",
+    "synonyms": [
+      "Fiji Government Online Portal"
+    ]
+  },
+  {
+    "value": "Fiji One",
+    "synonyms": [
+      "Fiji One"
+    ]
+  },
+  {
+    "value": "Fiji Sun",
+    "synonyms": [
+      "Fiji Sun"
+    ]
+  },
+  {
+    "value": "Fiji Times",
+    "synonyms": [
+      "Fiji Times"
+    ]
+  },
+  {
+    "value": "FijiVillage",
+    "synonyms": [
+      "FijiVillage"
+    ]
+  },
+  {
+    "value": "Financial Mirror",
+    "synonyms": [
+      "Financial Mirror"
+    ]
+  },
+  {
+    "value": "Financial Review",
+    "synonyms": [
+      "Financial Review"
+    ]
+  },
+  {
+    "value": "Financial Times",
+    "synonyms": [
+      "Financial Times"
+    ]
+  },
+  {
+    "value": "Fox News Channel",
+    "synonyms": [
+      "Fox News Channel"
+    ]
+  },
+  {
+    "value": "Fox Sports",
+    "synonyms": [
+      "Fox Sports"
+    ]
+  },
+  {
+    "value": "Free Burma",
+    "synonyms": [
+      "Free Burma"
+    ]
+  },
+  {
+    "value": "Free Media for Mladives",
+    "synonyms": [
+      "Free Media for Mladives"
+    ]
+  },
+  {
+    "value": "GMA News",
+    "synonyms": [
+      "GMA News"
+    ]
+  },
+  {
+    "value": "Gambia Net",
+    "synonyms": [
+      "Gambia Net"
+    ]
+  },
+  {
+    "value": "Gazeta",
+    "synonyms": [
+      "Gazeta"
+    ]
+  },
+  {
+    "value": "Geo News",
+    "synonyms": [
+      "Geo News"
+    ]
+  },
+  {
+    "value": "Georgia News",
+    "synonyms": [
+      "Georgia News"
+    ]
+  },
+  {
+    "value": "German Embassy to the US",
+    "synonyms": [
+      "German Embassy to the US"
+    ]
+  },
+  {
+    "value": "German parliament",
+    "synonyms": [
+      "German parliament"
+    ]
+  },
+  {
+    "value": "Ghana Review",
+    "synonyms": [
+      "Ghana Review"
+    ]
+  },
+  {
+    "value": "Ghanaian Chronicle",
+    "synonyms": [
+      "Ghanaian Chronicle"
+    ]
+  },
+  {
+    "value": "Global News",
+    "synonyms": [
+      "Global News"
+    ]
+  },
+  {
+    "value": "Gold Coast Bulletin",
+    "synonyms": [
+      "Gold Coast Bulletin"
+    ]
+  },
+  {
+    "value": "Gomantak times",
+    "synonyms": [
+      "Gomantak times"
+    ]
+  },
+  {
+    "value": "Google",
+    "synonyms": [
+      "Google"
+    ]
+  },
+  {
+    "value": "Governemnent News Agency",
+    "synonyms": [
+      "Governemnent News Agency"
+    ]
+  },
+  {
+    "value": "Government news",
+    "synonyms": [
+      "Government news"
+    ]
+  },
+  {
+    "value": "Granma",
+    "synonyms": [
+      "Granma"
+    ]
+  },
+  {
+    "value": "Guardian",
+    "synonyms": [
+      "Guardian"
+    ]
+  },
+  {
+    "value": "Gulf Daily News",
+    "synonyms": [
+      "Gulf Daily News"
+    ]
+  },
+  {
+    "value": "Gulf News",
+    "synonyms": [
+      "Gulf News"
+    ]
+  },
+  {
+    "value": "Gulf Times",
+    "synonyms": [
+      "Gulf Times"
+    ]
+  },
+  {
+    "value": "HR-Net",
+    "synonyms": [
+      "HR-Net"
+    ]
+  },
+  {
+    "value": "Haaretz",
+    "synonyms": [
+      "Haaretz"
+    ]
+  },
+  {
+    "value": "Halifax Chronicle Herald",
+    "synonyms": [
+      "Halifax Chronicle Herald"
+    ]
+  },
+  {
+    "value": "Halton Herald",
+    "synonyms": [
+      "Halton Herald"
+    ]
+  },
+  {
+    "value": "Haveeru Daily",
+    "synonyms": [
+      "Haveeru Daily"
+    ]
+  },
+  {
+    "value": "Hensingin Sanomat",
+    "synonyms": [
+      "Hensingin Sanomat"
+    ]
+  },
+  {
+    "value": "Herald-Sun",
+    "synonyms": [
+      "Herald-Sun"
+    ]
+  },
+  {
+    "value": "Hindustan Times",
+    "synonyms": [
+      "Hindustan Times"
+    ]
+  },
+  {
+    "value": "Hollywood Reporter",
+    "synonyms": [
+      "Hollywood Reporter"
+    ]
+  },
+  {
+    "value": "Honduras This Week",
+    "synonyms": [
+      "Honduras This Week"
+    ]
+  },
+  {
+    "value": "Hong Kong Economic Journal",
+    "synonyms": [
+      "Hong Kong Economic Journal"
+    ]
+  },
+  {
+    "value": "Hong Kong Government News Centre",
+    "synonyms": [
+      "Hong Kong Government News Centre"
+    ]
+  },
+  {
+    "value": "Hotnews",
+    "synonyms": [
+      "Hotnews"
+    ]
+  },
+  {
+    "value": "IAfrica",
+    "synonyms": [
+      "IAfrica"
+    ]
+  },
+  {
+    "value": "IC Wales",
+    "synonyms": [
+      "IC Wales"
+    ]
+  },
+  {
+    "value": "ILNA",
+    "synonyms": [
+      "ILNA"
+    ]
+  },
+  {
+    "value": "IOL",
+    "synonyms": [
+      "IOL"
+    ]
+  },
+  {
+    "value": "IRIB News",
+    "synonyms": [
+      "IRIB News"
+    ]
+  },
+  {
+    "value": "IRIN from the United Nations",
+    "synonyms": [
+      "IRIN from the United Nations"
+    ]
+  },
+  {
+    "value": "IRNA",
+    "synonyms": [
+      "IRNA"
+    ]
+  },
+  {
+    "value": "ISNA",
+    "synonyms": [
+      "ISNA"
+    ]
+  },
+  {
+    "value": "ITN",
+    "synonyms": [
+      "ITN"
+    ]
+  },
+  {
+    "value": "IWPR",
+    "synonyms": [
+      "IWPR"
+    ]
+  },
+  {
+    "value": "Iceland Review",
+    "synonyms": [
+      "Iceland Review"
+    ]
+  },
+  {
+    "value": "IkiShahil",
+    "synonyms": [
+      "IkiShahil"
+    ]
+  },
+  {
+    "value": "Il Corriere Della Sera",
+    "synonyms": [
+      "Il Corriere Della Sera"
+    ]
+  },
+  {
+    "value": "Il Sole 24 Ore",
+    "synonyms": [
+      "Il Sole 24 Ore"
+    ]
+  },
+  {
+    "value": "Illawarra Mercury",
+    "synonyms": [
+      "Illawarra Mercury"
+    ]
+  },
+  {
+    "value": "Independent Newspapers Limited",
+    "synonyms": [
+      "Independent Newspapers Limited"
+    ]
+  },
+  {
+    "value": "India Monitor",
+    "synonyms": [
+      "India Monitor"
+    ]
+  },
+  {
+    "value": "India News",
+    "synonyms": [
+      "India News"
+    ]
+  },
+  {
+    "value": "India Radio",
+    "synonyms": [
+      "India Radio"
+    ]
+  },
+  {
+    "value": "Indian Express",
+    "synonyms": [
+      "Indian Express"
+    ]
+  },
+  {
+    "value": "Info Brazil",
+    "synonyms": [
+      "Info Brazil"
+    ]
+  },
+  {
+    "value": "Inter Fax",
+    "synonyms": [
+      "Inter Fax"
+    ]
+  },
+  {
+    "value": "Interfax",
+    "synonyms": [
+      "Interfax"
+    ]
+  },
+  {
+    "value": "International Herald Tribune",
+    "synonyms": [
+      "International Herald Tribune"
+    ]
+  },
+  {
+    "value": "Internews",
+    "synonyms": [
+      "Internews"
+    ]
+  },
+  {
+    "value": "Ipp Media",
+    "synonyms": [
+      "Ipp Media"
+    ]
+  },
+  {
+    "value": "Iran Daily",
+    "synonyms": [
+      "Iran Daily"
+    ]
+  },
+  {
+    "value": "Iran News",
+    "synonyms": [
+      "Iran News"
+    ]
+  },
+  {
+    "value": "Iranian",
+    "synonyms": [
+      "Iranian"
+    ]
+  },
+  {
+    "value": "Iraq Crisis",
+    "synonyms": [
+      "Iraq Crisis"
+    ]
+  },
+  {
+    "value": "Iraq Today",
+    "synonyms": [
+      "Iraq Today"
+    ]
+  },
+  {
+    "value": "Irish Examiner",
+    "synonyms": [
+      "Irish Examiner"
+    ]
+  },
+  {
+    "value": "Irish Internet Hub",
+    "synonyms": [
+      "Irish Internet Hub"
+    ]
+  },
+  {
+    "value": "Irish Republican News",
+    "synonyms": [
+      "Irish Republican News"
+    ]
+  },
+  {
+    "value": "Israel Insider",
+    "synonyms": [
+      "Israel Insider"
+    ]
+  },
+  {
+    "value": "Israel National News",
+    "synonyms": [
+      "Israel National News"
+    ]
+  },
+  {
+    "value": "Japan Today",
+    "synonyms": [
+      "Japan Today"
+    ]
+  },
+  {
+    "value": "Jersey Evening Post",
+    "synonyms": [
+      "Jersey Evening Post"
+    ]
+  },
+  {
+    "value": "Journal of Turkish Weekly",
+    "synonyms": [
+      "Journal of Turkish Weekly"
+    ]
+  },
+  {
+    "value": "Jutarnji list",
+    "synonyms": [
+      "Jutarnji list"
+    ]
+  },
+  {
+    "value": "KBS World",
+    "synonyms": [
+      "KBS World"
+    ]
+  },
+  {
+    "value": "Karabakh News",
+    "synonyms": [
+      "Karabakh News"
+    ]
+  },
+  {
+    "value": "Kaspi",
+    "synonyms": [
+      "Kaspi"
+    ]
+  },
+  {
+    "value": "Kathimerini",
+    "synonyms": [
+      "Kathimerini"
+    ]
+  },
+  {
+    "value": "Khabar On Demand",
+    "synonyms": [
+      "Khabar On Demand"
+    ]
+  },
+  {
+    "value": "Khaleej Times",
+    "synonyms": [
+      "Khaleej Times"
+    ]
+  },
+  {
+    "value": "Knowledge@Wharton",
+    "synonyms": [
+      "Knowledge@Wharton"
+    ]
+  },
+  {
+    "value": "Kompas",
+    "synonyms": [
+      "Kompas"
+    ]
+  },
+  {
+    "value": "Korea Net",
+    "synonyms": [
+      "Korea Net"
+    ]
+  },
+  {
+    "value": "Kuensel",
+    "synonyms": [
+      "Kuensel"
+    ]
+  },
+  {
+    "value": "Kurdistan Observer",
+    "synonyms": [
+      "Kurdistan Observer"
+    ]
+  },
+  {
+    "value": "Kuwait Times",
+    "synonyms": [
+      "Kuwait Times"
+    ]
+  },
+  {
+    "value": "Kyiv Post",
+    "synonyms": [
+      "Kyiv Post"
+    ]
+  },
+  {
+    "value": "Kyodo News",
+    "synonyms": [
+      "Kyodo News"
+    ]
+  },
+  {
+    "value": "La 1ere",
+    "synonyms": [
+      "La 1ere"
+    ]
+  },
+  {
+    "value": "La Repubblica",
+    "synonyms": [
+      "La Repubblica"
+    ]
+  },
+  {
+    "value": "Latin American Newsletters",
+    "synonyms": [
+      "Latin American Newsletters"
+    ]
+  },
+  {
+    "value": "Leader Newspapers",
+    "synonyms": [
+      "Leader Newspapers"
+    ]
+  },
+  {
+    "value": "Lebanon",
+    "synonyms": [
+      "Lebanon"
+    ]
+  },
+  {
+    "value": "Les Nouvelles calédoniennes",
+    "synonyms": [
+      "Les Nouvelles calédoniennes"
+    ]
+  },
+  {
+    "value": "Lesotho Government online",
+    "synonyms": [
+      "Lesotho Government online"
+    ]
+  },
+  {
+    "value": "Lianhe Zaobao",
+    "synonyms": [
+      "Lianhe Zaobao"
+    ]
+  },
+  {
+    "value": "Libya Watanona",
+    "synonyms": [
+      "Libya Watanona"
+    ]
+  },
+  {
+    "value": "Los Angeles Times",
+    "synonyms": [
+      "Los Angeles Times"
+    ]
+  },
+  {
+    "value": "MN News Online",
+    "synonyms": [
+      "MN News Online"
+    ]
+  },
+  {
+    "value": "MSNBC",
+    "synonyms": [
+      "MSNBC"
+    ]
+  },
+  {
+    "value": "Macedonian information agency",
+    "synonyms": [
+      "Macedonian information agency"
+    ]
+  },
+  {
+    "value": "Maghreb Arabe Presse",
+    "synonyms": [
+      "Maghreb Arabe Presse"
+    ]
+  },
+  {
+    "value": "Malawi News Agency",
+    "synonyms": [
+      "Malawi News Agency"
+    ]
+  },
+  {
+    "value": "Malaysiakini",
+    "synonyms": [
+      "Malaysiakini"
+    ]
+  },
+  {
+    "value": "Malta News",
+    "synonyms": [
+      "Malta News"
+    ]
+  },
+  {
+    "value": "Matangi Tonga",
+    "synonyms": [
+      "Matangi Tonga"
+    ]
+  },
+  {
+    "value": "Mauritius Corporation",
+    "synonyms": [
+      "Mauritius Corporation"
+    ]
+  },
+  {
+    "value": "Mauritius News",
+    "synonyms": [
+      "Mauritius News"
+    ]
+  },
+  {
+    "value": "Mediafax",
+    "synonyms": [
+      "Mediafax"
+    ]
+  },
+  {
+    "value": "MehrNews",
+    "synonyms": [
+      "MehrNews"
+    ]
+  },
+  {
+    "value": "Merinews",
+    "synonyms": [
+      "Merinews"
+    ]
+  },
+  {
+    "value": "Mexico News",
+    "synonyms": [
+      "Mexico News"
+    ]
+  },
+  {
+    "value": "Middle East Online",
+    "synonyms": [
+      "Middle East Online"
+    ]
+  },
+  {
+    "value": "Miftah",
+    "synonyms": [
+      "Miftah"
+    ]
+  },
+  {
+    "value": "Milnix",
+    "synonyms": [
+      "Milnix"
+    ]
+  },
+  {
+    "value": "Ming Pao Daily",
+    "synonyms": [
+      "Ming Pao Daily"
+    ]
+  },
+  {
+    "value": "Minivan News Daily",
+    "synonyms": [
+      "Minivan News Daily"
+    ]
+  },
+  {
+    "value": "Minurso",
+    "synonyms": [
+      "Minurso"
+    ]
+  },
+  {
+    "value": "Mizzima",
+    "synonyms": [
+      "Mizzima"
+    ]
+  },
+  {
+    "value": "Mmegi",
+    "synonyms": [
+      "Mmegi"
+    ]
+  },
+  {
+    "value": "Monday Morning",
+    "synonyms": [
+      "Monday Morning"
+    ]
+  },
+  {
+    "value": "Monitor online",
+    "synonyms": [
+      "Monitor online"
+    ]
+  },
+  {
+    "value": "Montreal Gazette",
+    "synonyms": [
+      "Montreal Gazette"
+    ]
+  },
+  {
+    "value": "Musavat",
+    "synonyms": [
+      "Musavat"
+    ]
+  },
+  {
+    "value": "My free Nepal",
+    "synonyms": [
+      "My free Nepal"
+    ]
+  },
+  {
+    "value": "NDTV",
+    "synonyms": [
+      "NDTV"
+    ]
+  },
+  {
+    "value": "NPR",
+    "synonyms": [
+      "NPR"
+    ]
+  },
+  {
+    "value": "NZ Herald",
+    "synonyms": [
+      "NZ Herald"
+    ]
+  },
+  {
+    "value": "NZZ Online",
+    "synonyms": [
+      "NZZ Online"
+    ]
+  },
+  {
+    "value": "Namibia Economist",
+    "synonyms": [
+      "Namibia Economist"
+    ]
+  },
+  {
+    "value": "Namibian",
+    "synonyms": [
+      "Namibian"
+    ]
+  },
+  {
+    "value": "Nash Vek",
+    "synonyms": [
+      "Nash Vek"
+    ]
+  },
+  {
+    "value": "National Post",
+    "synonyms": [
+      "National Post"
+    ]
+  },
+  {
+    "value": "Nedelya",
+    "synonyms": [
+      "Nedelya"
+    ]
+  },
+  {
+    "value": "Nepal News",
+    "synonyms": [
+      "Nepal News"
+    ]
+  },
+  {
+    "value": "Neue Zürcher Zeitung",
+    "synonyms": [
+      "Neue Zürcher Zeitung"
+    ]
+  },
+  {
+    "value": "New Indian Express",
+    "synonyms": [
+      "New Indian Express"
+    ]
+  },
+  {
+    "value": "New Statesman",
+    "synonyms": [
+      "New Statesman"
+    ]
+  },
+  {
+    "value": "New Straits Times",
+    "synonyms": [
+      "New Straits Times"
+    ]
+  },
+  {
+    "value": "New York Times",
+    "synonyms": [
+      "NY Times",
+      "New York Times",
+      "The NY Times",
+      "The New York Times"
+    ]
+  },
+  {
+    "value": "Newcastle Herald",
+    "synonyms": [
+      "Newcastle Herald"
+    ]
+  },
+  {
+    "value": "News 24",
+    "synonyms": [
+      "News 24"
+    ]
+  },
+  {
+    "value": "News Room Finland",
+    "synonyms": [
+      "News Room Finland"
+    ]
+  },
+  {
+    "value": "News from Bangladesh",
+    "synonyms": [
+      "News from Bangladesh"
+    ]
+  },
+  {
+    "value": "News from Russia",
+    "synonyms": [
+      "News from Russia"
+    ]
+  },
+  {
+    "value": "NewsFactor",
+    "synonyms": [
+      "NewsFactor"
+    ]
+  },
+  {
+    "value": "NewsLocal",
+    "synonyms": [
+      "NewsLocal"
+    ]
+  },
+  {
+    "value": "Newsday",
+    "synonyms": [
+      "Newsday"
+    ]
+  },
+  {
+    "value": "Newseum",
+    "synonyms": [
+      "Newseum"
+    ]
+  },
+  {
+    "value": "Newsroom",
+    "synonyms": [
+      "Newsroom"
+    ]
+  },
+  {
+    "value": "Newstalk ZB",
+    "synonyms": [
+      "Newstalk ZB"
+    ]
+  },
+  {
+    "value": "Newswatch",
+    "synonyms": [
+      "Newswatch"
+    ]
+  },
+  {
+    "value": "NewswireToday",
+    "synonyms": [
+      "NewswireToday"
+    ]
+  },
+  {
+    "value": "Nikkei Net",
+    "synonyms": [
+      "Nikkei Net"
+    ]
+  },
+  {
+    "value": "Nine O\u0027clock",
+    "synonyms": [
+      "Nine O\u0027clock"
+    ]
+  },
+  {
+    "value": "Ninemsn",
+    "synonyms": [
+      "Ninemsn"
+    ]
+  },
+  {
+    "value": "Northern Territory News",
+    "synonyms": [
+      "Northern Territory News"
+    ]
+  },
+  {
+    "value": "Norway Post",
+    "synonyms": [
+      "Norway Post"
+    ]
+  },
+  {
+    "value": "Novosti",
+    "synonyms": [
+      "Novosti"
+    ]
+  },
+  {
+    "value": "Nunatsiaq News",
+    "synonyms": [
+      "Nunatsiaq News"
+    ]
+  },
+  {
+    "value": "O Estado de S. Paulo",
+    "synonyms": [
+      "O Estado de S. Paulo"
+    ]
+  },
+  {
+    "value": "O Globo",
+    "synonyms": [
+      "O Globo"
+    ]
+  },
+  {
+    "value": "OSCE",
+    "synonyms": [
+      "OSCE"
+    ]
+  },
+  {
+    "value": "Omaid Weekly",
+    "synonyms": [
+      "Omaid Weekly"
+    ]
+  },
+  {
+    "value": "Oman daily Observer",
+    "synonyms": [
+      "Oman daily Observer"
+    ]
+  },
+  {
+    "value": "One News",
+    "synonyms": [
+      "One News"
+    ]
+  },
+  {
+    "value": "Online Indian News",
+    "synonyms": [
+      "Online Indian News"
+    ]
+  },
+  {
+    "value": "Otago Daily Times",
+    "synonyms": [
+      "Otago Daily Times"
+    ]
+  },
+  {
+    "value": "Ottawa Citizen",
+    "synonyms": [
+      "Ottawa Citizen"
+    ]
+  },
+  {
+    "value": "Ottawa Sun",
+    "synonyms": [
+      "Ottawa Sun"
+    ]
+  },
+  {
+    "value": "Our Century",
+    "synonyms": [
+      "Our Century"
+    ]
+  },
+  {
+    "value": "Pacific Islands News Association",
+    "synonyms": [
+      "Pacific Islands News Association"
+    ]
+  },
+  {
+    "value": "Pak Tribune",
+    "synonyms": [
+      "Pak Tribune"
+    ]
+  },
+  {
+    "value": "Pakistan Corporation",
+    "synonyms": [
+      "Pakistan Corporation"
+    ]
+  },
+  {
+    "value": "Pakistan Times",
+    "synonyms": [
+      "Pakistan Times"
+    ]
+  },
+  {
+    "value": "Pakistan Today",
+    "synonyms": [
+      "Pakistan Today"
+    ]
+  },
+  {
+    "value": "Palestine Chronicle",
+    "synonyms": [
+      "Palestine Chronicle"
+    ]
+  },
+  {
+    "value": "Pambazuka News",
+    "synonyms": [
+      "Pambazuka News"
+    ]
+  },
+  {
+    "value": "Pattaya Mail",
+    "synonyms": [
+      "Pattaya Mail"
+    ]
+  },
+  {
+    "value": "People Daily",
+    "synonyms": [
+      "People Daily"
+    ]
+  },
+  {
+    "value": "PerthNow",
+    "synonyms": [
+      "PerthNow"
+    ]
+  },
+  {
+    "value": "Petra",
+    "synonyms": [
+      "Petra"
+    ]
+  },
+  {
+    "value": "Philippine Daily Inquirer",
+    "synonyms": [
+      "Philippine Daily Inquirer"
+    ]
+  },
+  {
+    "value": "Phnim Peah Post",
+    "synonyms": [
+      "Phnim Peah Post"
+    ]
+  },
+  {
+    "value": "Phuket Gazette",
+    "synonyms": [
+      "Phuket Gazette"
+    ]
+  },
+  {
+    "value": "PingMag",
+    "synonyms": [
+      "PingMag"
+    ]
+  },
+  {
+    "value": "Poland Monthly",
+    "synonyms": [
+      "Poland Monthly"
+    ]
+  },
+  {
+    "value": "Polish portal",
+    "synonyms": [
+      "Polish portal"
+    ]
+  },
+  {
+    "value": "Post Courier",
+    "synonyms": [
+      "Post Courier"
+    ]
+  },
+  {
+    "value": "Post Newspapers",
+    "synonyms": [
+      "Post Newspapers"
+    ]
+  },
+  {
+    "value": "Pravda",
+    "synonyms": [
+      "Pravda"
+    ]
+  },
+  {
+    "value": "Press Trust of India",
+    "synonyms": [
+      "Press Trust of India"
+    ]
+  },
+  {
+    "value": "PressTV",
+    "synonyms": [
+      "PressTV"
+    ]
+  },
+  {
+    "value": "Private Eye",
+    "synonyms": [
+      "Private Eye"
+    ]
+  },
+  {
+    "value": "Quest Newspapers",
+    "synonyms": [
+      "Quest Newspapers"
+    ]
+  },
+  {
+    "value": "RESPUBLIKA",
+    "synonyms": [
+      "RESPUBLIKA"
+    ]
+  },
+  {
+    "value": "RTE News",
+    "synonyms": [
+      "RTE News"
+    ]
+  },
+  {
+    "value": "Radar de Media",
+    "synonyms": [
+      "Radar de Media"
+    ]
+  },
+  {
+    "value": "Radio France Africa",
+    "synonyms": [
+      "Radio France Africa"
+    ]
+  },
+  {
+    "value": "Radio Free Europe",
+    "synonyms": [
+      "Radio Free Europe"
+    ]
+  },
+  {
+    "value": "Radio Latvia",
+    "synonyms": [
+      "Radio Latvia"
+    ]
+  },
+  {
+    "value": "Radio Nepal",
+    "synonyms": [
+      "Radio Nepal"
+    ]
+  },
+  {
+    "value": "Radio Netherlands",
+    "synonyms": [
+      "Radio Netherlands"
+    ]
+  },
+  {
+    "value": "Radio New Zealand",
+    "synonyms": [
+      "Radio New Zealand"
+    ]
+  },
+  {
+    "value": "Radio Poland",
+    "synonyms": [
+      "Radio Poland"
+    ]
+  },
+  {
+    "value": "Radio Prague",
+    "synonyms": [
+      "Radio Prague"
+    ]
+  },
+  {
+    "value": "Radio Taiwan International",
+    "synonyms": [
+      "Radio Taiwan International"
+    ]
+  },
+  {
+    "value": "Radio Television Hong Kong",
+    "synonyms": [
+      "Radio Television Hong Kong"
+    ]
+  },
+  {
+    "value": "Radiobras",
+    "synonyms": [
+      "Radiobras"
+    ]
+  },
+  {
+    "value": "Ranchi Express",
+    "synonyms": [
+      "Ranchi Express"
+    ]
+  },
+  {
+    "value": "Rediff",
+    "synonyms": [
+      "Rediff"
+    ]
+  },
+  {
+    "value": "Regina Leader-Post",
+    "synonyms": [
+      "Regina Leader-Post"
+    ]
+  },
+  {
+    "value": "Reuters",
+    "synonyms": [
+      "Reuters"
+    ]
+  },
+  {
+    "value": "Roll Call",
+    "synonyms": [
+      "Roll Call"
+    ]
+  },
+  {
+    "value": "Romenesko",
+    "synonyms": [
+      "Romenesko"
+    ]
+  },
+  {
+    "value": "Russia Beyond the Headlines",
+    "synonyms": [
+      "Russia Beyond the Headlines"
+    ]
+  },
+  {
+    "value": "Russia Journal",
+    "synonyms": [
+      "Russia Journal"
+    ]
+  },
+  {
+    "value": "Russia News",
+    "synonyms": [
+      "Russia News"
+    ]
+  },
+  {
+    "value": "Rzeczpospolita",
+    "synonyms": [
+      "Rzeczpospolita"
+    ]
+  },
+  {
+    "value": "SES",
+    "synonyms": [
+      "SES"
+    ]
+  },
+  {
+    "value": "SHERG",
+    "synonyms": [
+      "SHERG"
+    ]
+  },
+  {
+    "value": "SR international",
+    "synonyms": [
+      "SR international"
+    ]
+  },
+  {
+    "value": "SUN TV",
+    "synonyms": [
+      "SUN TV"
+    ]
+  },
+  {
+    "value": "Samachar News Site",
+    "synonyms": [
+      "Samachar News Site"
+    ]
+  },
+  {
+    "value": "Samoa News",
+    "synonyms": [
+      "Samoa News"
+    ]
+  },
+  {
+    "value": "Samoa Observer",
+    "synonyms": [
+      "Samoa Observer"
+    ]
+  },
+  {
+    "value": "Saskatoon StarPhoenix",
+    "synonyms": [
+      "Saskatoon StarPhoenix"
+    ]
+  },
+  {
+    "value": "Saudia Online",
+    "synonyms": [
+      "Saudia Online"
+    ]
+  },
+  {
+    "value": "Scandinavia Now",
+    "synonyms": [
+      "Scandinavia Now"
+    ]
+  },
+  {
+    "value": "Scoop",
+    "synonyms": [
+      "Scoop"
+    ]
+  },
+  {
+    "value": "Silverbird group",
+    "synonyms": [
+      "Silverbird group"
+    ]
+  },
+  {
+    "value": "Sky News",
+    "synonyms": [
+      "Sky News"
+    ]
+  },
+  {
+    "value": "Slobodna Dalmacija",
+    "synonyms": [
+      "Slobodna Dalmacija"
+    ]
+  },
+  {
+    "value": "Slovensko",
+    "synonyms": [
+      "Slovensko"
+    ]
+  },
+  {
+    "value": "Sofia Echo",
+    "synonyms": [
+      "Sofia Echo"
+    ]
+  },
+  {
+    "value": "Sofia News Agency",
+    "synonyms": [
+      "Sofia News Agency"
+    ]
+  },
+  {
+    "value": "Solomon Star",
+    "synonyms": [
+      "Solomon Star"
+    ]
+  },
+  {
+    "value": "Solomon Times",
+    "synonyms": [
+      "Solomon Times"
+    ]
+  },
+  {
+    "value": "South Western Times",
+    "synonyms": [
+      "South Western Times"
+    ]
+  },
+  {
+    "value": "South africa company",
+    "synonyms": [
+      "South africa company"
+    ]
+  },
+  {
+    "value": "SpaceTV",
+    "synonyms": [
+      "SpaceTV"
+    ]
+  },
+  {
+    "value": "Spiegel",
+    "synonyms": [
+      "Spiegel"
+    ]
+  },
+  {
+    "value": "St. John\u0027s Telegram",
+    "synonyms": [
+      "St. John\u0027s Telegram"
+    ]
+  },
+  {
+    "value": "Statesman",
+    "synonyms": [
+      "Statesman"
+    ]
+  },
+  {
+    "value": "Stuff",
+    "synonyms": [
+      "Stuff"
+    ]
+  },
+  {
+    "value": "Sudan Net",
+    "synonyms": [
+      "Sudan Net"
+    ]
+  },
+  {
+    "value": "Sunday Independent",
+    "synonyms": [
+      "Sunday Independent"
+    ]
+  },
+  {
+    "value": "Sunday express",
+    "synonyms": [
+      "Sunday express"
+    ]
+  },
+  {
+    "value": "Sur",
+    "synonyms": [
+      "Sur"
+    ]
+  },
+  {
+    "value": "Swiss Info",
+    "synonyms": [
+      "Swiss Info"
+    ]
+  },
+  {
+    "value": "TEZADLAR",
+    "synonyms": [
+      "TEZADLAR"
+    ]
+  },
+  {
+    "value": "TURAN",
+    "synonyms": [
+      "TURAN"
+    ]
+  },
+  {
+    "value": "TVB",
+    "synonyms": [
+      "TVB"
+    ]
+  },
+  {
+    "value": "Tagesschau",
+    "synonyms": [
+      "Tagesschau"
+    ]
+  },
+  {
+    "value": "Taipei Times",
+    "synonyms": [
+      "Taipei Times"
+    ]
+  },
+  {
+    "value": "Tamil Eelam News",
+    "synonyms": [
+      "Tamil Eelam News"
+    ]
+  },
+  {
+    "value": "Tamil Murasu",
+    "synonyms": [
+      "Tamil Murasu"
+    ]
+  },
+  {
+    "value": "Tanjus",
+    "synonyms": [
+      "Tanjus"
+    ]
+  },
+  {
+    "value": "Tech India",
+    "synonyms": [
+      "Tech India"
+    ]
+  },
+  {
+    "value": "Tech News Cloud",
+    "synonyms": [
+      "Tech News Cloud"
+    ]
+  },
+  {
+    "value": "Tehran Times",
+    "synonyms": [
+      "Tehran Times"
+    ]
+  },
+  {
+    "value": "Telegraph",
+    "synonyms": [
+      "Telegraph"
+    ]
+  },
+  {
+    "value": "The Advertiser",
+    "synonyms": [
+      "The Advertiser"
+    ]
+  },
+  {
+    "value": "The Aerogram",
+    "synonyms": [
+      "The Aerogram"
+    ]
+  },
+  {
+    "value": "The Age",
+    "synonyms": [
+      "The Age"
+    ]
+  },
+  {
+    "value": "The Australian",
+    "synonyms": [
+      "The Australian"
+    ]
+  },
+  {
+    "value": "The Azeri Times",
+    "synonyms": [
+      "The Azeri Times"
+    ]
+  },
+  {
+    "value": "The Baltic Times",
+    "synonyms": [
+      "The Baltic Times"
+    ]
+  },
+  {
+    "value": "The Bangladesh Observer",
+    "synonyms": [
+      "The Bangladesh Observer"
+    ]
+  },
+  {
+    "value": "The Budapest Sun",
+    "synonyms": [
+      "The Budapest Sun"
+    ]
+  },
+  {
+    "value": "The Business Times",
+    "synonyms": [
+      "The Business Times"
+    ]
+  },
+  {
+    "value": "The Canberra Times",
+    "synonyms": [
+      "The Canberra Times"
+    ]
+  },
+  {
+    "value": "The Chosun Ilbo",
+    "synonyms": [
+      "The Chosun Ilbo"
+    ]
+  },
+  {
+    "value": "The Christian Science Monitor",
+    "synonyms": [
+      "The Christian Science Monitor"
+    ]
+  },
+  {
+    "value": "The Copenhagen Post",
+    "synonyms": [
+      "The Copenhagen Post"
+    ]
+  },
+  {
+    "value": "The Cyprus Weekly",
+    "synonyms": [
+      "The Cyprus Weekly"
+    ]
+  },
+  {
+    "value": "The Daily Express",
+    "synonyms": [
+      "The Daily Express"
+    ]
+  },
+  {
+    "value": "The Daily Mail",
+    "synonyms": [
+      "The Daily Mail"
+    ]
+  },
+  {
+    "value": "The Daily News",
+    "synonyms": [
+      "The Daily News"
+    ]
+  },
+  {
+    "value": "The Daily Star",
+    "synonyms": [
+      "The Daily Star"
+    ]
+  },
+  {
+    "value": "The Daily Times",
+    "synonyms": [
+      "The Daily Times"
+    ]
+  },
+  {
+    "value": "The Economist",
+    "synonyms": [
+      "The Economist"
+    ]
+  },
+  {
+    "value": "The Express Online",
+    "synonyms": [
+      "The Express Online"
+    ]
+  },
+  {
+    "value": "The Financial Gazette",
+    "synonyms": [
+      "The Financial Gazette"
+    ]
+  },
+  {
+    "value": "The Frontier Post",
+    "synonyms": [
+      "The Frontier Post"
+    ]
+  },
+  {
+    "value": "The Globe and Mail",
+    "synonyms": [
+      "The Globe and Mail"
+    ]
+  },
+  {
+    "value": "The Gulf Today",
+    "synonyms": [
+      "The Gulf Today"
+    ]
+  },
+  {
+    "value": "The Herald",
+    "synonyms": [
+      "The Herald"
+    ]
+  },
+  {
+    "value": "The Hill Times",
+    "synonyms": [
+      "The Hill Times"
+    ]
+  },
+  {
+    "value": "The Independent",
+    "synonyms": [
+      "The Independent"
+    ]
+  },
+  {
+    "value": "The Irish Times",
+    "synonyms": [
+      "The Irish Times"
+    ]
+  },
+  {
+    "value": "The Jakarta Post",
+    "synonyms": [
+      "The Jakarta Post"
+    ]
+  },
+  {
+    "value": "The Japan Times",
+    "synonyms": [
+      "The Japan Times"
+    ]
+  },
+  {
+    "value": "The Japan Times Art",
+    "synonyms": [
+      "The Japan Times Art"
+    ]
+  },
+  {
+    "value": "The Jerusalem Post",
+    "synonyms": [
+      "The Jerusalem Post"
+    ]
+  },
+  {
+    "value": "The Jerusalem Report",
+    "synonyms": [
+      "The Jerusalem Report"
+    ]
+  },
+  {
+    "value": "The Jordan Times",
+    "synonyms": [
+      "The Jordan Times"
+    ]
+  },
+  {
+    "value": "The Kingston Whig Standard",
+    "synonyms": [
+      "The Kingston Whig Standard"
+    ]
+  },
+  {
+    "value": "The Korea Herald",
+    "synonyms": [
+      "The Korea Herald"
+    ]
+  },
+  {
+    "value": "The Liberian Connection",
+    "synonyms": [
+      "The Liberian Connection"
+    ]
+  },
+  {
+    "value": "The Malawi Nation",
+    "synonyms": [
+      "The Malawi Nation"
+    ]
+  },
+  {
+    "value": "The Malta independent online",
+    "synonyms": [
+      "The Malta independent online"
+    ]
+  },
+  {
+    "value": "The Mercury",
+    "synonyms": [
+      "The Mercury"
+    ]
+  },
+  {
+    "value": "The Mirror",
+    "synonyms": [
+      "The Mirror"
+    ]
+  },
+  {
+    "value": "The Moscow Times",
+    "synonyms": [
+      "The Moscow Times"
+    ]
+  },
+  {
+    "value": "The Nation",
+    "synonyms": [
+      "The Nation"
+    ]
+  },
+  {
+    "value": "The National Business Review",
+    "synonyms": [
+      "The National Business Review"
+    ]
+  },
+  {
+    "value": "The New Nation",
+    "synonyms": [
+      "The New Nation"
+    ]
+  },
+  {
+    "value": "The New Paper",
+    "synonyms": [
+      "The New Paper"
+    ]
+  },
+  {
+    "value": "The New Standard",
+    "synonyms": [
+      "The New Standard"
+    ]
+  },
+  {
+    "value": "The News",
+    "synonyms": [
+      "The News"
+    ]
+  },
+  {
+    "value": "The North Africa Journal",
+    "synonyms": [
+      "The North Africa Journal"
+    ]
+  },
+  {
+    "value": "The Online Independent",
+    "synonyms": [
+      "The Online Independent"
+    ]
+  },
+  {
+    "value": "The Perspective",
+    "synonyms": [
+      "The Perspective"
+    ]
+  },
+  {
+    "value": "The Philippine Star",
+    "synonyms": [
+      "The Philippine Star"
+    ]
+  },
+  {
+    "value": "The Portugal News Online",
+    "synonyms": [
+      "The Portugal News Online"
+    ]
+  },
+  {
+    "value": "The Post",
+    "synonyms": [
+      "The Post"
+    ]
+  },
+  {
+    "value": "The Prague Post",
+    "synonyms": [
+      "The Prague Post"
+    ]
+  },
+  {
+    "value": "The Prague Tribune",
+    "synonyms": [
+      "The Prague Tribune"
+    ]
+  },
+  {
+    "value": "The Scotsman",
+    "synonyms": [
+      "The Scotsman"
+    ]
+  },
+  {
+    "value": "The Socialist Worker",
+    "synonyms": [
+      "The Socialist Worker"
+    ]
+  },
+  {
+    "value": "The Spectator",
+    "synonyms": [
+      "The Spectator"
+    ]
+  },
+  {
+    "value": "The St. Petersburg Times",
+    "synonyms": [
+      "The St. Petersburg Times"
+    ]
+  },
+  {
+    "value": "The Star",
+    "synonyms": [
+      "The Star"
+    ]
+  },
+  {
+    "value": "The Straits Times",
+    "synonyms": [
+      "The Straits Times"
+    ]
+  },
+  {
+    "value": "The Sun",
+    "synonyms": [
+      "The Sun"
+    ]
+  },
+  {
+    "value": "The Sunday Island",
+    "synonyms": [
+      "The Sunday Island"
+    ]
+  },
+  {
+    "value": "The Sunday Leader",
+    "synonyms": [
+      "The Sunday Leader"
+    ]
+  },
+  {
+    "value": "The Sunday Times",
+    "synonyms": [
+      "The Sunday Times"
+    ]
+  },
+  {
+    "value": "The Sydney Morning Herald",
+    "synonyms": [
+      "The Sydney Morning Herald"
+    ]
+  },
+  {
+    "value": "The Telegraph",
+    "synonyms": [
+      "The Telegraph"
+    ]
+  },
+  {
+    "value": "The Toronto Star",
+    "synonyms": [
+      "The Toronto Star"
+    ]
+  },
+  {
+    "value": "The Vancouver Sun",
+    "synonyms": [
+      "The Vancouver Sun"
+    ]
+  },
+  {
+    "value": "The Voice of Greece",
+    "synonyms": [
+      "The Voice of Greece"
+    ]
+  },
+  {
+    "value": "The Voice of Mirza Xazar",
+    "synonyms": [
+      "The Voice of Mirza Xazar"
+    ]
+  },
+  {
+    "value": "The Warsaw Voice",
+    "synonyms": [
+      "The Warsaw Voice"
+    ]
+  },
+  {
+    "value": "The Washington Post",
+    "synonyms": [
+      "The Washington Post"
+    ]
+  },
+  {
+    "value": "The Washington Times",
+    "synonyms": [
+      "The Washington Times"
+    ]
+  },
+  {
+    "value": "The West Australian",
+    "synonyms": [
+      "The West Australian"
+    ]
+  },
+  {
+    "value": "The local",
+    "synonyms": [
+      "The local"
+    ]
+  },
+  {
+    "value": "The new Vision Online",
+    "synonyms": [
+      "The new Vision Online"
+    ]
+  },
+  {
+    "value": "The voice of Party",
+    "synonyms": [
+      "The voice of Party"
+    ]
+  },
+  {
+    "value": "The voice of Russia",
+    "synonyms": [
+      "The voice of Russia"
+    ]
+  },
+  {
+    "value": "Think Africa Press",
+    "synonyms": [
+      "Think Africa Press"
+    ]
+  },
+  {
+    "value": "Tico Times",
+    "synonyms": [
+      "Tico Times"
+    ]
+  },
+  {
+    "value": "Times Online",
+    "synonyms": [
+      "Times Online"
+    ]
+  },
+  {
+    "value": "Times of India",
+    "synonyms": [
+      "Times of India"
+    ]
+  },
+  {
+    "value": "Times of Oman",
+    "synonyms": [
+      "Times of Oman"
+    ]
+  },
+  {
+    "value": "Times of Swaziland",
+    "synonyms": [
+      "Times of Swaziland"
+    ]
+  },
+  {
+    "value": "Today.Az",
+    "synonyms": [
+      "Today.Az"
+    ]
+  },
+  {
+    "value": "Tokelau news from NZ Herald",
+    "synonyms": [
+      "Tokelau news from NZ Herald"
+    ]
+  },
+  {
+    "value": "Tokyo Art Beat",
+    "synonyms": [
+      "Tokyo Art Beat"
+    ]
+  },
+  {
+    "value": "Toronto Sun",
+    "synonyms": [
+      "Toronto Sun"
+    ]
+  },
+  {
+    "value": "Townsville Bulletin",
+    "synonyms": [
+      "Townsville Bulletin"
+    ]
+  },
+  {
+    "value": "Transitions online",
+    "synonyms": [
+      "Transitions online"
+    ]
+  },
+  {
+    "value": "Trend",
+    "synonyms": [
+      "Trend"
+    ]
+  },
+  {
+    "value": "Tribune",
+    "synonyms": [
+      "Tribune"
+    ]
+  },
+  {
+    "value": "Tunisia Online news",
+    "synonyms": [
+      "Tunisia Online news"
+    ]
+  },
+  {
+    "value": "Turkey News",
+    "synonyms": [
+      "Turkey News"
+    ]
+  },
+  {
+    "value": "Turkish Press",
+    "synonyms": [
+      "Turkish Press"
+    ]
+  },
+  {
+    "value": "Turkish daily news",
+    "synonyms": [
+      "Turkish daily news"
+    ]
+  },
+  {
+    "value": "Twitter",
+    "synonyms": [
+      "Twitter"
+    ]
+  },
+  {
+    "value": "USA Today",
+    "synonyms": [
+      "USA Today"
+    ]
+  },
+  {
+    "value": "Utusan Malaysia",
+    "synonyms": [
+      "Utusan Malaysia"
+    ]
+  },
+  {
+    "value": "Vancouver Province",
+    "synonyms": [
+      "Vancouver Province"
+    ]
+  },
+  {
+    "value": "Vanguard",
+    "synonyms": [
+      "Vanguard"
+    ]
+  },
+  {
+    "value": "Vaterland",
+    "synonyms": [
+      "Vaterland"
+    ]
+  },
+  {
+    "value": "Večernji list",
+    "synonyms": [
+      "Večernji list"
+    ]
+  },
+  {
+    "value": "Victoria Times Colonist",
+    "synonyms": [
+      "Victoria Times Colonist"
+    ]
+  },
+  {
+    "value": "Viet Nam News",
+    "synonyms": [
+      "Viet Nam News"
+    ]
+  },
+  {
+    "value": "Voice of Vietnam",
+    "synonyms": [
+      "Voice of Vietnam"
+    ]
+  },
+  {
+    "value": "WA Today",
+    "synonyms": [
+      "WA Today"
+    ]
+  },
+  {
+    "value": "WRN",
+    "synonyms": [
+      "WRN"
+    ]
+  },
+  {
+    "value": "WRN:Budapest",
+    "synonyms": [
+      "WRN:Budapest"
+    ]
+  },
+  {
+    "value": "Wairarapa Times-Age",
+    "synonyms": [
+      "Wairarapa Times-Age"
+    ]
+  },
+  {
+    "value": "Wall Street Journal",
+    "synonyms": [
+      "Wall Street Journal"
+    ]
+  },
+  {
+    "value": "Walta Information centre",
+    "synonyms": [
+      "Walta Information centre"
+    ]
+  },
+  {
+    "value": "Warsaw Business Journal",
+    "synonyms": [
+      "Warsaw Business Journal"
+    ]
+  },
+  {
+    "value": "Washington Post",
+    "synonyms": [
+      "Washington Post"
+    ]
+  },
+  {
+    "value": "Week",
+    "synonyms": [
+      "Week"
+    ]
+  },
+  {
+    "value": "Weekly Holiday",
+    "synonyms": [
+      "Weekly Holiday"
+    ]
+  },
+  {
+    "value": "Weekly independent",
+    "synonyms": [
+      "Weekly independent"
+    ]
+  },
+  {
+    "value": "Western Sahara Online",
+    "synonyms": [
+      "Western Sahara Online"
+    ]
+  },
+  {
+    "value": "Western Sahara Update",
+    "synonyms": [
+      "Western Sahara Update"
+    ]
+  },
+  {
+    "value": "Wiener Zeitung",
+    "synonyms": [
+      "Wiener Zeitung"
+    ]
+  },
+  {
+    "value": "Window on Ukraine",
+    "synonyms": [
+      "Window on Ukraine"
+    ]
+  },
+  {
+    "value": "Winnipeg Free Press",
+    "synonyms": [
+      "Winnipeg Free Press"
+    ]
+  },
+  {
+    "value": "Wired News",
+    "synonyms": [
+      "Wired News"
+    ]
+  },
+  {
+    "value": "WorldSnap",
+    "synonyms": [
+      "WorldSnap"
+    ]
+  },
+  {
+    "value": "Xalq Cebhesi",
+    "synonyms": [
+      "Xalq Cebhesi"
+    ]
+  },
+  {
+    "value": "Xinhua",
+    "synonyms": [
+      "Xinhua"
+    ]
+  },
+  {
+    "value": "Yahoo",
+    "synonyms": [
+      "Yahoo"
+    ]
+  },
+  {
+    "value": "Yandex",
+    "synonyms": [
+      "Yandex"
+    ]
+  },
+  {
+    "value": "Yemem Times",
+    "synonyms": [
+      "Yemem Times"
+    ]
+  },
+  {
+    "value": "Yeni Azerbaycan",
+    "synonyms": [
+      "Yeni Azerbaycan"
+    ]
+  },
+  {
+    "value": "YeniCAG",
+    "synonyms": [
+      "YeniCAG"
+    ]
+  },
+  {
+    "value": "Ynet News",
+    "synonyms": [
+      "Ynet News"
+    ]
+  },
+  {
+    "value": "ZAMAN",
+    "synonyms": [
+      "ZAMAN"
+    ]
+  },
+  {
+    "value": "Zaman Daily Newspaper",
+    "synonyms": [
+      "Zaman Daily Newspaper"
+    ]
+  },
+  {
+    "value": "Zambia Daily Mail",
+    "synonyms": [
+      "Zambia Daily Mail"
+    ]
+  },
+  {
+    "value": "Zawya",
+    "synonyms": [
+      "Zawya"
+    ]
+  },
+  {
+    "value": "Zimbabwe News",
+    "synonyms": [
+      "Zimbabwe News"
+    ]
+  },
+  {
+    "value": "Zimbabwe association",
+    "synonyms": [
+      "Zimbabwe association"
+    ]
+  },
+  {
+    "value": "iNews Journal",
+    "synonyms": [
+      "iNews Journal"
+    ]
+  },
+  {
+    "value": "iTV",
+    "synonyms": [
+      "iTV"
+    ]
+  }
+]

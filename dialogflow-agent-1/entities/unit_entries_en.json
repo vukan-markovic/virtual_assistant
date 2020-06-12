@@ -1,0 +1,50 @@
+[
+  {
+    "value": "@sys.unit-area-name",
+    "synonyms": [
+      "@sys.unit-area-name"
+    ]
+  },
+  {
+    "value": "@sys.unit-information-name",
+    "synonyms": [
+      "@sys.unit-information-name"
+    ]
+  },
+  {
+    "value": "@sys.unit-length-name",
+    "synonyms": [
+      "@sys.unit-length-name"
+    ]
+  },
+  {
+    "value": "@sys.unit-speed-name",
+    "synonyms": [
+      "@sys.unit-speed-name"
+    ]
+  },
+  {
+    "value": "@sys.unit-volume-name",
+    "synonyms": [
+      "@sys.unit-volume-name"
+    ]
+  },
+  {
+    "value": "@sys.unit-weight-name",
+    "synonyms": [
+      "@sys.unit-weight-name"
+    ]
+  },
+  {
+    "value": "@unit-temperature",
+    "synonyms": [
+      "@unit-temperature"
+    ]
+  },
+  {
+    "value": "@unit-time",
+    "synonyms": [
+      "@unit-time"
+    ]
+  }
+]

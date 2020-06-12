@@ -1,0 +1,38 @@
+{
+  "id": "fe2208e8-2cb9-47c1-a491-7bfd48be0cd4",
+  "name": "smalltalk.user.bored",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "smalltalk.user.bored",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "Boredom, huh? Check out a video of a hedgehog taking a bath!",
+            "What to do against boredom? Watch baby animal videos.",
+            "Bored? How about 10 jumping jacks? Get your blood flowing.",
+            "Bored? Silly idea, but it works: Interview you feet. ",
+            "If you\u0027re bored, you could plan your dream vacation."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

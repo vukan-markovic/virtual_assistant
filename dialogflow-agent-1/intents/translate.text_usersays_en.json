@@ -1,0 +1,2708 @@
+[
+  {
+    "id": "882df797-342f-461a-99b1-eb8328622c74",
+    "data": [
+      {
+        "text": "translation from ",
+        "userDefined": false
+      },
+      {
+        "text": "English",
+        "alias": "lang-from",
+        "meta": "@sys.language",
+        "userDefined": true
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "Italian",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "358748e4-aec0-4fe9-9920-690cb69b48c8",
+    "data": [
+      {
+        "text": "translate text ",
+        "userDefined": false
+      },
+      {
+        "text": "hello",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "3339e18f-b272-4d1d-af3c-c0182f1afecf",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "hi",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " into ",
+        "userDefined": false
+      },
+      {
+        "text": "Spanish",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "b36c99ec-35e0-4a74-a4b2-88c4249b853d",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "Spanish",
+        "alias": "lang-from",
+        "meta": "@sys.language",
+        "userDefined": true
+      },
+      {
+        "text": " word ",
+        "userDefined": false
+      },
+      {
+        "text": "trabajador",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " into ",
+        "userDefined": false
+      },
+      {
+        "text": "English",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0e7195d4-98e3-4219-88f1-396a8fe113c3",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "hello how are you",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "Punjabi",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a60aa0f9-afc2-4c09-816f-2b034cd7bed3",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "in America",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "058e8c0b-b220-405f-8684-7247f50fefad",
+    "data": [
+      {
+        "text": "what\u0027s the ",
+        "userDefined": false
+      },
+      {
+        "text": "German",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      },
+      {
+        "text": " word for ",
+        "userDefined": false
+      },
+      {
+        "text": "breakfast",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "00ee6039-7114-482f-b9a8-7ff281f0bc48",
+    "data": [
+      {
+        "text": "translation of the word ",
+        "userDefined": false
+      },
+      {
+        "text": "bismilla",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " into ",
+        "userDefined": false
+      },
+      {
+        "text": "English",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4a95ddf4-bb62-459d-9fa8-5eb06a1cdf80",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "many",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "English",
+        "alias": "lang-from",
+        "meta": "@sys.language",
+        "userDefined": true
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "French",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "46e4abdb-3a5a-4288-b4e5-7437c3f8812c",
+    "data": [
+      {
+        "text": "translate into ",
+        "userDefined": false
+      },
+      {
+        "text": "French",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e8285cef-27e8-4325-a336-c51f5525eee3",
+    "data": [
+      {
+        "text": "translate from ",
+        "userDefined": false
+      },
+      {
+        "text": "English",
+        "alias": "lang-from",
+        "meta": "@sys.language",
+        "userDefined": true
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "French",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e718f3f8-7912-459d-99ef-5f5e64e6bd3a",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "table",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " into ",
+        "userDefined": false
+      },
+      {
+        "text": "German",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "413983ef-686c-4160-8e16-a5ec7488b6dc",
+    "data": [
+      {
+        "text": "translate word ",
+        "userDefined": false
+      },
+      {
+        "text": "le renard",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " into ",
+        "userDefined": false
+      },
+      {
+        "text": "English",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "56a58554-502a-464b-b750-04c8073d537e",
+    "data": [
+      {
+        "text": "how to translate ",
+        "userDefined": false
+      },
+      {
+        "text": "hello",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " into ",
+        "userDefined": false
+      },
+      {
+        "text": "Spanish",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c7b44b84-9bbc-4a05-8172-ef397f0337b1",
+    "data": [
+      {
+        "text": "please translate in ",
+        "userDefined": false
+      },
+      {
+        "text": "English",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "75d8fc71-31cd-4a97-9d06-930443c7e5b6",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "hola",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "Spanish",
+        "alias": "lang-from",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c011b736-a0b1-490b-ab47-0c9fae17a570",
+    "data": [
+      {
+        "text": "translate word ",
+        "userDefined": false
+      },
+      {
+        "text": "trabajador",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " into ",
+        "userDefined": false
+      },
+      {
+        "text": "English",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8e12d723-0c04-47ec-b3b4-d97bcf0c6d9b",
+    "data": [
+      {
+        "text": "read the translation of ",
+        "userDefined": false
+      },
+      {
+        "text": "so cool",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "Spanish",
+        "alias": "lang-from",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "72e2acfd-2f78-491e-8a93-b8a90f7b46bc",
+    "data": [
+      {
+        "text": "translate into ",
+        "userDefined": false
+      },
+      {
+        "text": "English",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "le renard",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "563d3127-e5c6-47c3-b59d-38327da7367e",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "I love you",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "English",
+        "alias": "lang-from",
+        "meta": "@sys.language",
+        "userDefined": true
+      },
+      {
+        "text": " into ",
+        "userDefined": false
+      },
+      {
+        "text": "Japanese",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b70587d2-a099-4c18-93cb-5f2566c130de",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "we will go to the circus tomorrow",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " into ",
+        "userDefined": false
+      },
+      {
+        "text": "Bulgarian",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4d6fd8c7-8108-40bc-a8ae-567d7da69009",
+    "data": [
+      {
+        "text": "translate this words into ",
+        "userDefined": false
+      },
+      {
+        "text": "English",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "le renard",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b809c8b2-165a-46c5-b211-21f0fdb65088",
+    "data": [
+      {
+        "text": "read the translation of ",
+        "userDefined": false
+      },
+      {
+        "text": "so cool",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "6efd996f-8869-4886-8a76-a39d45fda185",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "we go to the cinema",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " into ",
+        "userDefined": false
+      },
+      {
+        "text": "Italian",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ce68fd7a-3913-4a1b-8bc8-bec76937a204",
+    "data": [
+      {
+        "text": "English",
+        "alias": "lang-from",
+        "meta": "@sys.language",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "Russian",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      },
+      {
+        "text": " translation",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4f20c867-e063-446a-ae52-3ade017a3901",
+    "data": [
+      {
+        "text": "hi how are you",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " into ",
+        "userDefined": false
+      },
+      {
+        "text": "Italian",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "36d48ea8-d207-4c7f-b7a7-a4b97491914a",
+    "data": [
+      {
+        "text": "how do you say ",
+        "userDefined": false
+      },
+      {
+        "text": "where\u0027s the nearest bus stop",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "French",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "67956ab6-f187-4cf2-b337-78ec66fc9350",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "I love you",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "English",
+        "alias": "lang-from",
+        "meta": "@sys.language",
+        "userDefined": true
+      },
+      {
+        "text": " into ",
+        "userDefined": false
+      },
+      {
+        "text": "Russian",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "81a07557-32b4-4860-97e8-63b80b021a2b",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "Happy New Year",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " into ",
+        "userDefined": false
+      },
+      {
+        "text": "Spanish",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4be2b10e-ad8f-49c9-a7f8-acf573de5d05",
+    "data": [
+      {
+        "text": "translate for me",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "76520fc8-ff3e-47b7-aa01-609adde4f8c2",
+    "data": [
+      {
+        "text": "can you translate ",
+        "userDefined": false
+      },
+      {
+        "text": "hello",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "German",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "69dff96e-e9c8-4cb4-9d51-683711404e7f",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "student",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " into ",
+        "userDefined": false
+      },
+      {
+        "text": "Chinese",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "1e96ef65-8568-46d8-9c82-0641ad186c6f",
+    "data": [
+      {
+        "text": "I need to translate ",
+        "userDefined": false
+      },
+      {
+        "text": "Bengali",
+        "alias": "lang-from",
+        "meta": "@sys.language",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "3f020aa8-f985-43fa-9939-4bfbd66fa922",
+    "data": [
+      {
+        "text": "can you say something in ",
+        "userDefined": false
+      },
+      {
+        "text": "French",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a670f353-82c0-4941-a1a2-4a91031fb3ed",
+    "data": [
+      {
+        "text": "how do you say ",
+        "userDefined": false
+      },
+      {
+        "text": "Santa Claus",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "Finnish",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "9960a334-744b-4b1f-85c3-2b2b49a6d18e",
+    "data": [
+      {
+        "text": "what\u0027s ",
+        "userDefined": false
+      },
+      {
+        "text": "terrific",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "German",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a2ebdd17-c627-46c5-be93-4b029e249deb",
+    "data": [
+      {
+        "text": "translate from ",
+        "userDefined": false
+      },
+      {
+        "text": "Tigrinya",
+        "alias": "lang-from",
+        "meta": "@sys.language",
+        "userDefined": true
+      },
+      {
+        "text": " into ",
+        "userDefined": false
+      },
+      {
+        "text": "Breton",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      },
+      {
+        "text": " language",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "15a83d73-06dc-47fc-a099-ace796bc0875",
+    "data": [
+      {
+        "text": "show the translation of ",
+        "userDefined": false
+      },
+      {
+        "text": "read out",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "2d39f58e-f28c-47af-852f-a7c5f5af9a6c",
+    "data": [
+      {
+        "text": "translation of ",
+        "userDefined": false
+      },
+      {
+        "text": "cómo te llamas",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "Spanish",
+        "alias": "lang-from",
+        "meta": "@sys.language",
+        "userDefined": true
+      },
+      {
+        "text": " into ",
+        "userDefined": false
+      },
+      {
+        "text": "English",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f3f80734-05d2-4a86-b3fd-ae64efeca286",
+    "data": [
+      {
+        "text": "what\u0027s ",
+        "userDefined": false
+      },
+      {
+        "text": "hello what a good day",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "German",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "7e78198d-deda-4271-83d3-7e2f98089da1",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "pencil",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "Tagalog",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "58220b69-aa93-4154-9e7b-2cde80815f57",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "can you send me a pic",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "Chinese",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e57357db-b9e1-4693-92cd-1191815f5602",
+    "data": [
+      {
+        "text": "translate from ",
+        "userDefined": false
+      },
+      {
+        "text": "French",
+        "alias": "lang-from",
+        "meta": "@sys.language",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "j aime les croissans",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "02abd695-4554-41db-b81b-d8d16e1af79e",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "hello",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "Spanish",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "English",
+        "alias": "lang-from",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "2c231531-be13-4077-a365-76c83b69c440",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "hey",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " into ",
+        "userDefined": false
+      },
+      {
+        "text": "Somali",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "bb4e808b-cdeb-428b-9873-757bf39e14f5",
+    "data": [
+      {
+        "text": "tell me the ",
+        "userDefined": false
+      },
+      {
+        "text": "Irish",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      },
+      {
+        "text": " translation for ",
+        "userDefined": false
+      },
+      {
+        "text": "beer",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " please",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "68526795-a5f1-49c2-9b48-b63e5fea42fc",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "hello",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "Filipino",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "891b7de4-0b60-4adb-bc38-fdaa52b2a020",
+    "data": [
+      {
+        "text": "translation into ",
+        "userDefined": false
+      },
+      {
+        "text": "Polish",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c4d2fa60-6000-4ef2-861c-6e02a61928d0",
+    "data": [
+      {
+        "text": "tell me the translation for ",
+        "userDefined": false
+      },
+      {
+        "text": "hello",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "Croatian",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "9bde4269-d68b-406b-961d-44ea1c18d4f8",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "how are you doing today",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "Chinese",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "76e1fc7d-a31e-45f6-aeaf-0ef1d6bb476e",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "ceiling",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "Hebrew",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "29595e43-ac12-4887-bebb-c639be7f6ee2",
+    "data": [
+      {
+        "text": "translation for ",
+        "userDefined": false
+      },
+      {
+        "text": "gutter",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "Portuguese",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "202daa3c-6954-4cbd-8d9d-bf4d2661383d",
+    "data": [
+      {
+        "text": "the translation of the phrase ",
+        "userDefined": false
+      },
+      {
+        "text": "je t\u0027aime bien",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "French",
+        "alias": "lang-from",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0b5915ab-4546-4c95-9420-33f3dcdaa214",
+    "data": [
+      {
+        "text": "translate something from ",
+        "userDefined": false
+      },
+      {
+        "text": "Chinese",
+        "alias": "lang-from",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "9fb01fa6-2ae1-49e6-9a6e-9a4a344ddfc1",
+    "data": [
+      {
+        "text": "what is ",
+        "userDefined": false
+      },
+      {
+        "text": "new shoes",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "French",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "96c5cb85-392d-46cd-8f1c-31c7d10504d2",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "cat",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "German",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "Croatian",
+        "alias": "lang-from",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "2e529ef9-4aeb-43ea-8967-676c92aeace5",
+    "data": [
+      {
+        "text": "how to translate ",
+        "userDefined": false
+      },
+      {
+        "text": "how are you",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "Russian",
+        "alias": "lang-from",
+        "meta": "@sys.language",
+        "userDefined": true
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "English",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "309728c9-c63d-4d39-854f-146489d088d1",
+    "data": [
+      {
+        "text": "the ",
+        "userDefined": false
+      },
+      {
+        "text": "Hindi",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      },
+      {
+        "text": " translation of ",
+        "userDefined": false
+      },
+      {
+        "text": "frivolity",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8570822e-1673-4eec-bdec-80f068ae6dc2",
+    "data": [
+      {
+        "text": "can you translate ",
+        "userDefined": false
+      },
+      {
+        "text": "Latin",
+        "alias": "lang-from",
+        "meta": "@sys.language",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "144d2c54-ec42-4c12-810c-57b462a26080",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "to come home tonight",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "Afrikaans",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e810c584-b8c3-4da6-af98-5465be56998f",
+    "data": [
+      {
+        "text": "translate to ",
+        "userDefined": false
+      },
+      {
+        "text": "Spanish",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "will never be rivals",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "6a86ea34-5ebc-45d8-85e4-8046356adc19",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "offspring",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "Tagalog",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "53ef7772-f36d-4dac-a733-58416ba73281",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "Quatro Sinko face",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "English",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "992272a6-03eb-44f0-87ac-50529b18cc42",
+    "data": [
+      {
+        "text": "translate to ",
+        "userDefined": false
+      },
+      {
+        "text": "French",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0d6c9446-a5c3-4888-8bbc-c5a88787bdf8",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "I hate you",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "Malayalam",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c3296b46-b19b-4fd9-b7e0-f0580d3bf81e",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "send me a picture",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "Chinese",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "cbfb48e7-a2a1-4c47-adb1-886d88f0500d",
+    "data": [
+      {
+        "text": "now",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " I want to translate from ",
+        "userDefined": false
+      },
+      {
+        "text": "Italian",
+        "alias": "lang-from",
+        "meta": "@sys.language",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "30991564-4f6e-403e-96a0-5e88a92a6755",
+    "data": [
+      {
+        "text": "I need the translation for ",
+        "userDefined": false
+      },
+      {
+        "text": "amour",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "French",
+        "alias": "lang-from",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "00c7c1ea-637b-4dba-9549-3a5567161e23",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "Russian",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "1ce2aed6-f83b-4d7f-b999-5939ad41fae1",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "what is your name",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "Tamil",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "69eb439d-5b17-4c82-807e-4cb84bf34e60",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "like a boss",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " into ",
+        "userDefined": false
+      },
+      {
+        "text": "Latin",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "19854dec-6133-4213-98c1-a6eb97f3886d",
+    "data": [
+      {
+        "text": "translate to ",
+        "userDefined": false
+      },
+      {
+        "text": "German",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "terima kasih",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "913039de-564b-43e8-aafa-ec63c5727b51",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "offspring",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "Filipino",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4772a7ea-14b4-4f06-a33a-69744a684aec",
+    "data": [
+      {
+        "text": "translate to ",
+        "userDefined": false
+      },
+      {
+        "text": "Greek",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "cat",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "1f4893bc-80a9-4335-bb19-9c88d0e21156",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "now I\u0027m going on",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c29e8ae5-2f92-43ad-a2d0-0ccc0f753c71",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "party",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " into ",
+        "userDefined": false
+      },
+      {
+        "text": "Spanish",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "be318cbc-7b05-4ef0-bfd0-4b818e86d700",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "I like you",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "Malay",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b516cb33-b712-4e04-8164-7f9e04df6e56",
+    "data": [
+      {
+        "text": "could you translate ",
+        "userDefined": false
+      },
+      {
+        "text": "I love my job",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "English",
+        "alias": "lang-from",
+        "meta": "@sys.language",
+        "userDefined": true
+      },
+      {
+        "text": " into ",
+        "userDefined": false
+      },
+      {
+        "text": "Italian",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ce173f89-0b04-4700-bf31-db86d56af19f",
+    "data": [
+      {
+        "text": "translate from ",
+        "userDefined": false
+      },
+      {
+        "text": "French",
+        "alias": "lang-from",
+        "meta": "@sys.language",
+        "userDefined": false
+      },
+      {
+        "text": " into ",
+        "userDefined": false
+      },
+      {
+        "text": "German",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "bbe69cff-b5cf-4a96-b2bc-9052093f48ea",
+    "data": [
+      {
+        "text": "translate text",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "58290a50-d7c5-432f-a565-90d76c560f95",
+    "data": [
+      {
+        "text": "now",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " translate ",
+        "userDefined": false
+      },
+      {
+        "text": "how are you",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "bb4a55ee-9754-4bee-813d-f21e9c004b37",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "I love you",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " into ",
+        "userDefined": false
+      },
+      {
+        "text": "French",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "22d42e89-80cc-4f39-b082-5493dcf845b9",
+    "data": [
+      {
+        "text": "translate something",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "64521176-4756-4bc9-864d-cdaf9e6c2ec2",
+    "data": [
+      {
+        "text": "English",
+        "alias": "lang-from",
+        "meta": "@sys.language",
+        "userDefined": true
+      },
+      {
+        "text": "-",
+        "userDefined": false
+      },
+      {
+        "text": "Russian",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      },
+      {
+        "text": " translation",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "400b8942-01c6-4699-956f-2bf6a98237f2",
+    "data": [
+      {
+        "text": "how to say ",
+        "userDefined": false
+      },
+      {
+        "text": "hello",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "Chinese",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8b3e1971-e025-4e20-b9c2-eb5ec232b568",
+    "data": [
+      {
+        "text": "translate a word",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f0236481-eaf2-4cdf-88a7-627083c86ab9",
+    "data": [
+      {
+        "text": "say ",
+        "userDefined": false
+      },
+      {
+        "text": "I\u0027m happy",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "Portuguese",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "37fec3e3-1c90-48f2-8a5a-4efe3627b1ad",
+    "data": [
+      {
+        "text": "I\u0027d like to translate a phrase",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c02c52d2-dd03-4e07-87a0-e9ef8507d9dd",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "what\u0027s up",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " into ",
+        "userDefined": false
+      },
+      {
+        "text": "Russian",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "418f5f60-9bbe-4fd2-823d-13b956ebf4e5",
+    "data": [
+      {
+        "text": "translate into ",
+        "userDefined": false
+      },
+      {
+        "text": "Urdu",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      },
+      {
+        "text": " language",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "727fb05c-86b3-4b1d-acb9-6ec4d25def98",
+    "data": [
+      {
+        "text": "English",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      },
+      {
+        "text": " translation for ",
+        "userDefined": false
+      },
+      {
+        "text": "te quiero",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "906010a7-d5d1-4520-b6a7-cdc635a61b67",
+    "data": [
+      {
+        "text": "translation",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "85a2cf96-4d38-4d43-8193-aa2c5daa4de6",
+    "data": [
+      {
+        "text": "translate a phrase",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "972b882d-dedb-44ce-a876-4ab39b8c035f",
+    "data": [
+      {
+        "text": "could you translate a word",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "9ff9c190-97e0-4f1b-b1c0-f4b3174dd322",
+    "data": [
+      {
+        "text": "translate",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d7ad8621-c83c-4b04-849e-fc70932eb279",
+    "data": [
+      {
+        "text": "translate ",
+        "userDefined": false
+      },
+      {
+        "text": "bonjour",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "French",
+        "alias": "lang-from",
+        "meta": "@sys.language",
+        "userDefined": true
+      },
+      {
+        "text": " into ",
+        "userDefined": false
+      },
+      {
+        "text": "English",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "6982c7ec-97d3-443c-9ec4-500e19af8ad9",
+    "data": [
+      {
+        "text": "I also need a translation of ",
+        "userDefined": false
+      },
+      {
+        "text": "tu es beau",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "French",
+        "alias": "lang-from",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0ea9a08d-c446-4915-bcab-b758081929cc",
+    "data": [
+      {
+        "text": "I need a translation",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c0235d6e-2f1f-4088-8ed9-957ebd7f7aa2",
+    "data": [
+      {
+        "text": "translate from ",
+        "userDefined": false
+      },
+      {
+        "text": "Spanish",
+        "alias": "lang-from",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "44870216-6e90-447f-90cc-81fe571ad4b1",
+    "data": [
+      {
+        "text": "can you translate into ",
+        "userDefined": false
+      },
+      {
+        "text": "English",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "bdc96d38-7fe3-4a19-9de0-c7b66c415828",
+    "data": [
+      {
+        "text": "I like you",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "French",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c0b8ef83-a10e-46cf-b5d2-c492e75bb30c",
+    "data": [
+      {
+        "text": "translate the phrase ",
+        "userDefined": false
+      },
+      {
+        "text": "je t\u0027aime",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " into ",
+        "userDefined": false
+      },
+      {
+        "text": "Hebrew",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c23fead9-acf7-4bd0-9978-9c41c287d39f",
+    "data": [
+      {
+        "text": "what\u0027s the ",
+        "userDefined": false
+      },
+      {
+        "text": "German",
+        "alias": "lang-from",
+        "meta": "@sys.language",
+        "userDefined": true
+      },
+      {
+        "text": " word for ",
+        "userDefined": false
+      },
+      {
+        "text": "pencil",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "eb140660-2a1b-4848-b023-01dd3761f6a6",
+    "data": [
+      {
+        "text": "tell me the ",
+        "userDefined": false
+      },
+      {
+        "text": "Japanese",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      },
+      {
+        "text": " translation for ",
+        "userDefined": false
+      },
+      {
+        "text": "how are you",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "54973ec2-a0d5-4622-93cb-9adb68da9e67",
+    "data": [
+      {
+        "text": "hola qué tal",
+        "alias": "text",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "Spanish",
+        "alias": "lang-from",
+        "meta": "@sys.language",
+        "userDefined": true
+      },
+      {
+        "text": " into ",
+        "userDefined": false
+      },
+      {
+        "text": "Croatian",
+        "alias": "lang-to",
+        "meta": "@sys.language",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

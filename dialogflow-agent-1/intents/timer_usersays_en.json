@@ -1,0 +1,122 @@
+[
+  {
+    "id": "ff98d3a8-875d-46d1-961c-e2422bbe7aee",
+    "data": [
+      {
+        "text": "set a timer for ",
+        "userDefined": false
+      },
+      {
+        "text": "10",
+        "alias": "seconds",
+        "meta": "@sys.number-integer",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "seconds",
+        "alias": "unit-time",
+        "meta": "@unit-time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "1314b7e3-b232-4d2e-a665-b8d490762983",
+    "data": [
+      {
+        "text": "create a timer for ",
+        "userDefined": false
+      },
+      {
+        "text": "100",
+        "alias": "seconds",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "seconds",
+        "alias": "unit-time",
+        "meta": "@unit-time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "6519e5d4-f21a-454a-9fe7-fc7064695873",
+    "data": [
+      {
+        "text": "timer for ",
+        "userDefined": false
+      },
+      {
+        "text": "300",
+        "alias": "seconds",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "seconds",
+        "alias": "unit-time",
+        "meta": "@unit-time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "acb256ad-0627-4267-af59-773edcf33ed6",
+    "data": [
+      {
+        "text": "timer",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "fb0fe1d9-d3f0-4c54-bc57-d4c839e01f6f",
+    "data": [
+      {
+        "text": "create a timer",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d8b18abf-bfe5-4465-af86-d5fd02e671ee",
+    "data": [
+      {
+        "text": "set a timer",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

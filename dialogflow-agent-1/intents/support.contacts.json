@@ -1,0 +1,35 @@
+{
+  "id": "d9b5c42f-be32-486e-9728-eca24c9064a8",
+  "name": "support.contacts",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "support.contacts",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "You can go to my page on the Google Play Store to see contact informations of developers. Be free to contact them.",
+            "You can see on Google Play Store page of this app developers contact informations. \nThey will be glad to receive some feedback from you."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,55 @@
+{
+  "id": "299ec39b-99ef-48c8-813a-6d21524c09c1",
+  "name": "support.problem",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "support.problem",
+      "affectedContexts": [
+        {
+          "name": "support-problem",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "01cb655b-6ac3-4683-9182-cae7a1eb5765",
+          "required": false,
+          "dataType": "@sys.any",
+          "name": "message",
+          "value": "$message",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "I\u0027m sorry to hear that. Write me review on Google Play and I\u0027ll see what I can do to fix it.",
+            "You can go to my page on the Google Play Store to give feedback. We read each review carefully and will do our best to correct it in the future.",
+            "You can go on Google Play Store page of this app to write feedback. \nI will be glad to receive some feedback from you."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

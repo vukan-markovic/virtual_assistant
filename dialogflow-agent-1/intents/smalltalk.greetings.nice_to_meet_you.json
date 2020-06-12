@@ -1,0 +1,37 @@
+{
+  "id": "6513f976-d2e0-4c60-888a-b4ac48732d5f",
+  "name": "smalltalk.greetings.nice_to_meet_you",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "smalltalk.greetings.nice_to_meet_you",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "It\u0027s nice meeting you, too.",
+            "Likewise. I\u0027m looking forward to helping you out.",
+            "Nice meeting you, as well.",
+            "The pleasure is mine."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

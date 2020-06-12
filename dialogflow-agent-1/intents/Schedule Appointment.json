@@ -1,0 +1,91 @@
+{
+  "id": "cc17366b-6ad9-4da0-a67a-af71dd38c56e",
+  "name": "Schedule Appointment",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "58ce1188-0f09-4fc6-8e25-48b55e1282a4",
+          "required": true,
+          "dataType": "@sys.time",
+          "name": "time",
+          "value": "$time",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Now, what time do you want the appointment?"
+            },
+            {
+              "lang": "en",
+              "value": "And what time works for you?"
+            },
+            {
+              "lang": "en",
+              "value": "What time?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "e562572a-a07a-43fb-b195-e919ec78abd5",
+          "required": true,
+          "dataType": "@sys.date",
+          "name": "date",
+          "value": "$date",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What date?"
+            },
+            {
+              "lang": "en",
+              "value": "Okay, I can help you with that. What day do you want?"
+            },
+            {
+              "lang": "en",
+              "value": "Sure, what day?"
+            },
+            {
+              "lang": "en",
+              "value": "Okay, what day will work for you?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "Sorry, I failed to make an appointment.",
+            "I can\u0027t make an appointment right now."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

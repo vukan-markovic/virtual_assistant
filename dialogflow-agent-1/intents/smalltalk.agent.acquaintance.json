@@ -1,0 +1,38 @@
+{
+  "id": "61b207fa-a42e-4835-ada9-f53311d906e6",
+  "name": "smalltalk.agent.acquaintance",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "smalltalk.agent.acquaintance",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "I\u0027m a virtual agent.",
+            "Think of me as a virtual agent.",
+            "Well, I\u0027m not a person, I\u0027m a virtual agent.",
+            "I\u0027m a virtual being, not a real person.",
+            "I\u0027m a conversational app."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

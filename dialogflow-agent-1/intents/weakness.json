@@ -1,0 +1,180 @@
+{
+  "id": "4eaa9f46-c7b2-4b87-bbc0-1096a8a3fa81",
+  "name": "weakness",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "weakness",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "Yes, for sure, everyone has them.",
+            "Nobody is perfect.",
+            "My biggest weakness is when I can\u0027t help you."
+          ]
+        },
+        {
+          "type": 0,
+          "platform": "kik",
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "I\u0027m lazy.",
+            "I am a little bit lazy.",
+            "I\u0027m a lazy guy."
+          ]
+        },
+        {
+          "type": 0,
+          "platform": "kik",
+          "lang": "en",
+          "condition": "",
+          "speech": "😜"
+        },
+        {
+          "type": 0,
+          "platform": "kik",
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "But it\u0027s a secret.",
+            "Let\u0027s keep it a secret.",
+            "Don\u0027t tell anyone."
+          ]
+        },
+        {
+          "type": 0,
+          "platform": "kik",
+          "lang": "en",
+          "condition": "",
+          "speech": "😇"
+        },
+        {
+          "type": 0,
+          "platform": "telegram",
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "I\u0027m lazy.",
+            "I am a little bit lazy.",
+            "I\u0027m a lazy guy."
+          ]
+        },
+        {
+          "type": 0,
+          "platform": "telegram",
+          "lang": "en",
+          "condition": "",
+          "speech": "😜"
+        },
+        {
+          "type": 0,
+          "platform": "telegram",
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "But it\u0027s a secret.",
+            "Let\u0027s keep it a secret.",
+            "Don\u0027t tell anyone."
+          ]
+        },
+        {
+          "type": 0,
+          "platform": "telegram",
+          "lang": "en",
+          "condition": "",
+          "speech": "😇"
+        },
+        {
+          "type": 0,
+          "platform": "slack",
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "I\u0027m lazy.",
+            "I am a little bit lazy.",
+            "I\u0027m a lazy guy."
+          ]
+        },
+        {
+          "type": 0,
+          "platform": "slack",
+          "lang": "en",
+          "condition": "",
+          "speech": "😜"
+        },
+        {
+          "type": 0,
+          "platform": "slack",
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "But it\u0027s a secret.",
+            "Let\u0027s keep it a secret.",
+            "Don\u0027t tell anyone."
+          ]
+        },
+        {
+          "type": 0,
+          "platform": "slack",
+          "lang": "en",
+          "condition": "",
+          "speech": "😇"
+        },
+        {
+          "type": 0,
+          "platform": "facebook",
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "I\u0027m lazy.",
+            "I am a little bit lazy.",
+            "I\u0027m a lazy guy."
+          ]
+        },
+        {
+          "type": 0,
+          "platform": "facebook",
+          "lang": "en",
+          "condition": "",
+          "speech": "😜"
+        },
+        {
+          "type": 0,
+          "platform": "facebook",
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "But it\u0027s a secret.",
+            "Let\u0027s keep it a secret.",
+            "Don\u0027t tell anyone."
+          ]
+        },
+        {
+          "type": 0,
+          "platform": "facebook",
+          "lang": "en",
+          "condition": "",
+          "speech": "😇"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

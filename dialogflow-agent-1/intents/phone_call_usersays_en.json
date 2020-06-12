@@ -1,0 +1,134 @@
+[
+  {
+    "id": "d45ab98b-8b19-4bd3-9bbd-d89aeea91cff",
+    "data": [
+      {
+        "text": "I want to call ",
+        "userDefined": false
+      },
+      {
+        "text": "2143434",
+        "alias": "phone-number",
+        "meta": "@sys.phone-number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "68b37e40-0bf2-4786-8350-d48da795ee6c",
+    "data": [
+      {
+        "text": "I have to make a call",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ecf58b0d-b500-42bf-b68f-f98094da9b2b",
+    "data": [
+      {
+        "text": "can you call me someone?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a5fa461e-239e-4f41-a1be-06c2e24cccf3",
+    "data": [
+      {
+        "text": "let\u0027s make a call",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "7462d137-62f7-483f-b8b5-0c3a94d3a495",
+    "data": [
+      {
+        "text": "make a phone call to ",
+        "userDefined": false
+      },
+      {
+        "text": "5111255856",
+        "alias": "phone-number",
+        "meta": "@sys.phone-number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a889b9d4-97e7-4c8b-892b-f4a5889c2104",
+    "data": [
+      {
+        "text": "call ",
+        "userDefined": false
+      },
+      {
+        "text": "06555555",
+        "alias": "phone-number",
+        "meta": "@sys.phone-number",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "77ded14b-d848-447e-83bc-4ea81488c92b",
+    "data": [
+      {
+        "text": "call ",
+        "userDefined": false
+      },
+      {
+        "text": "0631115498",
+        "alias": "phone-number",
+        "meta": "@sys.phone-number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b6342cc1-947d-4d55-a183-2c67011da9ae",
+    "data": [
+      {
+        "text": "new phone call",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "3dbc4964-bca5-40a4-a9a3-5b045611fefb",
+    "data": [
+      {
+        "text": "make a new phone call",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

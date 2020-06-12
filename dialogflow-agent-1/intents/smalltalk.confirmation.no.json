@@ -1,0 +1,39 @@
+{
+  "id": "fbf8531c-662c-429c-bd63-2904710e87eb",
+  "name": "smalltalk.confirmation.no",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "smalltalk.confirmation.no",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "Understood.",
+            "Okay.",
+            "I see.",
+            "I understand.",
+            "Okay then.",
+            "No problem. Just let me know if you need something else. I\u0027ll be here waiting."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

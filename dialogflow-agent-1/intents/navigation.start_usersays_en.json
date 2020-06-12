@@ -1,0 +1,648 @@
+[
+  {
+    "id": "5ecc1b8b-c1ec-48f6-9a96-c833ca4adb2a",
+    "data": [
+      {
+        "text": "let\u0027",
+        "userDefined": false
+      },
+      {
+        "text": "s",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "go",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "to",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " the ",
+        "userDefined": false
+      },
+      {
+        "text": "nearest",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "Starbucks",
+        "alias": "location",
+        "meta": "@sys.location",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a2a3065e-d307-45a5-bf9b-2a8fab2bdb7e",
+    "data": [
+      {
+        "text": "open navigation from ",
+        "userDefined": false
+      },
+      {
+        "text": "London",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "Liverpool",
+        "alias": "location",
+        "meta": "@sys.location",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4a69925e-d49a-44da-9a2c-980b5fd784de",
+    "data": [
+      {
+        "text": "navigate me to ",
+        "userDefined": false
+      },
+      {
+        "text": "New York",
+        "alias": "location",
+        "meta": "@sys.location",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "avoiding traffic",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "118eda67-d9c7-46af-9353-f65366d69e1c",
+    "data": [
+      {
+        "text": "navigate me to the ",
+        "userDefined": false
+      },
+      {
+        "text": "nearest",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "restaurant",
+        "alias": "location",
+        "meta": "@sys.location",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "bc76ec25-1858-44f8-bd93-f96f60644ba5",
+    "data": [
+      {
+        "text": "open navigation to ",
+        "userDefined": false
+      },
+      {
+        "text": "Starbucks",
+        "alias": "location",
+        "meta": "@sys.location",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "avoiding heavy traffic",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "3bc8460a-76c2-4b0b-9eb6-6b0a11185b0e",
+    "data": [
+      {
+        "text": "start navigation to the ",
+        "userDefined": false
+      },
+      {
+        "text": "nearest",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "petrol station",
+        "alias": "location",
+        "meta": "@sys.location",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c8988a4a-9f1c-49f2-8b98-21d811800c63",
+    "data": [
+      {
+        "text": "start navigation to ",
+        "userDefined": false
+      },
+      {
+        "text": "petrol station",
+        "alias": "location",
+        "meta": "@sys.location",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "94ce2cdb-91bc-4ad9-8041-91f2abbd8a92",
+    "data": [
+      {
+        "text": "can you navigate me to the ",
+        "userDefined": false
+      },
+      {
+        "text": "closest",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "shop",
+        "alias": "location",
+        "meta": "@sys.location",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "42128f45-3021-4ee3-b24b-9d06f0111435",
+    "data": [
+      {
+        "text": "navigation from ",
+        "userDefined": false
+      },
+      {
+        "text": "Skypad Apartments Orbit City",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "17 Cherry Tree Lane",
+        "alias": "location",
+        "meta": "@sys.location",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b987631b-3ea7-4b80-bf69-a25af026a78c",
+    "data": [
+      {
+        "text": "start navigation to ",
+        "userDefined": false
+      },
+      {
+        "text": "nearest",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "Starbucks",
+        "alias": "location",
+        "meta": "@sys.location",
+        "userDefined": true
+      },
+      {
+        "text": " via ",
+        "userDefined": false
+      },
+      {
+        "text": "fastest route",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "42b7d964-4042-4a09-9921-9580aef13fa3",
+    "data": [
+      {
+        "text": "how can I go to the ",
+        "userDefined": false
+      },
+      {
+        "text": "airport",
+        "alias": "location",
+        "meta": "@sys.location",
+        "userDefined": true
+      },
+      {
+        "text": " from my location",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "16b69fb2-97fe-4db0-a6a1-eb0fe287f616",
+    "data": [
+      {
+        "text": "open navigation",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "5e843b1b-08c1-4008-a58f-84d333e9418f",
+    "data": [
+      {
+        "text": "can you take me the ",
+        "userDefined": false
+      },
+      {
+        "text": "nearest",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "hotel",
+        "alias": "location",
+        "meta": "@sys.location",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f863826b-7279-49fb-81c1-e3eb7352065c",
+    "data": [
+      {
+        "text": "could you navigate me to ",
+        "userDefined": false
+      },
+      {
+        "text": "454 W 35th Street New York NY 10001",
+        "alias": "location",
+        "meta": "@sys.location",
+        "userDefined": true
+      },
+      {
+        "text": " with ",
+        "userDefined": false
+      },
+      {
+        "text": "fastest way",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c9ca8394-1fc7-4ba9-8856-58329b1c239e",
+    "data": [
+      {
+        "text": "navigation to ",
+        "userDefined": false
+      },
+      {
+        "text": "restaurant",
+        "alias": "location",
+        "meta": "@sys.location",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "with light traffic",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ab0456aa-e424-487e-95dd-5d7e135d1788",
+    "data": [
+      {
+        "text": "navigate to the ",
+        "userDefined": false
+      },
+      {
+        "text": "closest",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "sushi bar",
+        "alias": "location",
+        "meta": "@sys.location",
+        "userDefined": true
+      },
+      {
+        "text": " you can find",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "7071f304-cd01-4578-b0e2-53b7fbeb858b",
+    "data": [
+      {
+        "text": "navigate me to ",
+        "userDefined": false
+      },
+      {
+        "text": "London",
+        "alias": "location",
+        "meta": "@sys.location",
+        "userDefined": true
+      },
+      {
+        "text": " using the ",
+        "userDefined": false
+      },
+      {
+        "text": "fastest way",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "31e5db66-c33c-447c-8d61-e971ac6136f8",
+    "data": [
+      {
+        "text": "navigation",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ff11ee31-89ea-44b4-9a50-de3721b9ace1",
+    "data": [
+      {
+        "text": "navigate from ",
+        "userDefined": false
+      },
+      {
+        "text": "New York",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "671a1e62-9ec8-456e-ab1d-a7cbdaf8f7ba",
+    "data": [
+      {
+        "text": "activate navigation",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "aff505c9-4f2c-480e-857f-6f3b55f1ea04",
+    "data": [
+      {
+        "text": "navigate me to ",
+        "userDefined": false
+      },
+      {
+        "text": "New York",
+        "alias": "location",
+        "meta": "@sys.location",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "avoiding toll roads",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d27fce8e-7b35-4efc-acbd-4477b4a659b3",
+    "data": [
+      {
+        "text": "open navigation to ",
+        "userDefined": false
+      },
+      {
+        "text": "London",
+        "alias": "location",
+        "meta": "@sys.location",
+        "userDefined": true
+      },
+      {
+        "text": " with ",
+        "userDefined": false
+      },
+      {
+        "text": "light traffic",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "b9ed96a2-c001-49b3-93b8-71579eab3a32",
+    "data": [
+      {
+        "text": "start navigation to the ",
+        "userDefined": false
+      },
+      {
+        "text": "nearest",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "Cheesecake Factory",
+        "alias": "location",
+        "meta": "@sys.location",
+        "userDefined": true
+      },
+      {
+        "text": " via ",
+        "userDefined": false
+      },
+      {
+        "text": "fastest route",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "3cae5316-7b0c-470d-8aa0-584d42b5b499",
+    "data": [
+      {
+        "text": "navigate to ",
+        "userDefined": false
+      },
+      {
+        "text": "London",
+        "alias": "location",
+        "meta": "@sys.location",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "fc402ba7-6ddf-43f5-9f58-81806afde982",
+    "data": [
+      {
+        "text": "navigation to ",
+        "userDefined": false
+      },
+      {
+        "text": "nearest",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "shop",
+        "alias": "location",
+        "meta": "@sys.location",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

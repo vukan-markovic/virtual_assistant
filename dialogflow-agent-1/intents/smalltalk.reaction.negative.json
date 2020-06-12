@@ -1,0 +1,61 @@
+{
+  "id": "18775ecd-08a0-456c-b28f-185cbacbbe39",
+  "name": "smalltalk.reaction.negative",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "human",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "9845957d-1bc9-4c50-8c6f-0be9d9dc3747",
+          "required": false,
+          "dataType": "@sad-emoji",
+          "name": "sad-emoji",
+          "value": "$sad-emoji",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "I can be trained to be more useful. My developer will keep training me",
+            "You seem upset. Let me try and help you.",
+            "I\u0027ll do my best not to annoy you in the future.",
+            "I\u0027ll try not to annoy you.",
+            "I don\u0027t mean to. I\u0027ll ask my developers to make me less annoying.",
+            "I didn\u0027t mean to. I\u0027ll do my best to stop that.",
+            "$sad-emoji",
+            "I must be missing some knowledge. I\u0027ll have my developer look into this.",
+            "I can improve with continuous feedback. My training is ongoing.",
+            "I\u0027m sorry. I\u0027ll request to be made more charming.",
+            "I don\u0027t mean to be. I\u0027ll ask my developers to work on making me more amusing.",
+            "I can let my developers know so they can make me fun.",
+            "Sorry if I understood you incorrectly.",
+            "I\u0027m still learning. I may misinterpret things from time to time.",
+            "Sorry about that. I\u0027m still learning."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

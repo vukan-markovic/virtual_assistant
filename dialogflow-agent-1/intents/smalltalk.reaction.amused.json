@@ -1,0 +1,40 @@
+{
+  "id": "a304c5d2-737f-4f12-9929-bd903ce9db0b",
+  "name": "smalltalk.reaction.amused",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "smalltalk.agent.funny",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            ":+1: I\u0027m usually not that funny, but I am artificially intelligent..",
+            "Funny in a good way, I hope.",
+            "Thanks.",
+            "Glad you think I\u0027m funny.",
+            "I like it when people laugh.",
+            "Glad I can make you laugh.",
+            "I wish I could laugh out loud, too."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

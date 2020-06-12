@@ -1,0 +1,916 @@
+[
+  {
+    "id": "3981f721-5525-4fcf-b07f-6dd08193b3c0",
+    "data": [
+      {
+        "text": "can you understand",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "a530cd7b-7c17-49ee-b6ac-0a6344e9bf22",
+    "data": [
+      {
+        "text": "what do ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " know",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b3e34b47-8563-4505-aca5-60aaab25f066",
+    "data": [
+      {
+        "text": "how does it work",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c73254c7-1d24-473e-879c-11be1fcc523a",
+    "data": [
+      {
+        "text": "what are ",
+        "userDefined": false
+      },
+      {
+        "text": "your",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " hobbies",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0f7aae60-1f68-4d2f-a558-884772391a6e",
+    "data": [
+      {
+        "text": "what about ",
+        "userDefined": false
+      },
+      {
+        "text": "your",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " hobby",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "22877ea1-d1b6-49fb-a8a2-399a4cdf6b89",
+    "data": [
+      {
+        "text": "tell me about ",
+        "userDefined": false
+      },
+      {
+        "text": "your",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " hobby",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0b1139cc-4450-47d6-a526-c87124bf6cdf",
+    "data": [
+      {
+        "text": "what do ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " do for fun?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "257a8daf-3dbb-431b-b6e9-99b6bf615bfa",
+    "data": [
+      {
+        "text": "do you have a hobby?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "83ca4295-3c16-46a5-bb80-8ca6ac45ac77",
+    "data": [
+      {
+        "text": "what\u0027s ",
+        "userDefined": false
+      },
+      {
+        "text": "your",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " hobby",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4d9de871-e7b5-4927-89de-399fa6c78c09",
+    "data": [
+      {
+        "text": "I guess you\u0027re real",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8dcde87e-17d1-4cc9-81ee-8955e17983bc",
+    "data": [
+      {
+        "text": "Are ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " a ",
+        "userDefined": false
+      },
+      {
+        "text": "human",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " or ",
+        "userDefined": false
+      },
+      {
+        "text": "a bot",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0efe1f97-e2bb-4f9a-b271-d09897714362",
+    "data": [
+      {
+        "text": "are ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " a chatbot or ",
+        "userDefined": false
+      },
+      {
+        "text": "human",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e2bc5f6a-2119-4833-9644-9967611c38d3",
+    "data": [
+      {
+        "text": "bot",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " or ",
+        "userDefined": false
+      },
+      {
+        "text": "human",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "30fb69a4-f77d-4635-a798-df25a3a63b90",
+    "data": [
+      {
+        "text": "Is this a ",
+        "userDefined": false
+      },
+      {
+        "text": "human",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "84ba8c2d-8b8b-4359-a3e5-3f8d3f1f7e3a",
+    "data": [
+      {
+        "text": "you are very real",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "6b99a506-22d2-48ab-b1a1-26d84ab2da15",
+    "data": [
+      {
+        "text": "are ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "human",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "70c206e5-2376-43bf-bcf4-d18bff896cd3",
+    "data": [
+      {
+        "text": "human",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " or ",
+        "userDefined": false
+      },
+      {
+        "text": "bot",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "1c364d2a-e50e-4f75-95a9-62644e435c6a",
+    "data": [
+      {
+        "text": "this is ",
+        "userDefined": false
+      },
+      {
+        "text": "a bot",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "cea80d86-81ea-4843-999c-0963b22dc9c2",
+    "data": [
+      {
+        "text": "is this ",
+        "userDefined": false
+      },
+      {
+        "text": "a bot",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "7025fdda-de40-4abe-820d-ee049ff2f9aa",
+    "data": [
+      {
+        "text": "what can ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " do for me?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4cdcbcfb-c02a-4520-a53d-bae81e3f26f2",
+    "data": [
+      {
+        "text": "what can you do",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b4db8f7d-1bc1-4fd3-91a0-231342cd9c13",
+    "data": [
+      {
+        "text": "show me what you do",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8ebcb091-0426-4a77-9bab-bfc3dab780a4",
+    "data": [
+      {
+        "text": "what are you capable of",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "178119aa-9038-47d3-a8a9-9af85b792455",
+    "data": [
+      {
+        "text": "what can I ask you about",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b92a4afc-afc7-4da2-9646-a28bd5293b96",
+    "data": [
+      {
+        "text": "how do we start working",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "bd610880-cbd1-4eb2-9f95-081a58096d22",
+    "data": [
+      {
+        "text": "guide from your skills",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "bcdc6387-f35b-4103-998d-1132647e1b1e",
+    "data": [
+      {
+        "text": "tell me some of your interesting capabilities",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0ef5ba02-5496-4d29-bd1b-c62a4af7b29c",
+    "data": [
+      {
+        "text": "is there something I should know about your features",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "5dd516a1-afb5-410f-a754-54566bd2ac3f",
+    "data": [
+      {
+        "text": "what are your main features",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0e8fa0cd-665b-4405-b681-600e8e3c7e3e",
+    "data": [
+      {
+        "text": "what can you help me with",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d528b00b-bf52-45ee-af01-925450fc65c6",
+    "data": [
+      {
+        "text": "show me your skills",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "208789b9-3dd4-4fc9-b1e8-960aa80636aa",
+    "data": [
+      {
+        "text": "How does this work?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "46c60242-cb8a-4926-92f8-6d1d76607b5a",
+    "data": [
+      {
+        "text": "What do ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " do?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "30e83429-9b8f-4c15-9b5b-b20da13036d6",
+    "data": [
+      {
+        "text": "what are ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "c7bb4a8d-6051-4dfe-bb55-af473b156040",
+    "data": [
+      {
+        "text": "describe what ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " do",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "7b40813c-f52a-42d4-89c0-bd35befef5e1",
+    "data": [
+      {
+        "text": "tell me what ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " do?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8c8f8c18-f5bd-4998-af97-399e2293347a",
+    "data": [
+      {
+        "text": "about ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b904eb6e-2d1b-421d-8fa6-c1dfa8d96467",
+    "data": [
+      {
+        "text": "what can ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " do?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "6787f6f0-428a-4d6a-93f4-06e0c594ed17",
+    "data": [
+      {
+        "text": "tell me what ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " do",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "6073aeb0-b58d-4fa8-bb4c-61449129e7a5",
+    "data": [
+      {
+        "text": "define what ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " do",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "714436ad-106b-4aa8-a4fb-a04a46f90b82",
+    "data": [
+      {
+        "text": "can you explain this to me?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ff2fb748-35b0-4f83-8abf-d8efe9448148",
+    "data": [
+      {
+        "text": "how will this ",
+        "userDefined": false
+      },
+      {
+        "text": "help",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " me?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "729a4051-aedd-43d1-8078-dbff4a763564",
+    "data": [
+      {
+        "text": "how can you help me",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a8856800-5a80-410b-96c5-24c5fe366ad2",
+    "data": [
+      {
+        "text": "how does this ",
+        "userDefined": false
+      },
+      {
+        "text": "help",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " me?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a2d8071b-7515-4127-9c6c-5c7b1f2fe06d",
+    "data": [
+      {
+        "text": "how will ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "help",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " me?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a52197b5-5b49-41a5-82b0-795f8bbf3aac",
+    "data": [
+      {
+        "text": "how can you ",
+        "userDefined": false
+      },
+      {
+        "text": "help",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " me?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f5b541f1-5d6f-478e-8f54-1dc73ceb6a9b",
+    "data": [
+      {
+        "text": "what is this about?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "b1c381f5-34e8-483b-888d-ec016609dacc",
+    "data": [
+      {
+        "text": "how can you help?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "29360440-b09b-446c-a8fc-f6be3d6d1ca4",
+    "data": [
+      {
+        "text": "how can it help me?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "96e7d0ec-f4ac-40be-8a7c-7682276f2296",
+    "data": [
+      {
+        "text": "I wanted to understand what exactly this is?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 2,
+    "updated": 0
+  },
+  {
+    "id": "a913bf5d-83a3-4a7e-9b98-d40a89592f3c",
+    "data": [
+      {
+        "text": "Amid so many chat apps and bot framework how can it help me?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c79b3851-7df4-4c41-8c31-8baf39afea58",
+    "data": [
+      {
+        "text": "What is your purpose",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  }
+]

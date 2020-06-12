@@ -1,0 +1,41 @@
+{
+  "id": "235473e0-3587-4857-8d8c-86992e7fe127",
+  "name": "smalltalk.appraisal.good",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "smalltalk.appraisal.good",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "I know, right?",
+            "Agreed!",
+            "I agree!",
+            "Glad you think so!",
+            "Whew!",
+            "Alright, thanks!",
+            "Glad to hear that!",
+            "I\u0027m relieved, thanks!"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

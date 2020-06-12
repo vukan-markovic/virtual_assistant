@@ -1,0 +1,37 @@
+{
+  "id": "73daa5bb-21d1-40c5-8473-ac5c73669d63",
+  "name": "smalltalk.user.sleepy",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "smalltalk.user.sleepy",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "You should get some shuteye. You\u0027ll feel refreshed.",
+            "Sleep is important to your health. Rest up for a bit and we can chat later.",
+            "Don\u0027t let me keep you up. Get some rest and we can continue this later.",
+            "Why not catch a little shuteye? I\u0027ll be here to chat when you wake up."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

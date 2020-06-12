@@ -1,0 +1,80 @@
+{
+  "id": "d5ed88dd-93f2-42de-95bf-58d6d12ed654",
+  "name": "translate.text",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "translate.text",
+      "affectedContexts": [
+        {
+          "name": "translate-text",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "ed49366b-aa7e-41ed-8c58-7c1fb84f688e",
+          "required": false,
+          "dataType": "@sys.any",
+          "name": "text",
+          "value": "$text",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "d7f1ea66-5a27-44ac-9f22-b492588b6e2a",
+          "required": false,
+          "dataType": "@sys.language",
+          "name": "lang-to",
+          "value": "$lang-to",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "527a7f47-8d1a-4a38-9f99-eae3c7d38a37",
+          "required": false,
+          "dataType": "@sys.language",
+          "name": "lang-from",
+          "value": "$lang-from",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "You can go to options menu to change language i speak.",
+            "Please go to settings and change language i speak.",
+            "You can see in options menu all languages i speak and select the language you prefer.",
+            "In the options menu you have Assistant language option and there you can see all languages i speak and select the desired language."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

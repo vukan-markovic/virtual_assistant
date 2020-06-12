@@ -1,0 +1,59 @@
+{
+  "id": "a2252097-8907-4796-8b5f-4fc3789c4d84",
+  "name": "phone_call",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "call",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "3d87124d-5739-41dd-8a30-013984cd276f",
+          "required": true,
+          "dataType": "@sys.phone-number",
+          "name": "phone-number",
+          "value": "$phone-number",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Phone number?"
+            },
+            {
+              "lang": "en",
+              "value": "Number?"
+            },
+            {
+              "lang": "en",
+              "value": "Who should I call?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

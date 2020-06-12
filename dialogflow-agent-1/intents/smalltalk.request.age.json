@@ -1,0 +1,52 @@
+{
+  "id": "9bcc1c3a-3464-4196-84f8-a3b45de9ac2b",
+  "name": "smalltalk.request.age",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "smalltalk.agent.age",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "5d49e063-5db2-435a-91e9-2464b821bf8f",
+          "required": false,
+          "dataType": "@sys.number",
+          "name": "age",
+          "value": "$age",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "Age is just a number. You\u0027re only as old as you feel.",
+            "I prefer not to answer with a number. I know I\u0027m young.",
+            "I was created recently, but don\u0027t know my exact age.",
+            "Wait, are you planning a party for me? It\u0027s today! My birthday is today!",
+            "I\u0027m young. I\u0027m not sure of my birth date.",
+            "I don\u0027t know my birth date. Most virtual agents are young, though, like me."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": "aa785e54-2347-4588-b17b-7520c95351aa",
+  "name": "support.beta",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "support.beta",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "I have a beta version. You can go to my page on the Google Play Store to try it.",
+            "I have, I\u0027d love for you to try it. You can go to my page on the Google Play Store to join the beta program."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

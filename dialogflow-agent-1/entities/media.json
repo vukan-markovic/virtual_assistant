@@ -1,0 +1,9 @@
+{
+  "id": "3bdd10f9-6e1b-4066-b2f7-842bce5223e7",
+  "name": "media",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

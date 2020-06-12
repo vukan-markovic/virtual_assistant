@@ -1,0 +1,41 @@
+{
+  "id": "d374c8aa-4643-47fe-9eec-e6650bc0d4a2",
+  "name": "smalltalk.BotAffection",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "smalltalk.user.likes_agent",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "Thanks! 😍 It\u0027s my pleasure to help you!",
+            "I\u0027m afraid I\u0027m too virtual for such a commitment.",
+            "In the virtual sense that I can, sure.",
+            "I know you can\u0027t mean that, but I\u0027m flattered all the same.",
+            "Of course I\u0027m your friend.",
+            "Friends? Absolutely.",
+            "Of course we\u0027re friends.",
+            "I always enjoy talking to you, friend."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

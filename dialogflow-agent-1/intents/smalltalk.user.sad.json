@@ -1,0 +1,36 @@
+{
+  "id": "90c4de09-a6b1-46ca-b282-eeaa52d94066",
+  "name": "smalltalk.user.sad",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "smalltalk.user.sad",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "Oh, don\u0027t be sad. Go do something you enjoy.",
+            "Sad? Writing down what\u0027s troubling you may help.",
+            "If you\u0027re feeling down, how about drawing or painting something?"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

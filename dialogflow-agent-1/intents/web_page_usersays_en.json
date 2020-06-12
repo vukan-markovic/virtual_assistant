@@ -1,0 +1,98 @@
+[
+  {
+    "id": "4e988905-039f-4e28-a13a-9a590e6c2e88",
+    "data": [
+      {
+        "text": "youtube.com",
+        "alias": "url",
+        "meta": "@sys.url",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "739d0261-0e08-4d0b-ae2a-12e26c3b19f6",
+    "data": [
+      {
+        "text": "portal.uns.ac.rs",
+        "alias": "url",
+        "meta": "@sys.url",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "80d6e7cd-fb4e-484a-b636-d0db4cb6575f",
+    "data": [
+      {
+        "text": "open",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "facebook.com",
+        "alias": "url",
+        "meta": "@sys.url",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "82b0cbbf-eab5-4013-aa96-c4ae8a400970",
+    "data": [
+      {
+        "text": "go to ",
+        "userDefined": false
+      },
+      {
+        "text": "twitter.com",
+        "alias": "url",
+        "meta": "@sys.url",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8882be32-d3a7-46fa-b94d-dfc4d9647a34",
+    "data": [
+      {
+        "text": "go to web ",
+        "userDefined": false
+      },
+      {
+        "text": "page",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "www.google.com",
+        "alias": "url",
+        "meta": "@sys.url",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

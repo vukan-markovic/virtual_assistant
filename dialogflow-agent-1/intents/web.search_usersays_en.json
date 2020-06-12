@@ -1,0 +1,334 @@
+[
+  {
+    "id": "7059665b-5155-48d6-b92f-96716473dda9",
+    "data": [
+      {
+        "text": "find ",
+        "userDefined": false
+      },
+      {
+        "text": "Newton laws",
+        "alias": "q",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " in the web",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4b45e98c-7894-40e0-af4b-d96df3bf940a",
+    "data": [
+      {
+        "text": "find ",
+        "userDefined": false
+      },
+      {
+        "text": "funny cats",
+        "alias": "q",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "dc69e56e-09db-404e-9c85-d069974c78ab",
+    "data": [
+      {
+        "text": "google",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " a ",
+        "userDefined": false
+      },
+      {
+        "text": "recipe for tomato soup",
+        "alias": "q",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b606cea7-c112-4a7d-9fbd-1841b6524ef8",
+    "data": [
+      {
+        "text": "google",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "David Bowie",
+        "alias": "q",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "af697bde-4f6f-4fc8-8d09-864a3e81883e",
+    "data": [
+      {
+        "text": "find information about ",
+        "userDefined": false
+      },
+      {
+        "text": "Madonna",
+        "alias": "q",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e5a62d88-bac3-4484-b89c-97073588cd4d",
+    "data": [
+      {
+        "text": "Google",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "who is the president of the United States",
+        "alias": "q",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ebc3c1e5-1e95-42b2-a2db-e51dd939c6b5",
+    "data": [
+      {
+        "text": "search",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "5724ee0d-3477-4c3c-966f-db9a345409dc",
+    "data": [
+      {
+        "text": "web search",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "1c8f71f0-bd8b-440b-8924-a0d77484edda",
+    "data": [
+      {
+        "text": "find ",
+        "userDefined": false
+      },
+      {
+        "text": "apple pie recipes",
+        "alias": "q",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "81b7e511-582c-463c-b5de-ee6d4703f5c3",
+    "data": [
+      {
+        "text": "search ",
+        "userDefined": false
+      },
+      {
+        "text": "how to build a house",
+        "alias": "q",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "30df01a7-68ad-42e2-86a6-691b90ef6734",
+    "data": [
+      {
+        "text": "find ",
+        "userDefined": false
+      },
+      {
+        "text": "Lady Gaga\u0027s husband",
+        "alias": "q",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " on the Internet",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c84a5249-b69d-43b1-8037-6682fd957efa",
+    "data": [
+      {
+        "text": "can you find information",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4e2668c8-e96e-4277-aa77-e798da6f0a7f",
+    "data": [
+      {
+        "text": "find ",
+        "userDefined": false
+      },
+      {
+        "text": "Pink\u0027s biography",
+        "alias": "q",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " on ",
+        "userDefined": false
+      },
+      {
+        "text": "Wikipedia",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8e1532dc-9ba7-421a-bd22-59208416ec23",
+    "data": [
+      {
+        "text": "look up ",
+        "userDefined": false
+      },
+      {
+        "text": "Monty Python",
+        "alias": "q",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "418e046d-9298-4481-bdcd-68b5160de566",
+    "data": [
+      {
+        "text": "find ",
+        "userDefined": false
+      },
+      {
+        "text": "Metropolitan Museum",
+        "alias": "q",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " on ",
+        "userDefined": false
+      },
+      {
+        "text": "Wikipedia",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0cd119c5-4a02-495e-afa5-5aabb9961acc",
+    "data": [
+      {
+        "text": "search for ",
+        "userDefined": false
+      },
+      {
+        "text": "popular wallpapers",
+        "alias": "q",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " on ",
+        "userDefined": false
+      },
+      {
+        "text": "Yahoo",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "993f72b0-6b59-46ad-a097-927c004dad0b",
+    "data": [
+      {
+        "text": "search the Internet",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

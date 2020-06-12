@@ -1,0 +1,68 @@
+{
+  "id": "e048aa30-f8f2-484d-9a68-7268d0d486ea",
+  "name": "navigation.start",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "navigation",
+      "affectedContexts": [
+        {
+          "name": "navigation",
+          "parameters": {},
+          "lifespan": 3
+        }
+      ],
+      "parameters": [
+        {
+          "id": "0f315e55-2d68-488d-a26d-b51e51fbd353",
+          "required": true,
+          "dataType": "@sys.location",
+          "name": "location",
+          "value": "$location",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Location?"
+            },
+            {
+              "lang": "en",
+              "value": "Where to navigate?"
+            },
+            {
+              "lang": "en",
+              "value": "Where do you want to go?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "Here is navigation for that route.",
+            "This is the trajectory for that route."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

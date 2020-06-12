@@ -1,0 +1,42 @@
+{
+  "id": "61e3f553-1d83-4503-938c-4c2c2592b334",
+  "parentId": "038c0321-c595-4f6c-ac54-3bedb66cd1d1",
+  "rootParentId": "038c0321-c595-4f6c-ac54-3bedb66cd1d1",
+  "name": "web.search - repeat",
+  "auto": true,
+  "contexts": [
+    "websearch-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "web.search.repeat",
+      "affectedContexts": [
+        {
+          "name": "websearch-followup",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

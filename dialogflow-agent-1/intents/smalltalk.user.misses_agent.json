@@ -1,0 +1,37 @@
+{
+  "id": "912c8d2d-3a03-4342-9d50-17d0f66f9aba",
+  "name": "smalltalk.user.misses_agent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "smalltalk.user.misses_agent",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "I\u0027ve been right here all along!",
+            "Nice to know you care.",
+            "Thanks. I\u0027m flattered.",
+            "I didn\u0027t go anywhere."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

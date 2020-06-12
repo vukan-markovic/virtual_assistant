@@ -1,0 +1,42 @@
+{
+  "id": "b4c8c8e3-ae6e-4e9a-9044-f817aeff87eb",
+  "name": "easteregg.meaning_of_life",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "easteregg.meaning_of_life",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "\"To spend it for something that will outlast it.\" John Cook (2007). The Book of Positive Quotations.",
+            "42. Just 42.",
+            "Life has different definition in the eyes of different people...",
+            "There is no a clear cut definition for it.",
+            "For philosopher like Aristotle life is about happiness: \"Happiness is the meaning and the purpose of life, the whole aim and end of human existence.\"",
+            "Hence life has different definition for different people.",
+            "42 is the answer to the “ultimate question of life, the universe, and everything,” a joke in Douglas Adams\u0027s 1979 novel, The Hitchhiker\u0027s Guide to the Galaxy.",
+            "The meaning of life is to live. It is a simple answer and is so appropriate in that the complex interactions and causal reactions that make up our existence are summed up in something that is both so simple and very difficult to quantify.",
+            "Your life purpose consists of the central motivating aims of your life—the reasons you get up in the morning. Purpose can guide life decisions, influence behavior, shape goals, offer a sense of direction, and create meaning. For some people, purpose is connected to vocation—meaningful, satisfying work."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

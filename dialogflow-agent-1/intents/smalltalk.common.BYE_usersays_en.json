@@ -1,0 +1,535 @@
+[
+  {
+    "id": "1113e4a9-f18b-40fc-8ff2-829fa5ef24c5",
+    "data": [
+      {
+        "text": "I\u0027ll get back to ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "5f072c88-25fb-4062-8055-b10fb16d53e5",
+    "data": [
+      {
+        "text": "back in a bit",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "369c9281-60f5-405d-b47d-e29d14d5e3d1",
+    "data": [
+      {
+        "text": "I\u0027ll be back soon",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c7ac79cf-a2bd-476b-a7c8-3bca6cca0ed8",
+    "data": [
+      {
+        "text": "be back in a few",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f9abe5ca-3e1c-4869-8b4d-50bb05a46fb5",
+    "data": [
+      {
+        "text": "BBIAB",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "7f9a965e-5bc7-401e-b6e4-8382e7e8b62f",
+    "data": [
+      {
+        "text": "I gotta go",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8f508ad0-ac05-42ae-bb1c-387c02415170",
+    "data": [
+      {
+        "text": "I got to go now",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b19f9f71-6aaa-40d4-924c-4125d87da7ee",
+    "data": [
+      {
+        "text": "time to go",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b091c75e-6ce7-468c-8195-046050fd406a",
+    "data": [
+      {
+        "text": "time to go to bed",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "04d7285d-44d1-4a43-a7af-2ac32f0f0659",
+    "data": [
+      {
+        "text": "got get sleep",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "316a4e4c-bc10-4c6a-ae08-0b25686df678",
+    "data": [
+      {
+        "text": "gotta go to sleep",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "3b7cc22a-7001-46ef-9f1d-2614849b88c4",
+    "data": [
+      {
+        "text": "going to bed",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e3ab9472-c58c-4e68-b816-cdf293578dad",
+    "data": [
+      {
+        "text": "appreciate the ",
+        "userDefined": false
+      },
+      {
+        "text": "chat",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4f9656c2-4fc4-4fbc-bf82-a31196db9687",
+    "data": [
+      {
+        "text": "good talking to ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c5b42db8-11fa-496d-a87f-f7f46401633b",
+    "data": [
+      {
+        "text": "thanks for ",
+        "userDefined": false
+      },
+      {
+        "text": "chatting",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a36f8679-328f-4693-bdc9-aa14715267d4",
+    "data": [
+      {
+        "text": "good to ",
+        "userDefined": false
+      },
+      {
+        "text": "chat",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b3da6f13-d036-4157-8987-ef5bab24c910",
+    "data": [
+      {
+        "text": "nice to ",
+        "userDefined": false
+      },
+      {
+        "text": "chat",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "182adea7-aac4-4104-ae9f-3176d23030c3",
+    "data": [
+      {
+        "text": "it\u0027s been a pleasure ",
+        "userDefined": false
+      },
+      {
+        "text": "chatting",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " with ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "04eb52c3-32e4-4552-a456-51dbbf058552",
+    "data": [
+      {
+        "text": "It\u0027s been nice to talk to ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c1451082-7dd7-4817-9f79-ad5edea343c3",
+    "data": [
+      {
+        "text": "take it easy",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "63489f80-c472-4f66-8da5-ff84cdfc9aba",
+    "data": [
+      {
+        "text": "chat",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " later",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "37178845-e1b7-4539-9778-0cb7bc2e6875",
+    "data": [
+      {
+        "text": "fine for now",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "093acd71-478c-4f55-bdde-a09a4bd4bdb3",
+    "data": [
+      {
+        "text": "that\u0027s all for now",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "70f2152f-d66a-4161-a9ec-ac50bdc9eea0",
+    "data": [
+      {
+        "text": "til we meet again",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "871f0250-c7f4-4f00-b0bf-207c52b29044",
+    "data": [
+      {
+        "text": "later ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "503aa9b2-e4ae-4665-945a-1a76e37d565c",
+    "data": [
+      {
+        "text": "ciao",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "17b4e30a-795b-4bed-91e4-c4979ef92c12",
+    "data": [
+      {
+        "text": "sayonara",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0ecaf8e2-a388-4455-a02d-3f79e4c00411",
+    "data": [
+      {
+        "text": "cheerio",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "dfdbc82a-45e5-4298-9ad0-f7910f562139",
+    "data": [
+      {
+        "text": "ta ta for now",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "26f3d0e7-23ac-40fc-8df1-c894e4d61dcd",
+    "data": [
+      {
+        "text": "adios",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "1dc0b2ae-7824-4694-891d-4a5da290b571",
+    "data": [
+      {
+        "text": "asta la vista",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a9d3ef45-37c9-4396-8efb-b44ca05e676d",
+    "data": [
+      {
+        "text": "thanks good night",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "accde866-c804-4f94-aa7c-de08fa764aaa",
+    "data": [
+      {
+        "text": "ok have a good night",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "1b945bab-33e4-4a02-a86b-24beedd64fd8",
+    "data": [
+      {
+        "text": "alright good night",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "54161e99-84e0-4446-bc1a-1d1043134552",
+    "data": [
+      {
+        "text": "good night to ",
+        "userDefined": false
+      },
+      {
+        "text": "you",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "7a80b968-ac0b-4716-8e04-47a19d88de3b",
+    "data": [
+      {
+        "text": "goodnight now",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "225fa988-2bcc-4750-888a-4398fd8c5d2d",
+    "data": [
+      {
+        "text": "good night",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "1527a1c2-a8c9-4b3b-bd37-5b58e88adeaa",
+    "data": [
+      {
+        "text": "take care",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "63dbdf85-b915-4118-8647-b4575bd3dee1",
+    "data": [
+      {
+        "text": "speak to ya",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

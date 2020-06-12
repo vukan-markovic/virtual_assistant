@@ -1,0 +1,9 @@
+{
+  "id": "31a65e26-bbcb-4c8b-88df-f1f0e268430e",
+  "name": "music-sort",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

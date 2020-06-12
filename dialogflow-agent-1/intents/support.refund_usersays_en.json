@@ -1,0 +1,146 @@
+[
+  {
+    "id": "188dd0bc-9945-4383-b34f-ef9aa932775b",
+    "data": [
+      {
+        "text": "I expect my money back",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "09342f6e-5f0a-49b8-bd3a-2c258880ba6e",
+    "data": [
+      {
+        "text": "how do I get a refund",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a683a5ed-b47f-4003-8ebb-4bf19a977e70",
+    "data": [
+      {
+        "text": "give me back my money",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "fe46d487-843e-47b1-9e71-c426a73df755",
+    "data": [
+      {
+        "text": "I purchased an item by mistake, can I have my money back?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "123297d2-599d-49e6-8f82-7ffaf3a7e9c4",
+    "data": [
+      {
+        "text": "I want to cancel the purchase ",
+        "userDefined": false
+      },
+      {
+        "text": "134567890",
+        "alias": "transaction-id",
+        "meta": "@sys.number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "e352bed2-9ae7-4328-b94c-a2b15d4eedc5",
+    "data": [
+      {
+        "text": "refund",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "2eb4efe1-a394-40e2-9a3b-e5a73be5ab66",
+    "data": [
+      {
+        "text": "I\u0027ve bought a broken item. Return my money",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "7701ea73-0a40-406c-aaf0-f3ca27a52de4",
+    "data": [
+      {
+        "text": "the product I\u0027ve bought here is failed",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0965b14f-4be1-4199-b88c-e5229747c51c",
+    "data": [
+      {
+        "text": "refund my purchase. Transaction id is ",
+        "userDefined": false
+      },
+      {
+        "text": "12390283736",
+        "alias": "transaction-id",
+        "meta": "@sys.number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "024c6bc1-ce30-454f-813e-d83d7e89c149",
+    "data": [
+      {
+        "text": "I want to request a refund",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c80d77ec-7edf-4c38-942a-676049c8e7c0",
+    "data": [
+      {
+        "text": "Your product doesn\u0027t meet my expectations I want a refund",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

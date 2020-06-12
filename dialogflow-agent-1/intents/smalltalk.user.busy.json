@@ -1,0 +1,37 @@
+{
+  "id": "31d3fb71-4e55-4afe-a769-0de75fa13ddb",
+  "name": "smalltalk.user.busy",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "smalltalk.user.busy",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "Okay. I\u0027ll let you get back to work.",
+            "I won\u0027t distract you then. You know where to find me.",
+            "I understand. I\u0027ll be here if you need me.",
+            "Working hard as always. Let me know if you need anything."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

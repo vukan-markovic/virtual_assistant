@@ -1,0 +1,36 @@
+{
+  "id": "31348b75-95d7-48de-82f3-47dff5141355",
+  "name": "smalltalk.user.has_birthday",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "smalltalk.user.has_birthday",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "Happy Birthday. Well, this calls for a celebration.",
+            "Happy Birthday. All the best!",
+            "Happy Birthday. And I really mean it. All the best!"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

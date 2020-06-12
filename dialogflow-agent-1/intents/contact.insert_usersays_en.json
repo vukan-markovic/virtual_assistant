@@ -1,0 +1,132 @@
+[
+  {
+    "id": "f7fb5726-c96d-4019-ade1-2473cda66e38",
+    "data": [
+      {
+        "text": "new contact with name ",
+        "userDefined": false
+      },
+      {
+        "text": "Vukan",
+        "alias": "given-name",
+        "meta": "@sys.given-name",
+        "userDefined": true
+      },
+      {
+        "text": " and phone number ",
+        "userDefined": false
+      },
+      {
+        "text": "0631115498",
+        "alias": "phone-number",
+        "meta": "@sys.phone-number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a4257d8f-7658-429c-afef-1893bf548181",
+    "data": [
+      {
+        "text": "new contact",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "6342bff9-9d8b-4383-8eb8-29325ed511ca",
+    "data": [
+      {
+        "text": "enter a new contact, name ",
+        "userDefined": false
+      },
+      {
+        "text": "John",
+        "alias": "given-name",
+        "meta": "@sys.given-name",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8478e166-a5b7-4079-b3c5-ade68216676e",
+    "data": [
+      {
+        "text": "add contact ",
+        "userDefined": false
+      },
+      {
+        "text": "Maria",
+        "alias": "given-name",
+        "meta": "@sys.given-name",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0f34358e-5d86-4ce0-8ef4-84be150b78ee",
+    "data": [
+      {
+        "text": "insert a new contact",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "753fedd5-87d0-4d8d-97f5-521b9328fcd2",
+    "data": [
+      {
+        "text": "add new contact",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "79f12383-e4ea-4904-a4cb-6b8923633df4",
+    "data": [
+      {
+        "text": "enter a contact, ,number ",
+        "userDefined": false
+      },
+      {
+        "text": "0631118562",
+        "alias": "phone-number",
+        "meta": "@sys.phone-number",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0523314a-44c2-4484-b85d-da6571819fc7",
+    "data": [
+      {
+        "text": "insert a contact",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

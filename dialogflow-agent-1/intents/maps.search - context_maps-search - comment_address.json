@@ -1,0 +1,50 @@
+{
+  "id": "3c57bafa-a8e2-45bb-9064-bf64718a017c",
+  "name": "maps.search - context:maps-search - comment:address",
+  "auto": true,
+  "contexts": [
+    "maps-search"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "maps.search",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "cc286b6c-86ea-4b78-aaf0-3a63e607b9ea",
+          "required": false,
+          "dataType": "@sys.location",
+          "name": "location",
+          "value": "$location",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "Sorry, i can\u0027t find $location on the map.",
+            "I couldn\u0027t find that location on the map."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

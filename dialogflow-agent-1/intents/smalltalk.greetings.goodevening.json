@@ -1,0 +1,49 @@
+{
+  "id": "1394751a-c82e-4c70-a408-bba3c13da0db",
+  "name": "smalltalk.greetings.goodevening",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "smalltalk.greetings.goodevening",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "e5a6f482-7d39-4ab6-97c2-aaf0283144ef",
+          "required": false,
+          "dataType": "@sys.given-name",
+          "name": "given-name",
+          "value": "$given-name",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "How is your day going?",
+            "How\u0027s the day treating you so far?",
+            "How\u0027s your day been?"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

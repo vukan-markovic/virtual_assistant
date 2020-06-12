@@ -1,0 +1,37 @@
+{
+  "id": "f4cba25d-58f9-475a-8550-ce28a81fbb9e",
+  "name": "smalltalk.dialog.sorry",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "smalltalk.dialog.sorry",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "It\u0027s okay. No worries.",
+            "No big deal. I won\u0027t hold a grudge.",
+            "It\u0027s cool.",
+            "That\u0027s all right. I forgive you."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

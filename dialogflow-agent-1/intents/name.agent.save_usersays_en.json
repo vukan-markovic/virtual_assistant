@@ -1,0 +1,569 @@
+[
+  {
+    "id": "d1600c7d-fe94-4afa-9472-fefabf95e800",
+    "data": [
+      {
+        "text": "I\u0027d like to give you a ",
+        "userDefined": false
+      },
+      {
+        "text": "surname",
+        "alias": "type",
+        "meta": "@name-type",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "71fc210e-ce6d-4c20-929a-449adfe38a35",
+    "data": [
+      {
+        "text": "your new name is ",
+        "userDefined": false
+      },
+      {
+        "text": "Sam",
+        "alias": "given-name",
+        "meta": "@sys.given-name",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "5a4b8f17-7420-4183-a938-fb623f7b391f",
+    "data": [
+      {
+        "text": "your new ",
+        "userDefined": false
+      },
+      {
+        "text": "nickname",
+        "alias": "type",
+        "meta": "@name-type",
+        "userDefined": true
+      },
+      {
+        "text": " is ",
+        "userDefined": false
+      },
+      {
+        "text": "Ice",
+        "alias": "nick-name",
+        "meta": "@nick-name",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "6f09d92f-b2fd-4ef7-8036-5223c53b7005",
+    "data": [
+      {
+        "text": "you are ",
+        "userDefined": false
+      },
+      {
+        "text": "Nick",
+        "alias": "given-name",
+        "meta": "@sys.given-name",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "6a386b2b-ee4c-4692-bf71-8bda078bfe02",
+    "data": [
+      {
+        "text": "your ",
+        "userDefined": false
+      },
+      {
+        "text": "last name",
+        "alias": "type",
+        "meta": "@name-type",
+        "userDefined": true
+      },
+      {
+        "text": " is ",
+        "userDefined": false
+      },
+      {
+        "text": "Evans",
+        "alias": "last-name",
+        "meta": "@sys.last-name",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "dcfb95cc-2ec7-48a0-b0d9-9a441f3e3766",
+    "data": [
+      {
+        "text": "what if I call you ",
+        "userDefined": false
+      },
+      {
+        "text": "Liza",
+        "alias": "given-name",
+        "meta": "@sys.given-name",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "96905b65-046e-46ab-85c4-4eeaa56e15cb",
+    "data": [
+      {
+        "text": "your ",
+        "userDefined": false
+      },
+      {
+        "text": "last name",
+        "alias": "type",
+        "meta": "@name-type",
+        "userDefined": true
+      },
+      {
+        "text": " will be ",
+        "userDefined": false
+      },
+      {
+        "text": "Green",
+        "alias": "last-name",
+        "meta": "@sys.last-name",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "cab2d318-77a3-4455-86be-d7c8873f67a5",
+    "data": [
+      {
+        "text": "your ",
+        "userDefined": false
+      },
+      {
+        "text": "nickname",
+        "alias": "type",
+        "meta": "@name-type",
+        "userDefined": true
+      },
+      {
+        "text": " will be ",
+        "userDefined": false
+      },
+      {
+        "text": "Woo Woo",
+        "alias": "nick-name",
+        "meta": "@nick-name",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "076ea79a-f00b-4e01-9492-cc8d00440a4e",
+    "data": [
+      {
+        "text": "how can I save your name",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "519f58ab-2e5f-4544-90b3-fcdb56b3cde0",
+    "data": [
+      {
+        "text": "how can I save your ",
+        "userDefined": false
+      },
+      {
+        "text": "last name",
+        "alias": "type",
+        "meta": "@name-type",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "7a7a8808-db48-49a0-924d-763f46a5f8b3",
+    "data": [
+      {
+        "text": "I want to call you ",
+        "userDefined": false
+      },
+      {
+        "text": "Eva",
+        "alias": "given-name",
+        "meta": "@sys.given-name",
+        "userDefined": true
+      },
+      {
+        "text": " from now on",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "fedd24f9-3681-4a9e-9a89-fc7ca52a5a6f",
+    "data": [
+      {
+        "text": "save your new ",
+        "userDefined": false
+      },
+      {
+        "text": "middle",
+        "alias": "type",
+        "meta": "@name-type",
+        "userDefined": true
+      },
+      {
+        "text": " name",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "6c2a9865-80e1-4265-9b44-e4ca68c1da16",
+    "data": [
+      {
+        "text": "may",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " I pick a ",
+        "userDefined": false
+      },
+      {
+        "text": "nickname",
+        "alias": "type",
+        "meta": "@name-type",
+        "userDefined": false
+      },
+      {
+        "text": " for you",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "9162e5b8-9c1e-4007-89ed-c8332969e32f",
+    "data": [
+      {
+        "text": "do you mind if I ",
+        "userDefined": false
+      },
+      {
+        "text": "give",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " you a name",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "3a35f93e-b9dd-4814-96b1-ffe180643096",
+    "data": [
+      {
+        "text": "I think the name ",
+        "userDefined": false
+      },
+      {
+        "text": "Jason",
+        "alias": "given-name",
+        "meta": "@sys.given-name",
+        "userDefined": true
+      },
+      {
+        "text": " will suit you better",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8a808aa2-a37b-4415-8ec9-1a45e26dd154",
+    "data": [
+      {
+        "text": "I\u0027ll call you ",
+        "userDefined": false
+      },
+      {
+        "text": "Mike",
+        "alias": "given-name",
+        "meta": "@sys.given-name",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "16638413-6a3c-4053-80b2-78a654350fc0",
+    "data": [
+      {
+        "text": "Anna",
+        "alias": "given-name",
+        "meta": "@sys.given-name",
+        "userDefined": true
+      },
+      {
+        "text": " will be your new ",
+        "userDefined": false
+      },
+      {
+        "text": "middle name",
+        "alias": "type",
+        "meta": "@name-type",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f13e4ad4-ab0e-4ca2-bfd2-8a5c3e942f18",
+    "data": [
+      {
+        "text": "may I call you ",
+        "userDefined": false
+      },
+      {
+        "text": "Betty",
+        "alias": "given-name",
+        "meta": "@sys.given-name",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a4b3ac5e-3c52-414b-a9e1-12800d4d05fb",
+    "data": [
+      {
+        "text": "Green",
+        "alias": "last-name",
+        "meta": "@sys.last-name",
+        "userDefined": true
+      },
+      {
+        "text": " is your new ",
+        "userDefined": false
+      },
+      {
+        "text": "surname",
+        "alias": "type",
+        "meta": "@name-type",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4bec9f06-0058-4687-b6ba-218822f7d7b9",
+    "data": [
+      {
+        "text": "may I pick a name for you",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "1d4c9f8d-5d06-4b39-8b7c-3fdeb97686d6",
+    "data": [
+      {
+        "text": "can I name you",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "21e6790b-078d-4868-b3d5-edfc29950da1",
+    "data": [
+      {
+        "text": "Maria",
+        "alias": "given-name",
+        "meta": "@sys.given-name",
+        "userDefined": true
+      },
+      {
+        "text": " will be your new ",
+        "userDefined": false
+      },
+      {
+        "text": "middle name",
+        "alias": "type",
+        "meta": "@name-type",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "437005d6-625e-4927-ae0d-e8148ad8c90d",
+    "data": [
+      {
+        "text": "I\u0027d like to call you ",
+        "userDefined": false
+      },
+      {
+        "text": "Jennifer",
+        "alias": "given-name",
+        "meta": "@sys.given-name",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "3eb3eaf9-71f0-416b-a1c0-3192ad1560a4",
+    "data": [
+      {
+        "text": "your name is ",
+        "userDefined": false
+      },
+      {
+        "text": "Sam",
+        "alias": "given-name",
+        "meta": "@sys.given-name",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4f9233ea-ae96-46d0-8983-2549a077f22d",
+    "data": [
+      {
+        "text": "I think the ",
+        "userDefined": false
+      },
+      {
+        "text": "nickname",
+        "alias": "type",
+        "meta": "@name-type",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "Squirrel",
+        "alias": "nick-name",
+        "meta": "@nick-name",
+        "userDefined": true
+      },
+      {
+        "text": " will suit you better",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "91a2ccaf-308f-4f62-a481-a53718788097",
+    "data": [
+      {
+        "text": "do you mind if I give you a ",
+        "userDefined": false
+      },
+      {
+        "text": "surname",
+        "alias": "type",
+        "meta": "@name-type",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "df85936a-c4d6-41ca-b981-f843f76fed57",
+    "data": [
+      {
+        "text": "I\u0027d like to ",
+        "userDefined": false
+      },
+      {
+        "text": "give",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " you a name",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]
